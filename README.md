@@ -1,6 +1,7 @@
 # Wi-SUN MBED SIM (TCP, MQTT and FHSS ready)
 
-You need mbedtls for this repo.
+* You need mbedtls for this repo.
+* See license before fork/copy.
 
 ## Compile mbedtls
 
