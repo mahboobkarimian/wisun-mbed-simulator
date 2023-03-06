@@ -91,10 +91,8 @@ FHSS timing is working well, channel hopping is OFF at the start, but gets ON af
 
 ### References
 
-Simulator by https://github.com/SiliconLabs/wisun-br-linux version 1.2
-
-TCP re-add by Eric Tran
-
-MQTT adaptation to work with timers by Mahboob Karimian (source https://github.com/eclipse/paho.mqtt.embedded-c)
-
-RF driver inspired by EFR32 driver implementation (privaze) by Yann Charbon, and open source S2LP RF driver by STM
+1. Simulator by [SiLabs](https://github.com/SiliconLabs/wisun-br-linux) (version 1.2)
+2. TCP re-add by [Eric](https://github.com/ercclpn)
+3. FHSS MAC and all related functions and modifications added and applied by Mahboob Karimian
+4. MQTT adaptation to work with timers by Mahboob Karimian ([source](https://github.com/eclipse/paho.mqtt.embedded-c))
+5. RF driver added by Mahboob Karimian inspired by EFR32 driver implementation (privaze) by Yann Charbon, and open source S2LP RF driver by STM
