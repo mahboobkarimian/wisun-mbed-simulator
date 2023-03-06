@@ -1,0 +1,14 @@
+10th:
+CCA is not fully implemented
+Driver implemented by signalling
+Problems:
+Race condition on phy_tx callbacks
+Not recovery after PHY_TX_NOT_ALLOWED
+
+Suggestion:
+Move all the callbacks to main. Specially RX one.
+Investigate MAC problem after PHY_TX_NOT_ALLOWED
+
+Chgnges:
+1. Added a check for ack TX in mcps_pd_data_cca_trig
+

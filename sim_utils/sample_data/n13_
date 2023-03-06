@@ -1,0 +1,2403 @@
+1655416178 [DBG ][core]: NS Root task Init
+1655416178 [DBG ][sck ]: Socket Tasklet Generated
+1655416178 [INFO][wsbs]: WS tasklet init
+1655416178 [INFO][wspt]: Key timers revocation lifetime: 86400, new activation time: 3600, max mismatch 3840, time to update: 82800
+1655416178 [DBG ][cstr]: config set: gen, changed fields:
+1655416178 [DBG ][cstr]: i: 0x1 v: 57:69:2d:53:55:4e:20:4e:65:74:77:6f:72:6b 
+1655416178 [DBG ][cstr]: config set: phy, changed fields:
+1655416178 [DBG ][cstr]: i: 0x1 v: 01:2a 
+1655416178 [DBG ][cstr]: config set: timing, changed fields:
+1655416178 [DBG ][cstr]: i: (nil) v: 0f 
+1655416178 [DBG ][cstr]: i: 0x2 v: 3c:00 
+1655416178 [DBG ][cstr]: config set: rpl, changed fields:
+1655416178 [DBG ][cstr]: i: (nil) v: 0f:02:00 
+1655416178 [DBG ][cstr]: i: 0x8 v: 20:1c 
+1655416178 [DBG ][cstr]: i: 0xc v: 20:1c 
+1655416178 [DBG ][cstr]: config set: sec_prot, changed fields:
+1655416178 [DBG ][cstr]: i: 0x10 v: a4:01:02 
+1655416178 [DBG ][cstr]: config set: mpl, changed fields:
+1655416178 [DBG ][cstr]: i: 0x2 v: 0a 
+1655416178 [DBG ][cstr]: i: 0x6 v: 78:00 
+1655416178 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416178 [INFO][wsbs]: MAC address: 01:02:03:04:05:06:00:0d
+1655416178 [INFO][addr]: Address added to IF 1: fe80::302:304:506:d
+1655416178 [DBG ][addr]: LL64 Register OK!
+1655416178 [DBG ][rout]: Added route:
+1655416178 [DBG ][rout]:                    fe80::/64  if:1 src:'Static' id:0 lifetime:infinite
+1655416178 [DBG ][rout]:      On-link (met 128)
+1655416178 [DBG ][rout]: Added route:
+1655416178 [DBG ][rout]:                    ff00::/8   if:1 src:'Static' id:0 lifetime:infinite
+1655416178 [DBG ][rout]:      On-link (met 192)
+1655416178 [DBG ][sck ]: Socket id 0 allocated
+1655416178 [DBG ][wsbs]: tasklet init
+1655416178 [INFO][wsbs]: Discovery start
+1655416178 [INFO][wsbs]: Wi-SUN packet congestion minTh 85, maxTh 170, drop probability 10 weight 32, Packet/Seconds 5
+1655416178 [WARN][wsnv]: File not found: /tmp/n13_pae_keys
+1655416178 [WARN][wsnv]: File not found: /tmp/n13_pae_frame_counter
+1655416178 [WARN][wsnv]: File not found: /tmp/n13_pae_nw_info
+1655416178 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416178 [DBG ][wsbs]: FHSS activate
+1655416178 [DBG ][wsbs]: MAC init
+1655416178 [DBG ][wsbs]: router discovery start
+1655416178 [INFO][wspc]: NW keys remove
+1655416178 [DBG ][wsbs]: ip stack reset
+1655416178 [DBG ][wsbs]: ip stack address clear
+1655416178 [DBG ][wsbs]: Disc params imin 150, imax 600, expirations 255, k 1 PAS Trickle I 529 t 303, now 0, c 0
+1655416178 [INFO][wsbs]: Making parent selection in 58 s
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [DBG ][tric]: trickle reset timer
+1655416189 [INFO][wsbs]: Making parent selection in 27 s
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416194 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416215 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416216 [DBG ][wsbs]: WS SM:Active Scan
+1655416216 [DBG ][wsbs]: analyze network discovery result
+1655416216 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416216 [DBG ][wsbs]: FHSS activate
+1655416216 [DBG ][wsbs]: MAC init
+1655416216 [INFO][wsbs]: Making parent selection in 23 s
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416240 [DBG ][wsbs]: WS SM:Active Scan
+1655416240 [DBG ][wsbs]: analyze network discovery result
+1655416240 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416240 [DBG ][wsbs]: FHSS activate
+1655416240 [DBG ][wsbs]: MAC init
+1655416240 [INFO][wsbs]: Making parent selection in 20 s
+1655416260 [DBG ][wsbs]: WS SM:Active Scan
+1655416260 [DBG ][wsbs]: analyze network discovery result
+1655416260 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416260 [DBG ][wsbs]: FHSS activate
+1655416260 [DBG ][wsbs]: MAC init
+1655416260 [INFO][wsbs]: Making parent selection in 15 s
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416262 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416266 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416267 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655416275 [DBG ][wsbs]: WS SM:Active Scan
+1655416275 [DBG ][wsbs]: analyze network discovery result
+1655416275 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416275 [DBG ][wsbs]: FHSS activate
+1655416275 [DBG ][wsbs]: MAC init
+1655416275 [INFO][wsbs]: Making parent selection in 29 s
+1655416304 [DBG ][wsbs]: WS SM:Active Scan
+1655416304 [DBG ][wsbs]: analyze network discovery result
+1655416304 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416304 [DBG ][wsbs]: FHSS activate
+1655416304 [DBG ][wsbs]: MAC init
+1655416304 [INFO][wsbs]: Making parent selection in 20 s
+1655416325 [DBG ][wsbs]: WS SM:Active Scan
+1655416325 [DBG ][wsbs]: analyze network discovery result
+1655416325 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416325 [DBG ][wsbs]: FHSS activate
+1655416325 [DBG ][wsbs]: MAC init
+1655416325 [INFO][wsbs]: Making parent selection in 20 s
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416336 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416345 [DBG ][wsbs]: WS SM:Active Scan
+1655416345 [DBG ][wsbs]: analyze network discovery result
+1655416345 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416345 [DBG ][wsbs]: FHSS activate
+1655416345 [DBG ][wsbs]: MAC init
+1655416345 [INFO][wsbs]: Making parent selection in 18 s
+1655416364 [DBG ][wsbs]: WS SM:Active Scan
+1655416364 [DBG ][wsbs]: analyze network discovery result
+1655416364 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416364 [DBG ][wsbs]: FHSS activate
+1655416364 [DBG ][wsbs]: MAC init
+1655416364 [INFO][wsbs]: Making parent selection in 16 s
+1655416380 [DBG ][wsbs]: WS SM:Active Scan
+1655416380 [DBG ][wsbs]: analyze network discovery result
+1655416380 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416380 [DBG ][wsbs]: FHSS activate
+1655416380 [DBG ][wsbs]: MAC init
+1655416380 [INFO][wsbs]: Making parent selection in 21 s
+1655416385 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416402 [DBG ][wsbs]: WS SM:Active Scan
+1655416402 [DBG ][wsbs]: analyze network discovery result
+1655416402 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416402 [DBG ][wsbs]: FHSS activate
+1655416402 [DBG ][wsbs]: MAC init
+1655416402 [INFO][wsbs]: Making parent selection in 28 s
+1655416430 [DBG ][wsbs]: WS SM:Active Scan
+1655416430 [DBG ][wsbs]: analyze network discovery result
+1655416430 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416430 [DBG ][wsbs]: FHSS activate
+1655416430 [DBG ][wsbs]: MAC init
+1655416430 [INFO][wsbs]: Making parent selection in 24 s
+1655416453 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416454 [DBG ][wsbs]: WS SM:Active Scan
+1655416454 [DBG ][wsbs]: analyze network discovery result
+1655416454 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416454 [DBG ][wsbs]: FHSS activate
+1655416454 [DBG ][wsbs]: MAC init
+1655416454 [INFO][wsbs]: Making parent selection in 21 s
+1655416476 [DBG ][wsbs]: WS SM:Active Scan
+1655416476 [DBG ][wsbs]: analyze network discovery result
+1655416476 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416476 [DBG ][wsbs]: FHSS activate
+1655416476 [DBG ][wsbs]: MAC init
+1655416476 [INFO][wsbs]: Making parent selection in 15 s
+1655416491 [DBG ][wsbs]: WS SM:Active Scan
+1655416491 [DBG ][wsbs]: analyze network discovery result
+1655416491 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416491 [DBG ][wsbs]: FHSS activate
+1655416491 [DBG ][wsbs]: MAC init
+1655416491 [INFO][wsbs]: Making parent selection in 19 s
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416504 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416505 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416510 [DBG ][wsbs]: WS SM:Active Scan
+1655416510 [DBG ][wsbs]: analyze network discovery result
+1655416510 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416510 [DBG ][wsbs]: FHSS activate
+1655416510 [DBG ][wsbs]: MAC init
+1655416510 [INFO][wsbs]: Making parent selection in 20 s
+1655416531 [DBG ][wsbs]: WS SM:Active Scan
+1655416531 [DBG ][wsbs]: analyze network discovery result
+1655416531 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416531 [DBG ][wsbs]: FHSS activate
+1655416531 [DBG ][wsbs]: MAC init
+1655416531 [INFO][wsbs]: Making parent selection in 17 s
+1655416548 [DBG ][wsbs]: WS SM:Active Scan
+1655416548 [DBG ][wsbs]: analyze network discovery result
+1655416548 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416548 [DBG ][wsbs]: FHSS activate
+1655416548 [DBG ][wsbs]: MAC init
+1655416548 [INFO][wsbs]: Making parent selection in 21 s
+1655416570 [DBG ][wsbs]: WS SM:Active Scan
+1655416570 [DBG ][wsbs]: analyze network discovery result
+1655416570 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416570 [DBG ][wsbs]: FHSS activate
+1655416570 [DBG ][wsbs]: MAC init
+1655416570 [INFO][wsbs]: Making parent selection in 19 s
+1655416581 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416589 [DBG ][wsbs]: WS SM:Active Scan
+1655416589 [DBG ][wsbs]: analyze network discovery result
+1655416589 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416589 [DBG ][wsbs]: FHSS activate
+1655416589 [DBG ][wsbs]: MAC init
+1655416589 [INFO][wsbs]: Making parent selection in 29 s
+1655416618 [DBG ][wsbs]: WS SM:Active Scan
+1655416618 [DBG ][wsbs]: analyze network discovery result
+1655416618 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416618 [DBG ][wsbs]: FHSS activate
+1655416618 [DBG ][wsbs]: MAC init
+1655416618 [INFO][wsbs]: Making parent selection in 19 s
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416636 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416638 [DBG ][wsbs]: WS SM:Active Scan
+1655416638 [DBG ][wsbs]: analyze network discovery result
+1655416638 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416638 [DBG ][wsbs]: FHSS activate
+1655416638 [DBG ][wsbs]: MAC init
+1655416638 [INFO][wsbs]: Making parent selection in 15 s
+1655416653 [DBG ][wsbs]: WS SM:Active Scan
+1655416653 [DBG ][wsbs]: analyze network discovery result
+1655416653 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416653 [DBG ][wsbs]: FHSS activate
+1655416653 [DBG ][wsbs]: MAC init
+1655416653 [INFO][wsbs]: Making parent selection in 20 s
+1655416673 [DBG ][wsbs]: WS SM:Active Scan
+1655416673 [DBG ][wsbs]: analyze network discovery result
+1655416673 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416673 [DBG ][wsbs]: FHSS activate
+1655416673 [DBG ][wsbs]: MAC init
+1655416673 [INFO][wsbs]: Making parent selection in 25 s
+1655416689 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416699 [DBG ][wsbs]: WS SM:Active Scan
+1655416699 [DBG ][wsbs]: analyze network discovery result
+1655416699 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416699 [DBG ][wsbs]: FHSS activate
+1655416699 [DBG ][wsbs]: MAC init
+1655416699 [INFO][wsbs]: Making parent selection in 22 s
+1655416722 [DBG ][wsbs]: WS SM:Active Scan
+1655416722 [DBG ][wsbs]: analyze network discovery result
+1655416722 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416722 [DBG ][wsbs]: FHSS activate
+1655416722 [DBG ][wsbs]: MAC init
+1655416722 [INFO][wsbs]: Making parent selection in 21 s
+1655416743 [DBG ][wsbs]: WS SM:Active Scan
+1655416743 [DBG ][wsbs]: analyze network discovery result
+1655416743 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416743 [DBG ][wsbs]: FHSS activate
+1655416743 [DBG ][wsbs]: MAC init
+1655416743 [INFO][wsbs]: Making parent selection in 25 s
+1655416764 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416769 [DBG ][wsbs]: WS SM:Active Scan
+1655416769 [DBG ][wsbs]: analyze network discovery result
+1655416769 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416769 [DBG ][wsbs]: FHSS activate
+1655416769 [DBG ][wsbs]: MAC init
+1655416769 [INFO][wsbs]: Making parent selection in 28 s
+1655416797 [DBG ][wsbs]: WS SM:Active Scan
+1655416797 [DBG ][wsbs]: analyze network discovery result
+1655416797 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416797 [DBG ][wsbs]: FHSS activate
+1655416797 [DBG ][wsbs]: MAC init
+1655416797 [INFO][wsbs]: Making parent selection in 17 s
+1655416807 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416815 [DBG ][wsbs]: WS SM:Active Scan
+1655416815 [DBG ][wsbs]: analyze network discovery result
+1655416815 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416815 [DBG ][wsbs]: FHSS activate
+1655416815 [DBG ][wsbs]: MAC init
+1655416815 [INFO][wsbs]: Making parent selection in 15 s
+1655416831 [DBG ][wsbs]: WS SM:Active Scan
+1655416831 [DBG ][wsbs]: analyze network discovery result
+1655416831 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416831 [DBG ][wsbs]: FHSS activate
+1655416831 [DBG ][wsbs]: MAC init
+1655416831 [INFO][wsbs]: Making parent selection in 21 s
+1655416852 [DBG ][wsbs]: WS SM:Active Scan
+1655416852 [DBG ][wsbs]: analyze network discovery result
+1655416852 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416852 [DBG ][wsbs]: FHSS activate
+1655416852 [DBG ][wsbs]: MAC init
+1655416852 [INFO][wsbs]: Making parent selection in 15 s
+1655416868 [DBG ][wsbs]: WS SM:Active Scan
+1655416868 [DBG ][wsbs]: analyze network discovery result
+1655416868 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416868 [DBG ][wsbs]: FHSS activate
+1655416868 [DBG ][wsbs]: MAC init
+1655416868 [INFO][wsbs]: Making parent selection in 15 s
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416868 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416869 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416869 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416869 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655416883 [DBG ][wsbs]: WS SM:Active Scan
+1655416883 [DBG ][wsbs]: analyze network discovery result
+1655416883 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416883 [DBG ][wsbs]: FHSS activate
+1655416883 [DBG ][wsbs]: MAC init
+1655416883 [INFO][wsbs]: Making parent selection in 19 s
+1655416903 [DBG ][wsbs]: WS SM:Active Scan
+1655416903 [DBG ][wsbs]: analyze network discovery result
+1655416903 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416903 [DBG ][wsbs]: FHSS activate
+1655416903 [DBG ][wsbs]: MAC init
+1655416903 [INFO][wsbs]: Making parent selection in 22 s
+1655416925 [DBG ][wsbs]: WS SM:Active Scan
+1655416925 [DBG ][wsbs]: analyze network discovery result
+1655416925 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416925 [DBG ][wsbs]: FHSS activate
+1655416925 [DBG ][wsbs]: MAC init
+1655416925 [INFO][wsbs]: Making parent selection in 29 s
+1655416948 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416954 [DBG ][wsbs]: WS SM:Active Scan
+1655416954 [DBG ][wsbs]: analyze network discovery result
+1655416954 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416954 [DBG ][wsbs]: FHSS activate
+1655416954 [DBG ][wsbs]: MAC init
+1655416954 [INFO][wsbs]: Making parent selection in 25 s
+1655416980 [DBG ][wsbs]: WS SM:Active Scan
+1655416980 [DBG ][wsbs]: analyze network discovery result
+1655416980 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416980 [DBG ][wsbs]: FHSS activate
+1655416980 [DBG ][wsbs]: MAC init
+1655416980 [INFO][wsbs]: Making parent selection in 21 s
+1655416995 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417001 [DBG ][wsbs]: WS SM:Active Scan
+1655417001 [DBG ][wsbs]: analyze network discovery result
+1655417001 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417001 [DBG ][wsbs]: FHSS activate
+1655417001 [DBG ][wsbs]: MAC init
+1655417001 [INFO][wsbs]: Making parent selection in 18 s
+1655417019 [DBG ][wsbs]: WS SM:Active Scan
+1655417019 [DBG ][wsbs]: analyze network discovery result
+1655417019 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417019 [DBG ][wsbs]: FHSS activate
+1655417019 [DBG ][wsbs]: MAC init
+1655417019 [INFO][wsbs]: Making parent selection in 20 s
+1655417040 [DBG ][wsbs]: WS SM:Active Scan
+1655417040 [DBG ][wsbs]: analyze network discovery result
+1655417040 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417040 [DBG ][wsbs]: FHSS activate
+1655417040 [DBG ][wsbs]: MAC init
+1655417040 [INFO][wsbs]: Making parent selection in 18 s
+1655417059 [DBG ][wsbs]: WS SM:Active Scan
+1655417059 [DBG ][wsbs]: analyze network discovery result
+1655417059 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417059 [DBG ][wsbs]: FHSS activate
+1655417059 [DBG ][wsbs]: MAC init
+1655417059 [INFO][wsbs]: Making parent selection in 26 s
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417066 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417086 [DBG ][wsbs]: WS SM:Active Scan
+1655417086 [DBG ][wsbs]: analyze network discovery result
+1655417086 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417086 [DBG ][wsbs]: FHSS activate
+1655417086 [DBG ][wsbs]: MAC init
+1655417086 [INFO][wsbs]: Making parent selection in 21 s
+1655417102 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417107 [DBG ][wsbs]: WS SM:Active Scan
+1655417107 [DBG ][wsbs]: analyze network discovery result
+1655417107 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417107 [DBG ][wsbs]: FHSS activate
+1655417107 [DBG ][wsbs]: MAC init
+1655417107 [INFO][wsbs]: Making parent selection in 15 s
+1655417122 [DBG ][wsbs]: WS SM:Active Scan
+1655417122 [DBG ][wsbs]: analyze network discovery result
+1655417122 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417122 [DBG ][wsbs]: FHSS activate
+1655417122 [DBG ][wsbs]: MAC init
+1655417122 [INFO][wsbs]: Making parent selection in 27 s
+1655417150 [DBG ][wsbs]: WS SM:Active Scan
+1655417150 [DBG ][wsbs]: analyze network discovery result
+1655417150 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417150 [DBG ][wsbs]: FHSS activate
+1655417150 [DBG ][wsbs]: MAC init
+1655417150 [INFO][wsbs]: Making parent selection in 23 s
+1655417173 [DBG ][wsbs]: WS SM:Active Scan
+1655417173 [DBG ][wsbs]: analyze network discovery result
+1655417173 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417173 [DBG ][wsbs]: FHSS activate
+1655417173 [DBG ][wsbs]: MAC init
+1655417173 [INFO][wsbs]: Making parent selection in 27 s
+1655417173 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417200 [DBG ][wsbs]: WS SM:Active Scan
+1655417200 [DBG ][wsbs]: analyze network discovery result
+1655417200 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417200 [DBG ][wsbs]: FHSS activate
+1655417200 [DBG ][wsbs]: MAC init
+1655417200 [INFO][wsbs]: Making parent selection in 23 s
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417221 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417224 [DBG ][wsbs]: WS SM:Active Scan
+1655417224 [DBG ][wsbs]: analyze network discovery result
+1655417224 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417224 [DBG ][wsbs]: FHSS activate
+1655417224 [DBG ][wsbs]: MAC init
+1655417224 [INFO][wsbs]: Making parent selection in 27 s
+1655417252 [DBG ][wsbs]: WS SM:Active Scan
+1655417252 [DBG ][wsbs]: analyze network discovery result
+1655417252 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417252 [DBG ][wsbs]: FHSS activate
+1655417252 [DBG ][wsbs]: MAC init
+1655417252 [INFO][wsbs]: Making parent selection in 25 s
+1655417277 [DBG ][wsbs]: WS SM:Active Scan
+1655417277 [DBG ][wsbs]: analyze network discovery result
+1655417277 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417277 [DBG ][wsbs]: FHSS activate
+1655417277 [DBG ][wsbs]: MAC init
+1655417277 [INFO][wsbs]: Making parent selection in 24 s
+1655417282 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417302 [DBG ][wsbs]: WS SM:Active Scan
+1655417302 [DBG ][wsbs]: analyze network discovery result
+1655417302 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417302 [DBG ][wsbs]: FHSS activate
+1655417302 [DBG ][wsbs]: MAC init
+1655417302 [INFO][wsbs]: Making parent selection in 20 s
+1655417323 [DBG ][wsbs]: WS SM:Active Scan
+1655417323 [DBG ][wsbs]: analyze network discovery result
+1655417323 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417323 [DBG ][wsbs]: FHSS activate
+1655417323 [DBG ][wsbs]: MAC init
+1655417323 [INFO][wsbs]: Making parent selection in 27 s
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417346 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417347 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417350 [DBG ][wsbs]: WS SM:Active Scan
+1655417350 [DBG ][wsbs]: analyze network discovery result
+1655417350 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417350 [DBG ][wsbs]: FHSS activate
+1655417350 [DBG ][wsbs]: MAC init
+1655417350 [INFO][wsbs]: Making parent selection in 21 s
+1655417372 [DBG ][wsbs]: WS SM:Active Scan
+1655417372 [DBG ][wsbs]: analyze network discovery result
+1655417372 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417372 [DBG ][wsbs]: FHSS activate
+1655417372 [DBG ][wsbs]: MAC init
+1655417372 [INFO][wsbs]: Making parent selection in 26 s
+1655417398 [DBG ][wsbs]: WS SM:Active Scan
+1655417398 [DBG ][wsbs]: analyze network discovery result
+1655417398 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417398 [DBG ][wsbs]: FHSS activate
+1655417398 [DBG ][wsbs]: MAC init
+1655417398 [INFO][wsbs]: Making parent selection in 18 s
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417403 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417416 [DBG ][wsbs]: WS SM:Active Scan
+1655417416 [DBG ][wsbs]: analyze network discovery result
+1655417416 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417416 [DBG ][wsbs]: FHSS activate
+1655417416 [DBG ][wsbs]: MAC init
+1655417416 [INFO][wsbs]: Making parent selection in 24 s
+1655417441 [DBG ][wsbs]: WS SM:Active Scan
+1655417441 [DBG ][wsbs]: analyze network discovery result
+1655417441 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417441 [DBG ][wsbs]: FHSS activate
+1655417441 [DBG ][wsbs]: MAC init
+1655417441 [INFO][wsbs]: Making parent selection in 15 s
+1655417456 [DBG ][wsbs]: WS SM:Active Scan
+1655417456 [DBG ][wsbs]: analyze network discovery result
+1655417456 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417456 [DBG ][wsbs]: FHSS activate
+1655417456 [DBG ][wsbs]: MAC init
+1655417456 [INFO][wsbs]: Making parent selection in 18 s
+1655417474 [DBG ][wsbs]: WS SM:Active Scan
+1655417474 [DBG ][wsbs]: analyze network discovery result
+1655417474 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417474 [DBG ][wsbs]: FHSS activate
+1655417474 [DBG ][wsbs]: MAC init
+1655417474 [INFO][wsbs]: Making parent selection in 18 s
+1655417487 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417493 [DBG ][wsbs]: WS SM:Active Scan
+1655417493 [DBG ][wsbs]: analyze network discovery result
+1655417493 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417493 [DBG ][wsbs]: FHSS activate
+1655417493 [DBG ][wsbs]: MAC init
+1655417493 [INFO][wsbs]: Making parent selection in 15 s
+1655417508 [DBG ][wsbs]: WS SM:Active Scan
+1655417508 [DBG ][wsbs]: analyze network discovery result
+1655417508 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417508 [DBG ][wsbs]: FHSS activate
+1655417508 [DBG ][wsbs]: MAC init
+1655417508 [INFO][wsbs]: Making parent selection in 16 s
+1655417524 [DBG ][wsbs]: WS SM:Active Scan
+1655417524 [DBG ][wsbs]: analyze network discovery result
+1655417524 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417524 [DBG ][wsbs]: FHSS activate
+1655417524 [DBG ][wsbs]: MAC init
+1655417524 [INFO][wsbs]: Making parent selection in 19 s
+1655417533 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417544 [DBG ][wsbs]: WS SM:Active Scan
+1655417544 [DBG ][wsbs]: analyze network discovery result
+1655417544 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417544 [DBG ][wsbs]: FHSS activate
+1655417544 [DBG ][wsbs]: MAC init
+1655417544 [INFO][wsbs]: Making parent selection in 19 s
+1655417563 [DBG ][wsbs]: WS SM:Active Scan
+1655417563 [DBG ][wsbs]: analyze network discovery result
+1655417563 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417563 [DBG ][wsbs]: FHSS activate
+1655417563 [DBG ][wsbs]: MAC init
+1655417563 [INFO][wsbs]: Making parent selection in 25 s
+1655417582 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417589 [DBG ][wsbs]: WS SM:Active Scan
+1655417589 [DBG ][wsbs]: analyze network discovery result
+1655417589 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417589 [DBG ][wsbs]: FHSS activate
+1655417589 [DBG ][wsbs]: MAC init
+1655417589 [INFO][wsbs]: Making parent selection in 20 s
+1655417610 [DBG ][wsbs]: WS SM:Active Scan
+1655417610 [DBG ][wsbs]: analyze network discovery result
+1655417610 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417610 [DBG ][wsbs]: FHSS activate
+1655417610 [DBG ][wsbs]: MAC init
+1655417610 [INFO][wsbs]: Making parent selection in 23 s
+1655417634 [DBG ][wsbs]: WS SM:Active Scan
+1655417634 [DBG ][wsbs]: analyze network discovery result
+1655417634 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417634 [DBG ][wsbs]: FHSS activate
+1655417634 [DBG ][wsbs]: MAC init
+1655417634 [INFO][wsbs]: Making parent selection in 22 s
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417656 [DBG ][wsbs]: WS SM:Active Scan
+1655417656 [DBG ][wsbs]: analyze network discovery result
+1655417656 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417656 [DBG ][wsbs]: FHSS activate
+1655417656 [DBG ][wsbs]: MAC init
+1655417656 [INFO][wsbs]: Making parent selection in 24 s
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417658 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417680 [DBG ][wsbs]: WS SM:Active Scan
+1655417680 [DBG ][wsbs]: analyze network discovery result
+1655417680 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417680 [DBG ][wsbs]: FHSS activate
+1655417680 [DBG ][wsbs]: MAC init
+1655417680 [INFO][wsbs]: Making parent selection in 23 s
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417699 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655417704 [DBG ][wsbs]: WS SM:Active Scan
+1655417704 [DBG ][wsbs]: analyze network discovery result
+1655417704 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417704 [DBG ][wsbs]: FHSS activate
+1655417704 [DBG ][wsbs]: MAC init
+1655417704 [INFO][wsbs]: Making parent selection in 23 s
+1655417704 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417704 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417704 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417705 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417727 [DBG ][wsbs]: WS SM:Active Scan
+1655417727 [DBG ][wsbs]: analyze network discovery result
+1655417727 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417727 [DBG ][wsbs]: FHSS activate
+1655417727 [DBG ][wsbs]: MAC init
+1655417727 [INFO][wsbs]: Making parent selection in 18 s
+1655417746 [DBG ][wsbs]: WS SM:Active Scan
+1655417746 [DBG ][wsbs]: analyze network discovery result
+1655417746 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417746 [DBG ][wsbs]: FHSS activate
+1655417746 [DBG ][wsbs]: MAC init
+1655417746 [INFO][wsbs]: Making parent selection in 24 s
+1655417770 [DBG ][wsbs]: WS SM:Active Scan
+1655417770 [DBG ][wsbs]: analyze network discovery result
+1655417770 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417770 [DBG ][wsbs]: FHSS activate
+1655417770 [DBG ][wsbs]: MAC init
+1655417770 [INFO][wsbs]: Making parent selection in 22 s
+1655417772 [INFO][wsbs]: Send PAN advertisement Solicit
+1655417793 [DBG ][wsbs]: WS SM:Active Scan
+1655417793 [DBG ][wsbs]: analyze network discovery result
+1655417793 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417793 [DBG ][wsbs]: FHSS activate
+1655417793 [DBG ][wsbs]: MAC init
+1655417793 [INFO][wsbs]: Making parent selection in 21 s
+1655417814 [DBG ][wsbs]: WS SM:Active Scan
+1655417814 [DBG ][wsbs]: analyze network discovery result
+1655417814 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417814 [DBG ][wsbs]: FHSS activate
+1655417814 [DBG ][wsbs]: MAC init
+1655417814 [INFO][wsbs]: Making parent selection in 25 s
+1655417828 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417840 [DBG ][wsbs]: WS SM:Active Scan
+1655417840 [DBG ][wsbs]: analyze network discovery result
+1655417840 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417840 [DBG ][wsbs]: FHSS activate
+1655417840 [DBG ][wsbs]: MAC init
+1655417840 [INFO][wsbs]: Making parent selection in 23 s
+1655417863 [DBG ][wsbs]: WS SM:Active Scan
+1655417863 [DBG ][wsbs]: analyze network discovery result
+1655417863 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417863 [DBG ][wsbs]: FHSS activate
+1655417863 [DBG ][wsbs]: MAC init
+1655417863 [INFO][wsbs]: Making parent selection in 28 s
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417883 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417891 [DBG ][wsbs]: WS SM:Active Scan
+1655417891 [DBG ][wsbs]: analyze network discovery result
+1655417891 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417891 [DBG ][wsbs]: FHSS activate
+1655417891 [DBG ][wsbs]: MAC init
+1655417891 [INFO][wsbs]: Making parent selection in 26 s
+1655417918 [DBG ][wsbs]: WS SM:Active Scan
+1655417918 [DBG ][wsbs]: analyze network discovery result
+1655417918 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417918 [DBG ][wsbs]: FHSS activate
+1655417918 [DBG ][wsbs]: MAC init
+1655417918 [INFO][wsbs]: Making parent selection in 17 s
+1655417936 [DBG ][wsbs]: WS SM:Active Scan
+1655417936 [DBG ][wsbs]: analyze network discovery result
+1655417936 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417936 [DBG ][wsbs]: FHSS activate
+1655417936 [DBG ][wsbs]: MAC init
+1655417936 [INFO][wsbs]: Making parent selection in 21 s
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417939 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655417957 [DBG ][wsbs]: WS SM:Active Scan
+1655417957 [DBG ][wsbs]: analyze network discovery result
+1655417957 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417957 [DBG ][wsbs]: FHSS activate
+1655417957 [DBG ][wsbs]: MAC init
+1655417957 [INFO][wsbs]: Making parent selection in 16 s
+1655417973 [DBG ][wsbs]: WS SM:Active Scan
+1655417973 [DBG ][wsbs]: analyze network discovery result
+1655417973 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417973 [DBG ][wsbs]: FHSS activate
+1655417973 [DBG ][wsbs]: MAC init
+1655417973 [INFO][wsbs]: Making parent selection in 20 s
+1655417993 [DBG ][wsbs]: WS SM:Active Scan
+1655417993 [DBG ][wsbs]: analyze network discovery result
+1655417993 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655417993 [DBG ][wsbs]: FHSS activate
+1655417993 [DBG ][wsbs]: MAC init
+1655417993 [INFO][wsbs]: Making parent selection in 29 s
+1655418007 [INFO][wsbs]: Send PAN advertisement Solicit
+1655418023 [DBG ][wsbs]: WS SM:Active Scan
+1655418023 [DBG ][wsbs]: analyze network discovery result
+1655418023 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418023 [DBG ][wsbs]: FHSS activate
+1655418023 [DBG ][wsbs]: MAC init
+1655418023 [INFO][wsbs]: Making parent selection in 18 s
+1655418041 [DBG ][wsbs]: WS SM:Active Scan
+1655418041 [DBG ][wsbs]: analyze network discovery result
+1655418041 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418041 [DBG ][wsbs]: FHSS activate
+1655418041 [DBG ][wsbs]: MAC init
+1655418041 [INFO][wsbs]: Making parent selection in 26 s
+1655418041 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655418068 [DBG ][wsbs]: WS SM:Active Scan
+1655418068 [DBG ][wsbs]: analyze network discovery result
+1655418068 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418068 [DBG ][wsbs]: FHSS activate
+1655418068 [DBG ][wsbs]: MAC init
+1655418068 [INFO][wsbs]: Making parent selection in 27 s
+1655418069 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:0c rssi:0
+1655418090 [INFO][wsbs]: Send PAN advertisement Solicit
+1655418095 [DBG ][wsbs]: WS SM:Active Scan
+1655418095 [DBG ][wsbs]: analyze network discovery result
+1655418095 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418095 [DBG ][wsbs]: FHSS activate
+1655418095 [DBG ][wsbs]: MAC init
+1655418095 [INFO][wsbs]: Making parent selection in 27 s
+1655418122 [DBG ][wsbs]: WS SM:Active Scan
+1655418122 [DBG ][wsbs]: analyze network discovery result
+1655418122 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418122 [DBG ][wsbs]: FHSS activate
+1655418122 [DBG ][wsbs]: MAC init
+1655418122 [INFO][wsbs]: Making parent selection in 28 s
+1655418131 [INFO][wsbs]: Send PAN advertisement Solicit
+1655418151 [DBG ][wsbs]: WS SM:Active Scan
+1655418151 [DBG ][wsbs]: analyze network discovery result
+1655418151 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418151 [DBG ][wsbs]: FHSS activate
+1655418151 [DBG ][wsbs]: MAC init
+1655418151 [INFO][wsbs]: Making parent selection in 29 s
+1655418181 [DBG ][wsbs]: WS SM:Active Scan
+1655418181 [DBG ][wsbs]: analyze network discovery result
+1655418181 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418181 [DBG ][wsbs]: FHSS activate
+1655418181 [DBG ][wsbs]: MAC init
+1655418181 [INFO][wsbs]: Making parent selection in 22 s
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418188 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418203 [DBG ][wsbs]: WS SM:Active Scan
+1655418203 [DBG ][wsbs]: analyze network discovery result
+1655418203 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418203 [DBG ][wsbs]: FHSS activate
+1655418203 [DBG ][wsbs]: MAC init
+1655418203 [INFO][wsbs]: Making parent selection in 20 s
+1655418211 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:0c panid:5351 rssi:0
+1655418224 [DBG ][wsbs]: WS SM:Active Scan
+1655418224 [DBG ][wsbs]: analyze network discovery result
+1655418224 [INFO][wsbs]: candidate list a:01:02:03:04:05:06:00:0c panid:5351 cost:1536 size:3 rssi:0 txFailure:0 age:128
+1655418224 [INFO][wsbs]: selected parent:01:02:03:04:05:06:00:0c panid 21329
+1655418224 [DBG ][wsbs]: FHSS activate
+1655418224 [DBG ][wsbs]: MAC init
+1655418224 [DBG ][MACh]: Register Device 0, mac16 ffff mac64: 01:02:03:04:05:06:00:0c, 0
+1655418224 [INFO][wsbs]: Added new neighbor 01:02:03:04:05:06:00:0c : index:0
+1655418224 [INFO][wsbs]: authentication start
+1655418224 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655418224 [INFO][wsps]: Delete old keys, new PAN ID: 21329 network name: Wi-SUN Network
+1655418224 [DBG ][wsps]: PAE active, timer 3
+1655418227 [INFO][ksep]: Initial-key init
+1655418227 [INFO][wsps]: EAPOL target: 01:02:03:04:05:06:00:0c
+1655418227 [INFO][wsps]: Initial EAPOL-Key retry timer 322 seconds (range [180,420] seconds)
+1655418227 [INFO][ksep]: Initial EAPOL-Key send, PMKID not set PTKID not set GTKL 0
+1655418227 [DBG ][secl]: prot timeout, state: 5
+1655418227 [INFO][ksep]: Initial-key finished
+1655418230 [INFO][eaps]: EAP-TLS init
+1655418230 [DBG ][tlsp]: TLS: init
+1655418230 [INFO][eaps]: EAP-TLS recv REQ type IDENTITY id 1 flags 0 len 5
+1655418230 [INFO][eaps]: EAP-TLS start
+1655418230 [INFO][eaps]: EAP-TLS: send RESPONSE type IDENTITY id 1 flags ff len 18
+1655418233 [INFO][eaps]: EAP-TLS recv REQ type TLS id 2 flags 20 len 6
+1655418233 [DBG ][tlsp]: TLS: start
+1655418233 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 2 flags 0 len 122
+1655418236 [INFO][eaps]: EAP-TLS recv REQ type TLS id 3 flags c0 len 610
+1655418236 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 3 flags 0 len 10
+1655418239 [INFO][eaps]: EAP-TLS recv REQ type TLS id 4 flags 0 len 171
+1655418239 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 4 flags c0 len 614
+1655418242 [INFO][eaps]: EAP-TLS recv REQ type TLS id 5 flags 0 len 6
+1655418242 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 5 flags 0 len 54
+1655418245 [INFO][eaps]: EAP-TLS recv REQ type TLS id 6 flags 0 len 49
+1655418245 [DBG ][tlsp]: TLS: finish
+1655418245 [INFO][eaps]: EAP-TLS: handshake success
+1655418245 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 6 flags 0 len 10
+1655418248 [INFO][eaps]: EAP-TLS finish
+1655418248 [INFO][sfwh]: 4WH: init
+1655418248 [INFO][sfwh]: 4WH: recv Message 1
+1655418248 [INFO][secl]: PMKID 66:6c:a9:fc:a8:14:83:d1:7c:49:5e:43:37:aa:fd:1a EUI-64 01:02:03:04:05:06:00:00 01:02:03:04:05:06:00:0d
+1655418248 [INFO][sfwh]: 4WH: start
+1655418248 [INFO][sfwh]: 4WH: send Message 2
+1655418250 [DBG ][secl]: prot timeout, state: 5
+1655418250 [DBG ][tlsp]: TLS: finished, free F
+1655418251 [INFO][sfwh]: 4WH: recv Message 3
+1655418251 [INFO][secl]: GTK recv index 0 lifetime 2589945
+1655418251 [INFO][sfwh]: 4WH: send Message 4
+1655418251 [INFO][sfwh]: 4WH: finish, wait Message 3 retry
+1655418251 [INFO][wspc]: NW key set: 0, hash: 25:63:2a:ab:28:ec:37:bb
+1655418251 [INFO][wsbs]: authentication success eui64:01:02:03:04:05:06:00:0c
+1655418251 [INFO][wsbs]: Configuration start
+1655418251 [DBG ][wsbs]: router configuration learn start
+1655418251 [DBG ][wsbs]: ip stack reset
+1655418251 [DBG ][tric]: trickle reset timer
+1655418251 [DBG ][wsbs]: WS SM:configuration Scan
+1655418253 [DBG ][secl]: prot timeout, state: 5
+1655418253 [INFO][eaps]: EAP-TLS finished
+1655418254 [INFO][sgkh]: GKH init
+1655418254 [INFO][sgkh]: GKH: recv Message 1
+1655418254 [INFO][secl]: GTK recv index 1 lifetime 5181942
+1655418254 [INFO][sgkh]: GKH start
+1655418254 [INFO][sgkh]: GKH: send Message 2
+1655418254 [INFO][sgkh]: GKH finish
+1655418254 [INFO][wspc]: NW key set: 1, hash: 25:63:2a:ab:28:ec:37:bb
+1655418257 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418257 [INFO][sgkh]: GKH init
+1655418257 [INFO][sgkh]: GKH: recv Message 1
+1655418257 [INFO][secl]: GTK recv index 2 lifetime 7773939
+1655418257 [INFO][sgkh]: GKH start
+1655418257 [INFO][sgkh]: GKH: send Message 2
+1655418257 [INFO][sgkh]: GKH finish
+1655418257 [INFO][wspc]: NW key set: 2, hash: 25:63:2a:ab:28:ec:37:bb
+1655418259 [DBG ][secl]: prot timeout, state: 5
+1655418259 [INFO][sgkh]: GKH finished
+1655418261 [INFO][sgkh]: GKH init
+1655418261 [INFO][sgkh]: GKH: recv Message 1
+1655418261 [INFO][secl]: GTK recv index 3 lifetime 12957936
+1655418261 [INFO][sgkh]: GKH start
+1655418261 [INFO][sgkh]: GKH: send Message 2
+1655418261 [INFO][sgkh]: GKH finish
+1655418261 [INFO][wspc]: NW key set: 3, hash: 49:21:f1:11:f9:1a:85:39
+1655418262 [DBG ][secl]: prot timeout, state: 5
+1655418262 [INFO][sgkh]: GKH finished
+1655418264 [INFO][wsbs]: Send PAN configuration Solicit
+1655418266 [DBG ][secl]: prot timeout, state: 5
+1655418266 [INFO][sgkh]: GKH finished
+1655418278 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:0c rssi:0
+1655418278 [INFO][wsbs]: Updated PAN configuration own:0, heard:14524
+1655418278 [DBG ][wspc]: Pending to store new frame counter: index 0 value 0
+1655418278 [DBG ][wspc]: Stored frame counters, active key set: index 0 value 0
+1655418278 [DBG ][wspc]: Pending to store new frame counter: index 1 value 0
+1655418278 [DBG ][wspc]: Pending to store new frame counter: index 2 value 0
+1655418278 [DBG ][wspc]: Pending to store new frame counter: index 3 value 0
+1655418278 [DBG ][wspc]: Write frame counters: system time 2098
+1655418278 [INFO][wsnv]: NVM FRAME COUNTER write; stored time: 1577838898
+1655418278 [INFO][wspc]: NW send key index set: 1
+1655418278 [INFO][wsbs]: learn network configuration
+1655418279 [DBG ][wsbs]: WS SM:configuration Scan
+1655418279 [DBG ][wsbs]: Start using PAN configuration
+1655418279 [INFO][wsbs]: operation start
+1655418279 [DBG ][wsbs]: ip stack init
+1655418279 [DBG ][wsbs]: ip stack reset
+1655418279 [DBG ][wsbs]: RPL Activate
+1655418279 [DBG ][wsbs]: Start RPL learn
+1655418280 [DBG ][wsbs]: WS SM:Wait RPL to contact DODAG root
+1655418280 [INFO][rplc]: Transmit DIS
+1655418280 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:0c panid:5351 rssi:0
+1655418305 [INFO][rplc]: DIO from fe80::302:304:506:c, rank 9f4
+1655418305 [DBG ][rplu]: Timed parent triggered 41
+1655418307 [INFO][wsbs]: Probe generate NS 0
+1655418310 [INFO][wsbs]: Probe generate NS 0
+1655418311 [DBG ][secl]: prot timeout, state: 8
+1655418311 [INFO][sfwh]: 4WH: Message 3 retry timeout
+1655418316 [DBG ][secl]: prot timeout, state: 5
+1655418316 [INFO][sfwh]: 4WH: finished
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418317 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418326 [INFO][wsbs]: Probe generate NS 0
+1655418326 [DBG ][rplc]: Triggering parent selection due to ETX better on neigh index 0, etx 256
+1655418343 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:0c panid:5351 rssi:0
+1655418346 [DBG ][rplu]: Timed parent selection
+1655418346 [DBG ][tric]: trickle reset timer
+1655418346 [INFO][rplu]: Added parent fe80::302:304:506:c
+1655418346 [DBG ][rout]: Added route:
+1655418346 [DBG ][rout]:                        ::/0   if:1 src:'RPL Instance' id:1 lifetime:7200
+1655418346 [DBG ][rout]:      next-hop fe80::302:304:506:c (met 128)
+1655418346 [DBG ][rout]: Added route:
+1655418346 [DBG ][rout]:  fd12:3456::1615:16ff:fe17:1819/128 if:1 src:'RPL Root' id:1 lifetime:7200
+1655418346 [DBG ][rout]:      next-hop fe80::302:304:506:c (met 128)
+1655418346 [DBG ][rout]: Added route:
+1655418346 [DBG ][rout]:                        ::/0   if:1 src:'RPL Root' id:1 lifetime:7200
+1655418346 [DBG ][rout]:      next-hop fe80::302:304:506:c (met 128)
+1655418346 [INFO][rplu]: New preferred parent fe:80:00:00:00:00:00:00:03:02:03:04:05:06:00:0c
+1655418346 [DBG ][RPLd]: removed=0, added=ff
+1655418346 [INFO][wsbs]: RPL parent update ... register ARO
+1655418346 [INFO][wsbs]: RPL event 3
+1655418346 [INFO][rplu]: Time 00:36:06.0 (2166.0) RPL memory usage 512
+1655418346 [INFO][rplu]: RPL Domain 0x564c06665000
+1655418346 [INFO][rplu]: RPL Instance 1
+1655418346 [INFO][rplu]: ---------------
+1655418346 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418346 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418346 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418346 [INFO][rplu]:   Version 241
+1655418346 [INFO][rplu]:   *Current version* Rank=0ab8
+1655418346 [INFO][rplu]:     1*09f4 0a74 ff fe80::302:304:506:c%1 (fd12:3456::302:304:506:c)
+1655418346 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418346 [INFO][rplu]:             I=328, now=0, t=269, c=0
+1655418346 [DBG ][DHP ]: GEN new Dhcpv6 client 1
+1655418346 [DBG ][dhcp]: Send DHCPv6 request
+1655418346 [INFO][dhcp]: dhcp service socket_sendto fe80::302:304:506:c
+1655418346 [DBG ][wsps]: PAE idle
+1655418348 [INFO][dhcp]: dhcp service socket_sendto fe80::302:304:506:c
+1655418351 [DBG ][dhcp]: dhcp recv response message
+1655418351 [DBG ][rout]: Added route:
+1655418351 [DBG ][rout]:  fd12:3456::302:304:506:d/128 if:1 src:'Loopback' id:0 lifetime:infinite
+1655418351 [DBG ][rout]:      On-link (met 128)
+1655418351 [INFO][addr]: Address added to IF 1: fd12:3456::302:304:506:d
+1655418351 [DBG ][wsbs]: DHCPv6 fd12:3456::302:304:506:d status 1 with link fe80::302:304:506:c
+1655418352 [DBG ][RPLd]: New Target fd12:3456::302:304:506:d
+1655418352 [DBG ][RPLd]: Register Address to parent fd12:3456::302:304:506:d
+1655418352 [INFO][RPLd]: Send ARO fd12:3456::302:304:506:d to fe80::302:304:506:c
+1655418352 [DBG ][RPLd]: Address fd12:3456::302:304:506:d register to fe80::302:304:506:c
+1655418364 [INFO][RPLd]: DAO tx 240 seq attempts 0 retry-timer 350
+1655418366 [INFO][rplc]: DIO from fe80::302:304:506:c, rank 9f4
+1655418366 [DBG ][rplu]: Timed parent triggered 43
+1655418368 [DBG ][RPLd]: DAO-ACK RX
+1655418368 [DBG ][RPLd]: tgt fd12:3456::302:304:506:d/128 - pc ff, assigned 00, assigning ff, life 78, rfr 0
+1655418368 [DBG ][RPLd]: set rfr to 4685
+1655418368 [DBG ][wsbs]: Enable DHCPv6 relay
+1655418368 [DBG ][sck ]: Socket id 1 allocated
+1655418368 [DBG ][wsbs]: Start EAPOL relay
+1655418368 [DBG ][sck ]: Socket id 2 allocated
+1655418368 [INFO][wsps]: NW key valid indication
+1655418368 [INFO][wsnv]: NVM NW_INFO write PAN ID: 21329 name: Wi-SUN Network stored time: 1577838987
+1655418368 [INFO][wsnv]: NVM KEYS write
+1655418368 [DBG ][wsbs]: own hop: 13, own rank: 2744, rank inc: 196
+1655418368 [INFO][wsbs]: RPL event 0
+1655418368 [DBG ][wsbs]: WS SM:Wait RPL to contact DODAG root
+1655418368 [INFO][wsbs]: Routing ready
+1655418368 [INFO][wsbs]: WS SM:Bootstrap Done
+1655418368 [INFO][core]: RPL Ready
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [DBG ][tric]: trickle reset timer
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418383 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:0e rssi:0
+1655418393 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:0c panid:5351 rssi:0
+1655418395 [INFO][rplc]: transmit dio, rank: ab8
+1655418399 [INFO][wsbs]: Send PAN configuration
+1655418409 [DBG ][rplu]: Timed parent selection
+1655418409 [INFO][rplu]: Time 00:37:09.0 (2229.0) RPL memory usage 592
+1655418409 [INFO][rplu]: RPL Domain 0x564c06665000
+1655418409 [INFO][rplu]: RPL Instance 1
+1655418409 [INFO][rplu]: ---------------
+1655418409 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418409 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418409 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418409 [INFO][rplu]:   Version 241
+1655418409 [INFO][rplu]:   *Current version* Rank=0ab8
+1655418409 [INFO][rplu]:     1*09f4 0a74 ff fe80::302:304:506:c%1 (fd12:3456::302:304:506:c)
+1655418409 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418409 [INFO][rplu]:             I=656, now=83, t=473, c=0
+1655418409 [INFO][rplu]: DAO Targets:
+1655418409 [INFO][rplu]:   fd12:3456::302:304:506:d/128             ff seq=240 (pub)
+1655418421 [INFO][wsbs]: Send PAN advertisement

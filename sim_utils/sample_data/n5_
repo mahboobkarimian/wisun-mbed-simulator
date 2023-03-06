@@ -1,0 +1,1706 @@
+1655416176 [DBG ][core]: NS Root task Init
+1655416176 [DBG ][sck ]: Socket Tasklet Generated
+1655416176 [INFO][wsbs]: WS tasklet init
+1655416176 [INFO][wspt]: Key timers revocation lifetime: 86400, new activation time: 3600, max mismatch 3840, time to update: 82800
+1655416176 [DBG ][cstr]: config set: gen, changed fields:
+1655416176 [DBG ][cstr]: i: 0x1 v: 57:69:2d:53:55:4e:20:4e:65:74:77:6f:72:6b 
+1655416176 [DBG ][cstr]: config set: phy, changed fields:
+1655416176 [DBG ][cstr]: i: 0x1 v: 01:2a 
+1655416176 [DBG ][cstr]: config set: timing, changed fields:
+1655416176 [DBG ][cstr]: i: (nil) v: 0f 
+1655416176 [DBG ][cstr]: i: 0x2 v: 3c:00 
+1655416176 [DBG ][cstr]: config set: rpl, changed fields:
+1655416176 [DBG ][cstr]: i: (nil) v: 0f:02:00 
+1655416176 [DBG ][cstr]: i: 0x8 v: 20:1c 
+1655416176 [DBG ][cstr]: i: 0xc v: 20:1c 
+1655416176 [DBG ][cstr]: config set: sec_prot, changed fields:
+1655416176 [DBG ][cstr]: i: 0x10 v: a4:01:02 
+1655416176 [DBG ][cstr]: config set: mpl, changed fields:
+1655416176 [DBG ][cstr]: i: 0x2 v: 0a 
+1655416176 [DBG ][cstr]: i: 0x6 v: 78:00 
+1655416176 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416176 [INFO][wsbs]: MAC address: 01:02:03:04:05:06:00:05
+1655416176 [INFO][addr]: Address added to IF 1: fe80::302:304:506:5
+1655416176 [DBG ][addr]: LL64 Register OK!
+1655416176 [DBG ][rout]: Added route:
+1655416176 [DBG ][rout]:                    fe80::/64  if:1 src:'Static' id:0 lifetime:infinite
+1655416176 [DBG ][rout]:      On-link (met 128)
+1655416176 [DBG ][rout]: Added route:
+1655416176 [DBG ][rout]:                    ff00::/8   if:1 src:'Static' id:0 lifetime:infinite
+1655416176 [DBG ][rout]:      On-link (met 192)
+1655416176 [DBG ][sck ]: Socket id 0 allocated
+1655416176 [DBG ][wsbs]: tasklet init
+1655416176 [INFO][wsbs]: Discovery start
+1655416176 [INFO][wsbs]: Wi-SUN packet congestion minTh 85, maxTh 170, drop probability 10 weight 32, Packet/Seconds 5
+1655416176 [WARN][wsnv]: File not found: /tmp/n5_pae_keys
+1655416176 [WARN][wsnv]: File not found: /tmp/n5_pae_frame_counter
+1655416176 [WARN][wsnv]: File not found: /tmp/n5_pae_nw_info
+1655416176 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416176 [DBG ][wsbs]: FHSS activate
+1655416176 [DBG ][wsbs]: MAC init
+1655416176 [DBG ][wsbs]: router discovery start
+1655416176 [INFO][wspc]: NW keys remove
+1655416176 [DBG ][wsbs]: ip stack reset
+1655416176 [DBG ][wsbs]: ip stack address clear
+1655416176 [DBG ][wsbs]: Disc params imin 150, imax 600, expirations 255, k 1 PAS Trickle I 330 t 328, now 0, c 0
+1655416176 [INFO][wsbs]: Making parent selection in 50 s
+1655416209 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416227 [DBG ][wsbs]: WS SM:Active Scan
+1655416227 [DBG ][wsbs]: analyze network discovery result
+1655416227 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416227 [DBG ][wsbs]: FHSS activate
+1655416227 [DBG ][wsbs]: MAC init
+1655416227 [INFO][wsbs]: Making parent selection in 25 s
+1655416251 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416253 [DBG ][wsbs]: WS SM:Active Scan
+1655416253 [DBG ][wsbs]: analyze network discovery result
+1655416253 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416253 [DBG ][wsbs]: FHSS activate
+1655416253 [DBG ][wsbs]: MAC init
+1655416253 [INFO][wsbs]: Making parent selection in 27 s
+1655416280 [DBG ][wsbs]: WS SM:Active Scan
+1655416280 [DBG ][wsbs]: analyze network discovery result
+1655416280 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416280 [DBG ][wsbs]: FHSS activate
+1655416280 [DBG ][wsbs]: MAC init
+1655416280 [INFO][wsbs]: Making parent selection in 19 s
+1655416300 [DBG ][wsbs]: WS SM:Active Scan
+1655416300 [DBG ][wsbs]: analyze network discovery result
+1655416300 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416300 [DBG ][wsbs]: FHSS activate
+1655416300 [DBG ][wsbs]: MAC init
+1655416300 [INFO][wsbs]: Making parent selection in 16 s
+1655416306 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416316 [DBG ][wsbs]: WS SM:Active Scan
+1655416316 [DBG ][wsbs]: analyze network discovery result
+1655416316 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416316 [DBG ][wsbs]: FHSS activate
+1655416316 [DBG ][wsbs]: MAC init
+1655416316 [INFO][wsbs]: Making parent selection in 26 s
+1655416342 [DBG ][wsbs]: WS SM:Active Scan
+1655416342 [DBG ][wsbs]: analyze network discovery result
+1655416342 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416342 [DBG ][wsbs]: FHSS activate
+1655416342 [DBG ][wsbs]: MAC init
+1655416342 [INFO][wsbs]: Making parent selection in 28 s
+1655416360 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416371 [DBG ][wsbs]: WS SM:Active Scan
+1655416371 [DBG ][wsbs]: analyze network discovery result
+1655416371 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416371 [DBG ][wsbs]: FHSS activate
+1655416371 [DBG ][wsbs]: MAC init
+1655416371 [INFO][wsbs]: Making parent selection in 29 s
+1655416401 [DBG ][wsbs]: WS SM:Active Scan
+1655416401 [DBG ][wsbs]: analyze network discovery result
+1655416401 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416401 [DBG ][wsbs]: FHSS activate
+1655416401 [DBG ][wsbs]: MAC init
+1655416401 [INFO][wsbs]: Making parent selection in 15 s
+1655416416 [DBG ][wsbs]: WS SM:Active Scan
+1655416416 [DBG ][wsbs]: analyze network discovery result
+1655416416 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416416 [DBG ][wsbs]: FHSS activate
+1655416416 [DBG ][wsbs]: MAC init
+1655416416 [INFO][wsbs]: Making parent selection in 15 s
+1655416430 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416432 [DBG ][wsbs]: WS SM:Active Scan
+1655416432 [DBG ][wsbs]: analyze network discovery result
+1655416432 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416432 [DBG ][wsbs]: FHSS activate
+1655416432 [DBG ][wsbs]: MAC init
+1655416432 [INFO][wsbs]: Making parent selection in 23 s
+1655416455 [DBG ][wsbs]: WS SM:Active Scan
+1655416455 [DBG ][wsbs]: analyze network discovery result
+1655416455 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416455 [DBG ][wsbs]: FHSS activate
+1655416455 [DBG ][wsbs]: MAC init
+1655416455 [INFO][wsbs]: Making parent selection in 20 s
+1655416476 [DBG ][wsbs]: WS SM:Active Scan
+1655416476 [DBG ][wsbs]: analyze network discovery result
+1655416476 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416476 [DBG ][wsbs]: FHSS activate
+1655416476 [DBG ][wsbs]: MAC init
+1655416476 [INFO][wsbs]: Making parent selection in 26 s
+1655416487 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416502 [DBG ][wsbs]: WS SM:Active Scan
+1655416502 [DBG ][wsbs]: analyze network discovery result
+1655416502 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416502 [DBG ][wsbs]: FHSS activate
+1655416502 [DBG ][wsbs]: MAC init
+1655416502 [INFO][wsbs]: Making parent selection in 29 s
+1655416531 [DBG ][wsbs]: WS SM:Active Scan
+1655416531 [DBG ][wsbs]: analyze network discovery result
+1655416531 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416531 [DBG ][wsbs]: FHSS activate
+1655416531 [DBG ][wsbs]: MAC init
+1655416531 [INFO][wsbs]: Making parent selection in 25 s
+1655416556 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416557 [DBG ][wsbs]: WS SM:Active Scan
+1655416557 [DBG ][wsbs]: analyze network discovery result
+1655416557 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416557 [DBG ][wsbs]: FHSS activate
+1655416557 [DBG ][wsbs]: MAC init
+1655416557 [INFO][wsbs]: Making parent selection in 22 s
+1655416579 [DBG ][wsbs]: WS SM:Active Scan
+1655416579 [DBG ][wsbs]: analyze network discovery result
+1655416579 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416579 [DBG ][wsbs]: FHSS activate
+1655416579 [DBG ][wsbs]: MAC init
+1655416579 [INFO][wsbs]: Making parent selection in 29 s
+1655416608 [DBG ][wsbs]: WS SM:Active Scan
+1655416608 [DBG ][wsbs]: analyze network discovery result
+1655416608 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416608 [DBG ][wsbs]: FHSS activate
+1655416608 [DBG ][wsbs]: MAC init
+1655416608 [INFO][wsbs]: Making parent selection in 26 s
+1655416621 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416621 [DBG ][tric]: trickle reset timer
+1655416621 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416621 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416622 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416634 [DBG ][wsbs]: WS SM:Active Scan
+1655416634 [DBG ][wsbs]: analyze network discovery result
+1655416634 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416634 [DBG ][wsbs]: FHSS activate
+1655416634 [DBG ][wsbs]: MAC init
+1655416634 [INFO][wsbs]: Making parent selection in 27 s
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416642 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416661 [DBG ][wsbs]: WS SM:Active Scan
+1655416661 [DBG ][wsbs]: analyze network discovery result
+1655416661 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416661 [DBG ][wsbs]: FHSS activate
+1655416661 [DBG ][wsbs]: MAC init
+1655416661 [INFO][wsbs]: Making parent selection in 29 s
+1655416682 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416690 [DBG ][wsbs]: WS SM:Active Scan
+1655416690 [DBG ][wsbs]: analyze network discovery result
+1655416690 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416690 [DBG ][wsbs]: FHSS activate
+1655416690 [DBG ][wsbs]: MAC init
+1655416690 [INFO][wsbs]: Making parent selection in 16 s
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416700 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416707 [DBG ][wsbs]: WS SM:Active Scan
+1655416707 [DBG ][wsbs]: analyze network discovery result
+1655416707 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416707 [DBG ][wsbs]: FHSS activate
+1655416707 [DBG ][wsbs]: MAC init
+1655416707 [INFO][wsbs]: Making parent selection in 24 s
+1655416730 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:04 rssi:0
+1655416731 [DBG ][wsbs]: WS SM:Active Scan
+1655416731 [DBG ][wsbs]: analyze network discovery result
+1655416731 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416731 [DBG ][wsbs]: FHSS activate
+1655416731 [DBG ][wsbs]: MAC init
+1655416731 [INFO][wsbs]: Making parent selection in 22 s
+1655416753 [DBG ][wsbs]: WS SM:Active Scan
+1655416753 [DBG ][wsbs]: analyze network discovery result
+1655416753 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416753 [DBG ][wsbs]: FHSS activate
+1655416753 [DBG ][wsbs]: MAC init
+1655416753 [INFO][wsbs]: Making parent selection in 29 s
+1655416782 [DBG ][wsbs]: WS SM:Active Scan
+1655416782 [DBG ][wsbs]: analyze network discovery result
+1655416782 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416782 [DBG ][wsbs]: FHSS activate
+1655416782 [DBG ][wsbs]: MAC init
+1655416782 [INFO][wsbs]: Making parent selection in 26 s
+1655416799 [INFO][wsbs]: Send PAN advertisement Solicit
+1655416809 [DBG ][wsbs]: WS SM:Active Scan
+1655416809 [DBG ][wsbs]: analyze network discovery result
+1655416809 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416809 [DBG ][wsbs]: FHSS activate
+1655416809 [DBG ][wsbs]: MAC init
+1655416809 [INFO][wsbs]: Making parent selection in 17 s
+1655416826 [DBG ][wsbs]: WS SM:Active Scan
+1655416826 [DBG ][wsbs]: analyze network discovery result
+1655416826 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416826 [DBG ][wsbs]: FHSS activate
+1655416826 [DBG ][wsbs]: MAC init
+1655416826 [INFO][wsbs]: Making parent selection in 22 s
+1655416836 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416848 [DBG ][wsbs]: WS SM:Active Scan
+1655416848 [DBG ][wsbs]: analyze network discovery result
+1655416848 [INFO][wsbs]: candidate list a:01:02:03:04:05:06:00:04 panid:5351 cost:512 size:1 rssi:0 txFailure:0 age:128
+1655416848 [INFO][wsbs]: selected parent:01:02:03:04:05:06:00:04 panid 21329
+1655416848 [DBG ][wsbs]: FHSS activate
+1655416848 [DBG ][wsbs]: MAC init
+1655416848 [DBG ][MACh]: Register Device 0, mac16 ffff mac64: 01:02:03:04:05:06:00:04, 0
+1655416848 [INFO][wsbs]: Added new neighbor 01:02:03:04:05:06:00:04 : index:0
+1655416848 [INFO][wsbs]: authentication start
+1655416848 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416848 [INFO][wsps]: Delete old keys, new PAN ID: 21329 network name: Wi-SUN Network
+1655416848 [DBG ][wsps]: PAE active, timer 2
+1655416850 [INFO][ksep]: Initial-key init
+1655416850 [INFO][wsps]: EAPOL target: 01:02:03:04:05:06:00:04
+1655416850 [INFO][wsps]: Initial EAPOL-Key retry timer 199 seconds (range [180,420] seconds)
+1655416850 [INFO][ksep]: Initial EAPOL-Key send, PMKID not set PTKID not set GTKL 0
+1655416850 [DBG ][secl]: prot timeout, state: 5
+1655416850 [INFO][ksep]: Initial-key finished
+1655416851 [INFO][eaps]: EAP-TLS init
+1655416851 [DBG ][tlsp]: TLS: init
+1655416851 [INFO][eaps]: EAP-TLS recv REQ type IDENTITY id 1 flags 0 len 5
+1655416851 [INFO][eaps]: EAP-TLS start
+1655416851 [INFO][eaps]: EAP-TLS: send RESPONSE type IDENTITY id 1 flags ff len 18
+1655416852 [INFO][eaps]: EAP-TLS recv REQ type TLS id 2 flags 20 len 6
+1655416852 [DBG ][tlsp]: TLS: start
+1655416852 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 2 flags 0 len 122
+1655416853 [INFO][eaps]: EAP-TLS recv REQ type TLS id 3 flags c0 len 610
+1655416853 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 3 flags 0 len 10
+1655416854 [INFO][eaps]: EAP-TLS recv REQ type TLS id 4 flags 0 len 172
+1655416854 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 4 flags c0 len 614
+1655416855 [INFO][eaps]: EAP-TLS recv REQ type TLS id 5 flags 0 len 6
+1655416855 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 5 flags 0 len 53
+1655416856 [INFO][eaps]: EAP-TLS recv REQ type TLS id 6 flags 0 len 49
+1655416856 [DBG ][tlsp]: TLS: finish
+1655416856 [INFO][eaps]: EAP-TLS: handshake success
+1655416856 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 6 flags 0 len 10
+1655416857 [INFO][eaps]: EAP-TLS finish
+1655416857 [INFO][sfwh]: 4WH: init
+1655416857 [INFO][sfwh]: 4WH: recv Message 1
+1655416857 [INFO][secl]: PMKID 98:1d:9a:08:b5:63:54:6a:e2:64:d8:62:36:ed:18:2e EUI-64 01:02:03:04:05:06:00:00 01:02:03:04:05:06:00:05
+1655416857 [INFO][sfwh]: 4WH: start
+1655416857 [INFO][sfwh]: 4WH: send Message 2
+1655416858 [INFO][sfwh]: 4WH: recv Message 3
+1655416858 [INFO][secl]: GTK recv index 0 lifetime 2591330
+1655416858 [INFO][sfwh]: 4WH: send Message 4
+1655416858 [INFO][sfwh]: 4WH: finish, wait Message 3 retry
+1655416858 [INFO][wspc]: NW key set: 0, hash: 25:63:2a:ab:28:ec:37:bb
+1655416858 [INFO][wsbs]: authentication success eui64:01:02:03:04:05:06:00:04
+1655416858 [INFO][wsbs]: Configuration start
+1655416858 [DBG ][wsbs]: router configuration learn start
+1655416858 [DBG ][wsbs]: ip stack reset
+1655416858 [DBG ][tric]: trickle reset timer
+1655416858 [DBG ][wsbs]: WS SM:configuration Scan
+1655416859 [INFO][sgkh]: GKH init
+1655416859 [INFO][sgkh]: GKH: recv Message 1
+1655416859 [INFO][secl]: GTK recv index 1 lifetime 5183329
+1655416859 [INFO][sgkh]: GKH start
+1655416859 [INFO][sgkh]: GKH: send Message 2
+1655416859 [INFO][sgkh]: GKH finish
+1655416859 [INFO][wspc]: NW key set: 1, hash: 25:63:2a:ab:28:ec:37:bb
+1655416860 [INFO][sgkh]: GKH init
+1655416860 [INFO][sgkh]: GKH: recv Message 1
+1655416860 [INFO][secl]: GTK recv index 2 lifetime 7775328
+1655416860 [INFO][sgkh]: GKH start
+1655416860 [INFO][sgkh]: GKH: send Message 2
+1655416860 [INFO][sgkh]: GKH finish
+1655416860 [INFO][wspc]: NW key set: 2, hash: 25:63:2a:ab:28:ec:37:bb
+1655416861 [DBG ][secl]: prot timeout, state: 5
+1655416861 [DBG ][tlsp]: TLS: finished, free F
+1655416861 [INFO][sgkh]: GKH init
+1655416861 [INFO][sgkh]: GKH: recv Message 1
+1655416861 [INFO][secl]: GTK recv index 3 lifetime 12959327
+1655416861 [INFO][sgkh]: GKH start
+1655416861 [INFO][sgkh]: GKH: send Message 2
+1655416861 [INFO][sgkh]: GKH finish
+1655416861 [INFO][wspc]: NW key set: 3, hash: 49:21:f1:11:f9:1a:85:39
+1655416862 [DBG ][secl]: prot timeout, state: 5
+1655416862 [INFO][eaps]: EAP-TLS finished
+1655416864 [DBG ][secl]: prot timeout, state: 5
+1655416864 [INFO][sgkh]: GKH finished
+1655416865 [DBG ][secl]: prot timeout, state: 5
+1655416865 [INFO][sgkh]: GKH finished
+1655416866 [DBG ][secl]: prot timeout, state: 5
+1655416866 [INFO][sgkh]: GKH finished
+1655416872 [INFO][wsbs]: Send PAN configuration Solicit
+1655416880 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416883 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655416883 [INFO][wsbs]: Updated PAN configuration own:0, heard:14524
+1655416883 [DBG ][wspc]: Pending to store new frame counter: index 0 value 0
+1655416883 [DBG ][wspc]: Stored frame counters, active key set: index 0 value 0
+1655416883 [DBG ][wspc]: Pending to store new frame counter: index 1 value 0
+1655416883 [DBG ][wspc]: Pending to store new frame counter: index 2 value 0
+1655416883 [DBG ][wspc]: Pending to store new frame counter: index 3 value 0
+1655416883 [DBG ][wspc]: Write frame counters: system time 705
+1655416883 [INFO][wsnv]: NVM FRAME COUNTER write; stored time: 1577837505
+1655416883 [INFO][wspc]: NW send key index set: 1
+1655416883 [INFO][wsbs]: learn network configuration
+1655416883 [DBG ][wsbs]: WS SM:configuration Scan
+1655416883 [DBG ][wsbs]: Start using PAN configuration
+1655416883 [INFO][wsbs]: operation start
+1655416883 [DBG ][wsbs]: ip stack init
+1655416883 [DBG ][wsbs]: ip stack reset
+1655416883 [DBG ][wsbs]: RPL Activate
+1655416883 [DBG ][wsbs]: Start RPL learn
+1655416884 [DBG ][wsbs]: WS SM:Wait RPL to contact DODAG root
+1655416884 [INFO][rplc]: Transmit DIS
+1655416895 [DBG ][mpl ]: MPL received 140
+1655416895 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 140
+1655416898 [INFO][mpl ]: MPL transmit 140
+1655416905 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655416905 [DBG ][rplu]: Timed parent triggered 39
+1655416906 [INFO][wsbs]: Probe generate NS 0
+1655416909 [INFO][wsbs]: Probe generate NS 0
+1655416916 [INFO][wsbs]: Probe generate NS 0
+1655416916 [DBG ][rplc]: Triggering parent selection due to ETX better on neigh index 0, etx 256
+1655416918 [DBG ][secl]: prot timeout, state: 8
+1655416918 [INFO][sfwh]: 4WH: Message 3 retry timeout
+1655416920 [DBG ][mpl ]: MPL received 141
+1655416920 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 141
+1655416923 [INFO][mpl ]: MPL transmit 141
+1655416923 [DBG ][secl]: prot timeout, state: 5
+1655416923 [INFO][sfwh]: 4WH: finished
+1655416943 [DBG ][rplu]: Timed parent selection
+1655416943 [DBG ][tric]: trickle reset timer
+1655416943 [INFO][rplu]: Added parent fe80::302:304:506:4
+1655416943 [DBG ][rout]: Added route:
+1655416943 [DBG ][rout]:                        ::/0   if:1 src:'RPL Instance' id:1 lifetime:7200
+1655416943 [DBG ][rout]:      next-hop fe80::302:304:506:4 (met 128)
+1655416943 [DBG ][rout]: Added route:
+1655416943 [DBG ][rout]:  fd12:3456::1615:16ff:fe17:1819/128 if:1 src:'RPL Root' id:1 lifetime:7200
+1655416943 [DBG ][rout]:      next-hop fe80::302:304:506:4 (met 128)
+1655416943 [DBG ][rout]: Added route:
+1655416943 [DBG ][rout]:                        ::/0   if:1 src:'RPL Root' id:1 lifetime:7200
+1655416943 [DBG ][rout]:      next-hop fe80::302:304:506:4 (met 128)
+1655416943 [INFO][rplu]: New preferred parent fe:80:00:00:00:00:00:00:03:02:03:04:05:06:00:04
+1655416943 [DBG ][RPLd]: removed=0, added=ff
+1655416943 [INFO][wsbs]: RPL parent update ... register ARO
+1655416943 [INFO][wsbs]: RPL event 3
+1655416943 [INFO][rplu]: Time 00:12:46.0 (766.0) RPL memory usage 512
+1655416943 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655416943 [INFO][rplu]: RPL Instance 1
+1655416943 [INFO][rplu]: ---------------
+1655416943 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416943 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416943 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416943 [INFO][rplu]:   Version 241
+1655416943 [INFO][rplu]:   *Current version* Rank=0498
+1655416943 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655416943 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416943 [INFO][rplu]:             I=328, now=0, t=189, c=0
+1655416943 [DBG ][DHP ]: GEN new Dhcpv6 client 1
+1655416943 [DBG ][dhcp]: Send DHCPv6 request
+1655416943 [INFO][dhcp]: dhcp service socket_sendto fe80::302:304:506:4
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655416946 [INFO][dhcp]: dhcp service socket_sendto fe80::302:304:506:4
+1655416947 [DBG ][dhcp]: dhcp recv response message
+1655416947 [DBG ][rout]: Added route:
+1655416947 [DBG ][rout]:  fd12:3456::302:304:506:5/128 if:1 src:'Loopback' id:0 lifetime:infinite
+1655416947 [DBG ][rout]:      On-link (met 128)
+1655416947 [INFO][addr]: Address added to IF 1: fd12:3456::302:304:506:5
+1655416947 [DBG ][wsbs]: DHCPv6 fd12:3456::302:304:506:5 status 1 with link fe80::302:304:506:4
+1655416947 [DBG ][RPLd]: New Target fd12:3456::302:304:506:5
+1655416947 [DBG ][RPLd]: Register Address to parent fd12:3456::302:304:506:5
+1655416947 [INFO][RPLd]: Send ARO fd12:3456::302:304:506:5 to fe80::302:304:506:4
+1655416947 [DBG ][RPLd]: Address fd12:3456::302:304:506:5 register to fe80::302:304:506:4
+1655416949 [DBG ][mpl ]: MPL received 142
+1655416949 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 142
+1655416952 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416953 [DBG ][wsps]: PAE idle
+1655416956 [INFO][mpl ]: MPL transmit 142
+1655416960 [INFO][RPLd]: DAO tx 240 seq attempts 0 retry-timer 477
+1655416961 [DBG ][RPLd]: DAO-ACK RX
+1655416961 [DBG ][RPLd]: tgt fd12:3456::302:304:506:5/128 - pc ff, assigned 00, assigning ff, life 78, rfr 0
+1655416961 [DBG ][RPLd]: set rfr to 4971
+1655416961 [DBG ][wsbs]: Enable DHCPv6 relay
+1655416961 [DBG ][sck ]: Socket id 1 allocated
+1655416961 [DBG ][wsbs]: Start EAPOL relay
+1655416961 [DBG ][sck ]: Socket id 2 allocated
+1655416961 [INFO][wsps]: NW key valid indication
+1655416961 [INFO][wsnv]: NVM NW_INFO write PAN ID: 21329 name: Wi-SUN Network stored time: 1577837584
+1655416961 [INFO][wsnv]: NVM KEYS write
+1655416961 [DBG ][wsbs]: own hop: 5, own rank: 1176, rank inc: 196
+1655416961 [INFO][wsbs]: RPL event 0
+1655416961 [DBG ][wsbs]: WS SM:Wait RPL to contact DODAG root
+1655416961 [INFO][wsbs]: Routing ready
+1655416961 [INFO][wsbs]: WS SM:Bootstrap Done
+1655416961 [INFO][core]: RPL Ready
+1655416970 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655416970 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416978 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655416978 [DBG ][rplu]: Timed parent triggered 46
+1655416980 [INFO][rplc]: transmit dio, rank: 498
+1655416985 [DBG ][mpl ]: MPL received 143
+1655416985 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 143
+1655416986 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655416986 [DBG ][tric]: trickle reset timer
+1655416987 [INFO][mpl ]: MPL transmit 143
+1655416998 [INFO][wsbs]: Send PAN advertisement
+1655417015 [DBG ][mpl ]: MPL received 144
+1655417015 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 144
+1655417023 [INFO][mpl ]: MPL transmit 144
+1655417023 [DBG ][rplu]: Timed parent selection
+1655417023 [INFO][rplu]: Time 00:14:06.0 (846.0) RPL memory usage 592
+1655417023 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417023 [INFO][rplu]: RPL Instance 1
+1655417023 [INFO][rplu]: ---------------
+1655417023 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417023 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417023 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417023 [INFO][rplu]:   Version 241
+1655417023 [INFO][rplu]:   *Current version* Rank=0498
+1655417023 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417023 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417023 [INFO][rplu]:             I=656, now=291, t=543, c=0
+1655417023 [INFO][rplu]: DAO Targets:
+1655417023 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417027 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417027 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417027 [INFO][wsbs]: Send PAN advertisement
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [DBG ][tric]: trickle reset timer
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417031 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:06 rssi:0
+1655417036 [DBG ][mpl ]: MPL received 145
+1655417036 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 145
+1655417038 [INFO][mpl ]: MPL transmit 145
+1655417046 [INFO][wsbs]: Send PAN configuration
+1655417047 [DBG ][tric]: trickle reset timer
+1655417062 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417068 [INFO][rplc]: transmit dio, rank: 498
+1655417070 [INFO][wsbs]: Send PAN configuration
+1655417071 [DBG ][MACh]: Register Device 1, mac16 ffff mac64: 01:02:03:04:05:06:00:06, 0
+1655417072 [DBG ][mpl ]: MPL received 146
+1655417072 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 146
+1655417072 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417072 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417075 [INFO][mpl ]: MPL transmit 146
+1655417076 [DBG ][MACh]: Unregister Device 1, mac64: 01:02:03:04:05:06:00:06
+1655417080 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655417080 [DBG ][rplu]: Timed parent triggered 41
+1655417081 [DBG ][MACh]: Register Device 2, mac16 ffff mac64: 01:02:03:04:05:06:00:06, 0
+1655417086 [DBG ][MACh]: Unregister Device 2, mac64: 01:02:03:04:05:06:00:06
+1655417104 [DBG ][mpl ]: MPL received 147
+1655417104 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 147
+1655417106 [DBG ][MACh]: Register Device 3, mac16 ffff mac64: 01:02:03:04:05:06:00:06, 0
+1655417106 [DBG ][dhcp]: dhcp Relay recv msg
+1655417106 [DBG ][wsbs]: Set short response neighbor 01:02:03:04:05:06:00:06 : index:3
+1655417106 [DBG ][dhcp]: Forward Client msg to server
+1655417107 [DBG ][dhcp]: dhcp Relay recv msg
+1655417107 [DBG ][dhcp]: Forward Original relay msg to client
+1655417108 [DBG ][wllc]: Remove Temp Entry by TX confirm
+1655417108 [DBG ][MACh]: Unregister Device 3, mac64: 01:02:03:04:05:06:00:06
+1655417109 [DBG ][MACh]: Register Device 4, mac16 ffff mac64: 01:02:03:04:05:06:00:06, 0
+1655417109 [INFO][wscm]: Added new neighbor 01:02:03:04:05:06:00:06 : index:4
+1655417109 [INFO][wscm]: Child registration allowed 0/230, max:255
+1655417109 [DBG ][rout]: Added route:
+1655417109 [DBG ][rout]:  fd12:3456::302:304:506:6/128 if:1 src:'ARO' id:0 lifetime:2218
+1655417109 [DBG ][rout]:      next-hop fd12:3456::302:304:506:6 (met 32)
+1655417109 [DBG ][icmp]: Omit NA ARO success
+1655417110 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417112 [INFO][mpl ]: MPL transmit 147
+1655417114 [INFO][wsbs]: Send PAN configuration
+1655417116 [DBG ][mpl ]: MPL received 147
+1655417116 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 147
+1655417116 [DBG ][mpl ]: Repeated MPL message 147
+1655417120 [DBG ][rplu]: Timed parent selection
+1655417120 [INFO][rplu]: Time 00:15:43.0 (943.0) RPL memory usage 592
+1655417120 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417120 [INFO][rplu]: RPL Instance 1
+1655417120 [INFO][rplu]: ---------------
+1655417120 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417120 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417120 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417120 [INFO][rplu]:   Version 241
+1655417120 [INFO][rplu]:   *Current version* Rank=0498
+1655417120 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417120 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417120 [INFO][rplu]:             I=656, now=399, t=596, c=0
+1655417120 [INFO][rplu]: DAO Targets:
+1655417120 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417127 [DBG ][mpl ]: MPL received 148
+1655417127 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 148
+1655417130 [INFO][mpl ]: MPL transmit 148
+1655417137 [DBG ][mpl ]: MPL received 148
+1655417137 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 148
+1655417137 [DBG ][mpl ]: Repeated MPL message 148
+1655417139 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417140 [INFO][rplc]: transmit dio, rank: 498
+1655417142 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417142 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417146 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417157 [DBG ][mpl ]: MPL received 149
+1655417157 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 149
+1655417161 [DBG ][rplc]: Triggering parent selection due to ETX better on neigh index 4, etx 256
+1655417162 [INFO][mpl ]: MPL transmit 149
+1655417164 [DBG ][mpl ]: MPL received 149
+1655417164 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 149
+1655417164 [DBG ][mpl ]: Repeated MPL message 149
+1655417178 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417185 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417189 [DBG ][mpl ]: MPL received 150
+1655417189 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 150
+1655417190 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417190 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417195 [INFO][mpl ]: MPL transmit 150
+1655417198 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655417198 [DBG ][rplu]: Timed parent triggered 33
+1655417203 [DBG ][mpl ]: MPL received 150
+1655417203 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 150
+1655417203 [DBG ][mpl ]: Repeated MPL message 150
+1655417216 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417223 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417223 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417226 [DBG ][mpl ]: MPL received 151
+1655417226 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 151
+1655417228 [INFO][mpl ]: MPL transmit 151
+1655417230 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417231 [DBG ][rplu]: Timed parent selection
+1655417231 [INFO][rplu]: Time 00:17:34.0 (1054.0) RPL memory usage 592
+1655417231 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417231 [INFO][rplu]: RPL Instance 1
+1655417231 [INFO][rplu]: ---------------
+1655417231 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417231 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417231 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417231 [INFO][rplu]:   Version 241
+1655417231 [INFO][rplu]:   *Current version* Rank=0498
+1655417231 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417231 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417231 [INFO][rplu]:             I=1311, now=853, t=1276, c=1
+1655417231 [INFO][rplu]: DAO Targets:
+1655417231 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417235 [DBG ][mpl ]: MPL received 151
+1655417235 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 151
+1655417235 [DBG ][mpl ]: Repeated MPL message 151
+1655417245 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417248 [DBG ][mpl ]: MPL received 152
+1655417248 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 152
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417249 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417249 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417250 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417250 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417250 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417250 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417250 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417250 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417250 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417250 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417250 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417250 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417250 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417250 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417250 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417250 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417253 [INFO][mpl ]: MPL transmit 152
+1655417260 [DBG ][mpl ]: MPL received 152
+1655417260 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 152
+1655417260 [DBG ][mpl ]: Repeated MPL message 152
+1655417268 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417274 [INFO][rplc]: transmit dio, rank: 498
+1655417283 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417283 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417294 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417295 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417308 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417308 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417313 [DBG ][mpl ]: MPL received 154
+1655417313 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 154
+1655417317 [INFO][mpl ]: MPL transmit 154
+1655417318 [DBG ][mpl ]: MPL received 154
+1655417318 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 154
+1655417318 [DBG ][mpl ]: Repeated MPL message 154
+1655417318 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417327 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417327 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417332 [DBG ][mpl ]: MPL received 155
+1655417332 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 155
+1655417333 [INFO][mpl ]: MPL transmit 155
+1655417340 [DBG ][mpl ]: MPL received 155
+1655417340 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 155
+1655417340 [DBG ][mpl ]: Repeated MPL message 155
+1655417359 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655417359 [DBG ][rplu]: Timed parent triggered 35
+1655417363 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417373 [DBG ][mpl ]: MPL received 156
+1655417373 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 156
+1655417374 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417377 [INFO][mpl ]: MPL transmit 156
+1655417378 [DBG ][mpl ]: MPL received 156
+1655417378 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 156
+1655417378 [DBG ][mpl ]: Repeated MPL message 156
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417383 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417383 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417384 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417384 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417391 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417392 [INFO][rplc]: transmit dio, rank: 498
+1655417394 [DBG ][rplu]: Timed parent selection
+1655417394 [INFO][rplu]: Time 00:20:16.0 (1216.0) RPL memory usage 592
+1655417394 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417394 [INFO][rplu]: RPL Instance 1
+1655417394 [INFO][rplu]: ---------------
+1655417394 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417394 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417394 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417394 [INFO][rplu]:   Version 241
+1655417394 [INFO][rplu]:   *Current version* Rank=0498
+1655417394 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417394 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417394 [INFO][rplu]:             I=1311, now=1162, t=1147, c=1
+1655417394 [INFO][rplu]: DAO Targets:
+1655417394 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417401 [DBG ][mpl ]: MPL received 157
+1655417401 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 157
+1655417404 [INFO][mpl ]: MPL transmit 157
+1655417406 [DBG ][mpl ]: MPL received 157
+1655417406 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 157
+1655417406 [DBG ][mpl ]: Repeated MPL message 157
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417416 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417423 [DBG ][mpl ]: MPL received 158
+1655417423 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 158
+1655417426 [INFO][mpl ]: MPL transmit 158
+1655417431 [DBG ][mpl ]: MPL received 158
+1655417431 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 158
+1655417431 [DBG ][mpl ]: Repeated MPL message 158
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417435 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417454 [DBG ][mpl ]: MPL received 159
+1655417454 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 159
+1655417455 [INFO][mpl ]: MPL transmit 159
+1655417461 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655417461 [DBG ][rplu]: Timed parent triggered 44
+1655417461 [DBG ][mpl ]: MPL received 159
+1655417461 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 159
+1655417461 [DBG ][mpl ]: Repeated MPL message 159
+1655417464 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417464 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417478 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417478 [INFO][rout]: Resetting PMTU for: ff02::1a
+1655417489 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417490 [DBG ][mpl ]: MPL received 160
+1655417490 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 160
+1655417492 [INFO][mpl ]: MPL transmit 160
+1655417492 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417498 [INFO][rout]: Resetting PMTU for: ff03::fc
+1655417498 [INFO][rout]: Resetting PMTU for: fe80::302:304:506:4
+1655417500 [DBG ][mpl ]: MPL received 160
+1655417500 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 160
+1655417500 [DBG ][mpl ]: Repeated MPL message 160
+1655417505 [DBG ][rplu]: Timed parent selection
+1655417505 [INFO][rplu]: Time 00:22:07.0 (1327.0) RPL memory usage 592
+1655417505 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417505 [INFO][rplu]: RPL Instance 1
+1655417505 [INFO][rplu]: ---------------
+1655417505 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417505 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417505 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417505 [INFO][rplu]:   Version 241
+1655417505 [INFO][rplu]:   *Current version* Rank=0498
+1655417505 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417505 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417505 [INFO][rplu]:             I=1311, now=961, t=1084, c=1
+1655417505 [INFO][rplu]: DAO Targets:
+1655417505 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417517 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417517 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417517 [INFO][rplc]: transmit dio, rank: 498
+1655417521 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655417521 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417531 [DBG ][mpl ]: MPL received 161
+1655417531 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 161
+1655417532 [INFO][mpl ]: MPL transmit 161
+1655417536 [DBG ][mpl ]: MPL received 161
+1655417536 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 161
+1655417536 [DBG ][mpl ]: Repeated MPL message 161
+1655417554 [DBG ][mpl ]: MPL received 162
+1655417554 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 162
+1655417555 [INFO][mpl ]: MPL transmit 162
+1655417558 [INFO][rout]: Resetting PMTU for: fd12:3456::1615:16ff:fe17:1819
+1655417562 [INFO][wsbs]: Send PAN advertisement
+1655417564 [DBG ][mpl ]: MPL received 162
+1655417564 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 162
+1655417564 [DBG ][mpl ]: Repeated MPL message 162
+1655417587 [DBG ][mpl ]: MPL received 163
+1655417587 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 163
+1655417591 [INFO][wsbs]: Send PAN configuration
+1655417592 [INFO][mpl ]: MPL transmit 163
+1655417596 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655417596 [DBG ][rplu]: Timed parent triggered 39
+1655417597 [DBG ][mpl ]: MPL received 163
+1655417597 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 163
+1655417597 [DBG ][mpl ]: Repeated MPL message 163
+1655417602 [INFO][wsbs]: Send PAN advertisement
+1655417613 [DBG ][mpl ]: MPL received 164
+1655417613 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 164
+1655417618 [INFO][mpl ]: MPL transmit 164
+1655417623 [DBG ][mpl ]: MPL received 164
+1655417623 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 164
+1655417623 [DBG ][mpl ]: Repeated MPL message 164
+1655417635 [DBG ][rplu]: Timed parent selection
+1655417635 [INFO][rplu]: Time 00:24:17.0 (1457.0) RPL memory usage 592
+1655417635 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417635 [INFO][rplu]: RPL Instance 1
+1655417635 [INFO][rplu]: ---------------
+1655417635 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417635 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417635 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417635 [INFO][rplu]:   Version 241
+1655417635 [INFO][rplu]:   *Current version* Rank=0498
+1655417635 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417635 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417635 [INFO][rplu]:             I=1311, now=950, t=1126, c=1
+1655417635 [INFO][rplu]: DAO Targets:
+1655417635 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417638 [DBG ][mpl ]: MPL received 165
+1655417638 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 165
+1655417639 [INFO][mpl ]: MPL transmit 165
+1655417648 [DBG ][mpl ]: MPL received 165
+1655417648 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 165
+1655417648 [DBG ][mpl ]: Repeated MPL message 165
+1655417652 [INFO][rplc]: transmit dio, rank: 498
+1655417654 [INFO][wsbs]: Send PAN configuration
+1655417671 [DBG ][mpl ]: MPL received 166
+1655417671 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 166
+1655417676 [INFO][mpl ]: MPL transmit 166
+1655417680 [DBG ][mpl ]: MPL received 166
+1655417680 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 166
+1655417680 [DBG ][mpl ]: Repeated MPL message 166
+1655417681 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417688 [INFO][wsbs]: Send PAN advertisement
+1655417696 [DBG ][mpl ]: MPL received 167
+1655417696 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 167
+1655417698 [INFO][rout]: Resetting PMTU for: fe80::302:304:506:6
+1655417699 [INFO][mpl ]: MPL transmit 167
+1655417705 [DBG ][mpl ]: MPL received 167
+1655417705 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 167
+1655417705 [DBG ][mpl ]: Repeated MPL message 167
+1655417715 [INFO][wsbs]: Send PAN configuration
+1655417718 [INFO][rout]: Resetting PMTU for: fd12:3456::302:304:506:6
+1655417734 [DBG ][mpl ]: MPL received 168
+1655417734 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 168
+1655417740 [INFO][mpl ]: MPL transmit 168
+1655417740 [INFO][wsbs]: Send PAN advertisement
+1655417744 [DBG ][mpl ]: MPL received 168
+1655417744 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 168
+1655417744 [DBG ][mpl ]: Repeated MPL message 168
+1655417752 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655417752 [DBG ][rplu]: Timed parent triggered 44
+1655417762 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417767 [DBG ][mpl ]: MPL received 169
+1655417767 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 169
+1655417769 [INFO][rplc]: transmit dio, rank: 498
+1655417770 [INFO][mpl ]: MPL transmit 169
+1655417772 [DBG ][mpl ]: MPL received 169
+1655417772 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 169
+1655417772 [DBG ][mpl ]: Repeated MPL message 169
+1655417772 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417776 [INFO][wsbs]: Send PAN configuration
+1655417786 [DBG ][mpl ]: MPL received 170
+1655417786 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 170
+1655417790 [INFO][mpl ]: MPL transmit 170
+1655417796 [DBG ][rplu]: Timed parent selection
+1655417796 [INFO][rplu]: Time 00:26:58.0 (1618.0) RPL memory usage 592
+1655417796 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417796 [INFO][rplu]: RPL Instance 1
+1655417796 [INFO][rplu]: ---------------
+1655417796 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417796 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417796 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417796 [INFO][rplu]:   Version 241
+1655417796 [INFO][rplu]:   *Current version* Rank=0498
+1655417796 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417796 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417796 [INFO][rplu]:             I=1311, now=1249, t=982, c=1
+1655417796 [INFO][rplu]: DAO Targets:
+1655417796 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417796 [DBG ][mpl ]: MPL received 170
+1655417796 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 170
+1655417796 [DBG ][mpl ]: Repeated MPL message 170
+1655417823 [DBG ][mpl ]: MPL received 171
+1655417823 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 171
+1655417827 [INFO][mpl ]: MPL transmit 171
+1655417832 [DBG ][mpl ]: MPL received 171
+1655417832 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 171
+1655417832 [DBG ][mpl ]: Repeated MPL message 171
+1655417834 [INFO][wsbs]: Send PAN configuration
+1655417836 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655417836 [DBG ][rplu]: Timed parent triggered 43
+1655417851 [DBG ][mpl ]: MPL received 172
+1655417851 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 172
+1655417852 [INFO][mpl ]: MPL transmit 172
+1655417854 [DBG ][mpl ]: MPL received 172
+1655417854 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 172
+1655417854 [DBG ][mpl ]: Repeated MPL message 172
+1655417860 [INFO][wsbs]: Send PAN advertisement
+1655417865 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655417865 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417878 [DBG ][mpl ]: MPL received 173
+1655417878 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 173
+1655417879 [DBG ][rplu]: Timed parent selection
+1655417879 [INFO][rplu]: Time 00:28:21.0 (1701.0) RPL memory usage 592
+1655417879 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655417879 [INFO][rplu]: RPL Instance 1
+1655417879 [INFO][rplu]: ---------------
+1655417879 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417879 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417879 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417879 [INFO][rplu]:   Version 241
+1655417879 [INFO][rplu]:   *Current version* Rank=0498
+1655417879 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655417879 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417879 [INFO][rplu]:             I=1311, now=768, t=1027, c=1
+1655417879 [INFO][rplu]: DAO Targets:
+1655417879 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655417880 [INFO][mpl ]: MPL transmit 173
+1655417882 [DBG ][mpl ]: MPL received 173
+1655417882 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 173
+1655417882 [DBG ][mpl ]: Repeated MPL message 173
+1655417905 [INFO][rplc]: transmit dio, rank: 498
+1655417907 [INFO][wsbs]: Send PAN advertisement
+1655417907 [DBG ][mpl ]: MPL received 174
+1655417907 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 174
+1655417912 [INFO][mpl ]: MPL transmit 174
+1655417919 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655417920 [DBG ][mpl ]: MPL received 174
+1655417920 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 174
+1655417920 [DBG ][mpl ]: Repeated MPL message 174
+1655417943 [DBG ][mpl ]: MPL received 175
+1655417943 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 175
+1655417949 [INFO][mpl ]: MPL transmit 175
+1655417949 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655417954 [DBG ][mpl ]: MPL received 175
+1655417954 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 175
+1655417954 [DBG ][mpl ]: Repeated MPL message 175
+1655417962 [INFO][wsbs]: Send PAN configuration
+1655417965 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:04 panid:5351 rssi:0
+1655417969 [DBG ][mpl ]: MPL received 176
+1655417969 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 176
+1655417975 [INFO][mpl ]: MPL transmit 176
+1655417977 [DBG ][mpl ]: MPL received 176
+1655417977 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 176
+1655417977 [DBG ][mpl ]: Repeated MPL message 176
+1655418005 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655418005 [DBG ][rplu]: Timed parent triggered 44
+1655418007 [DBG ][mpl ]: MPL received 177
+1655418007 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 177
+1655418013 [INFO][mpl ]: MPL transmit 177
+1655418016 [DBG ][mpl ]: MPL received 177
+1655418016 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 177
+1655418016 [DBG ][mpl ]: Repeated MPL message 177
+1655418016 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655418018 [INFO][rplc]: transmit dio, rank: 498
+1655418025 [INFO][wsbs]: Send PAN configuration
+1655418027 [INFO][wsbs]: Send PAN advertisement
+1655418035 [DBG ][mpl ]: MPL received 178
+1655418035 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 178
+1655418042 [INFO][mpl ]: MPL transmit 178
+1655418045 [DBG ][mpl ]: MPL received 178
+1655418045 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 178
+1655418045 [DBG ][mpl ]: Repeated MPL message 178
+1655418047 [INFO][wsbs]: ARO registration timer start
+1655418047 [DBG ][RPLd]: Register Address to parent fd12:3456::302:304:506:5
+1655418047 [INFO][RPLd]: Send ARO fd12:3456::302:304:506:5 to fe80::302:304:506:4
+1655418047 [DBG ][RPLd]: Address fd12:3456::302:304:506:5 register to fe80::302:304:506:4
+1655418049 [DBG ][rplu]: Timed parent selection
+1655418049 [INFO][rplu]: Time 00:31:11.0 (1871.0) RPL memory usage 592
+1655418049 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655418049 [INFO][rplu]: RPL Instance 1
+1655418049 [INFO][rplu]: ---------------
+1655418049 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418049 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418049 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418049 [INFO][rplu]:   Version 241
+1655418049 [INFO][rplu]:   *Current version* Rank=0498
+1655418049 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655418049 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418049 [INFO][rplu]:             I=1311, now=1157, t=851, c=1
+1655418049 [INFO][rplu]: DAO Targets:
+1655418049 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655418052 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:06 rssi:0
+1655418052 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655418056 [DBG ][mpl ]: MPL received 179
+1655418056 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 179
+1655418062 [INFO][mpl ]: MPL transmit 179
+1655418073 [DBG ][mpl ]: MPL received 179
+1655418073 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 179
+1655418073 [DBG ][mpl ]: Repeated MPL message 179
+1655418079 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655418094 [DBG ][mpl ]: MPL received 180
+1655418094 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 180
+1655418101 [INFO][mpl ]: MPL transmit 180
+1655418107 [DBG ][mpl ]: MPL received 180
+1655418107 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 180
+1655418107 [DBG ][mpl ]: Repeated MPL message 180
+1655418117 [DBG ][mpl ]: MPL received 181
+1655418117 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 181
+1655418118 [INFO][mpl ]: MPL transmit 181
+1655418124 [DBG ][mpl ]: MPL received 181
+1655418124 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 181
+1655418124 [DBG ][mpl ]: Repeated MPL message 181
+1655418137 [INFO][wsbs]: Send PAN configuration
+1655418137 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655418137 [DBG ][rplu]: Timed parent triggered 38
+1655418149 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655418153 [DBG ][mpl ]: MPL received 182
+1655418153 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 182
+1655418156 [INFO][mpl ]: MPL transmit 182
+1655418160 [INFO][rplc]: transmit dio, rank: 498
+1655418163 [DBG ][mpl ]: MPL received 182
+1655418163 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 182
+1655418163 [DBG ][mpl ]: Repeated MPL message 182
+1655418168 [INFO][wsbs]: Send PAN advertisement
+1655418174 [DBG ][rplu]: Timed parent selection
+1655418174 [INFO][rplu]: Time 00:33:16.0 (1996.0) RPL memory usage 592
+1655418174 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655418174 [INFO][rplu]: RPL Instance 1
+1655418174 [INFO][rplu]: ---------------
+1655418174 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418174 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418174 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418174 [INFO][rplu]:   Version 241
+1655418174 [INFO][rplu]:   *Current version* Rank=0498
+1655418174 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655418174 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418174 [INFO][rplu]:             I=1311, now=1096, t=950, c=1
+1655418174 [INFO][rplu]: DAO Targets:
+1655418174 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655418183 [DBG ][mpl ]: MPL received 183
+1655418183 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 183
+1655418187 [INFO][mpl ]: MPL transmit 183
+1655418190 [DBG ][mpl ]: MPL received 183
+1655418190 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 183
+1655418190 [DBG ][mpl ]: Repeated MPL message 183
+1655418207 [DBG ][mpl ]: MPL received 184
+1655418207 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 184
+1655418207 [INFO][wsbs]: Send PAN configuration
+1655418209 [INFO][wscm]: Child registration from old child
+1655418209 [DBG ][icmp]: Omit NA ARO success
+1655418210 [INFO][mpl ]: MPL transmit 184
+1655418210 [INFO][wsbs]: Send PAN advertisement
+1655418214 [DBG ][mpl ]: MPL received 184
+1655418214 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 184
+1655418214 [DBG ][mpl ]: Repeated MPL message 184
+1655418240 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655418240 [DBG ][rplu]: Timed parent triggered 33
+1655418248 [DBG ][mpl ]: MPL received 185
+1655418248 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 185
+1655418251 [INFO][mpl ]: MPL transmit 185
+1655418254 [DBG ][mpl ]: MPL received 185
+1655418254 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 185
+1655418254 [DBG ][mpl ]: Repeated MPL message 185
+1655418254 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:06 panid:5351 rssi:0
+1655418269 [DBG ][mpl ]: MPL received 186
+1655418269 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 186
+1655418271 [INFO][mpl ]: MPL transmit 186
+1655418272 [DBG ][rplu]: Timed parent selection
+1655418272 [INFO][rplu]: Time 00:34:54.0 (2094.0) RPL memory usage 592
+1655418272 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655418272 [INFO][rplu]: RPL Instance 1
+1655418272 [INFO][rplu]: ---------------
+1655418272 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418272 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418272 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418272 [INFO][rplu]:   Version 241
+1655418272 [INFO][rplu]:   *Current version* Rank=0498
+1655418272 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655418272 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418272 [INFO][rplu]:             I=1311, now=765, t=1216, c=1
+1655418272 [INFO][rplu]: DAO Targets:
+1655418272 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655418274 [INFO][wsbs]: Send PAN configuration
+1655418281 [DBG ][mpl ]: MPL received 186
+1655418281 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 186
+1655418281 [DBG ][mpl ]: Repeated MPL message 186
+1655418298 [DBG ][mpl ]: MPL received 187
+1655418298 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 187
+1655418303 [INFO][mpl ]: MPL transmit 187
+1655418306 [DBG ][mpl ]: MPL received 187
+1655418306 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 187
+1655418306 [DBG ][mpl ]: Repeated MPL message 187
+1655418312 [INFO][rplc]: DIO from fe80::302:304:506:6, rank 55c
+1655418314 [INFO][wsbs]: Send PAN configuration
+1655418317 [INFO][rplc]: transmit dio, rank: 498
+1655418328 [DBG ][mpl ]: MPL received 188
+1655418328 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 188
+1655418330 [INFO][mpl ]: MPL transmit 188
+1655418333 [DBG ][mpl ]: MPL received 188
+1655418333 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 188
+1655418333 [DBG ][mpl ]: Repeated MPL message 188
+1655418339 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:04 rssi:0
+1655418339 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655418344 [INFO][wsbs]: Send PAN advertisement
+1655418361 [DBG ][mpl ]: MPL received 189
+1655418361 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 189
+1655418362 [INFO][rplc]: DIO from fe80::302:304:506:4, rank 3d4
+1655418362 [DBG ][rplu]: Timed parent triggered 42
+1655418364 [INFO][mpl ]: MPL transmit 189
+1655418368 [DBG ][mpl ]: MPL received 189
+1655418368 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 189
+1655418368 [DBG ][mpl ]: Repeated MPL message 189
+1655418383 [INFO][wsbs]: Send PAN advertisement
+1655418397 [INFO][rplc]: transmit dio, rank: 498
+1655418398 [DBG ][mpl ]: MPL received 190
+1655418398 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 190
+1655418403 [INFO][mpl ]: MPL transmit 190
+1655418404 [DBG ][rplu]: Timed parent selection
+1655418404 [INFO][rplu]: Time 00:37:06.0 (2226.0) RPL memory usage 592
+1655418404 [INFO][rplu]: RPL Domain 0x55bf756f5000
+1655418404 [INFO][rplu]: RPL Instance 1
+1655418404 [INFO][rplu]: ---------------
+1655418404 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418404 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418404 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418404 [INFO][rplu]:   Version 241
+1655418404 [INFO][rplu]:   *Current version* Rank=0498
+1655418404 [INFO][rplu]:     1*03d4 0454 ff fe80::302:304:506:4%1 (fd12:3456::302:304:506:4)
+1655418404 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418404 [INFO][rplu]:             I=1311, now=774, t=701, c=1
+1655418404 [INFO][rplu]: DAO Targets:
+1655418404 [INFO][rplu]:   fd12:3456::302:304:506:5/128             ff seq=240 (pub)
+1655418411 [DBG ][mpl ]: MPL received 190
+1655418411 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 190
+1655418411 [DBG ][mpl ]: Repeated MPL message 190
+1655418421 [DBG ][mpl ]: MPL received 191
+1655418421 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 191
+1655418425 [INFO][mpl ]: MPL transmit 191

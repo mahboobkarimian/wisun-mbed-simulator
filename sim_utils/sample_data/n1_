@@ -1,0 +1,1673 @@
+1655416176 [DBG ][core]: NS Root task Init
+1655416176 [DBG ][sck ]: Socket Tasklet Generated
+1655416176 [INFO][wsbs]: WS tasklet init
+1655416176 [INFO][wspt]: Key timers revocation lifetime: 86400, new activation time: 3600, max mismatch 3840, time to update: 82800
+1655416176 [DBG ][cstr]: config set: gen, changed fields:
+1655416176 [DBG ][cstr]: i: 0x1 v: 57:69:2d:53:55:4e:20:4e:65:74:77:6f:72:6b 
+1655416176 [DBG ][cstr]: config set: phy, changed fields:
+1655416176 [DBG ][cstr]: i: 0x1 v: 01:2a 
+1655416176 [DBG ][cstr]: config set: timing, changed fields:
+1655416176 [DBG ][cstr]: i: (nil) v: 0f 
+1655416176 [DBG ][cstr]: i: 0x2 v: 3c:00 
+1655416176 [DBG ][cstr]: config set: rpl, changed fields:
+1655416176 [DBG ][cstr]: i: (nil) v: 0f:02:00 
+1655416176 [DBG ][cstr]: i: 0x8 v: 20:1c 
+1655416176 [DBG ][cstr]: i: 0xc v: 20:1c 
+1655416176 [DBG ][cstr]: config set: sec_prot, changed fields:
+1655416176 [DBG ][cstr]: i: 0x10 v: a4:01:02 
+1655416176 [DBG ][cstr]: config set: mpl, changed fields:
+1655416176 [DBG ][cstr]: i: 0x2 v: 0a 
+1655416176 [DBG ][cstr]: i: 0x6 v: 78:00 
+1655416176 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416176 [INFO][wsbs]: MAC address: 01:02:03:04:05:06:00:01
+1655416176 [INFO][addr]: Address added to IF 1: fe80::302:304:506:1
+1655416176 [DBG ][addr]: LL64 Register OK!
+1655416176 [DBG ][rout]: Added route:
+1655416176 [DBG ][rout]:                    fe80::/64  if:1 src:'Static' id:0 lifetime:infinite
+1655416176 [DBG ][rout]:      On-link (met 128)
+1655416176 [DBG ][rout]: Added route:
+1655416176 [DBG ][rout]:                    ff00::/8   if:1 src:'Static' id:0 lifetime:infinite
+1655416176 [DBG ][rout]:      On-link (met 192)
+1655416176 [DBG ][sck ]: Socket id 0 allocated
+1655416176 [DBG ][wsbs]: tasklet init
+1655416176 [INFO][wsbs]: Discovery start
+1655416176 [INFO][wsbs]: Wi-SUN packet congestion minTh 85, maxTh 170, drop probability 10 weight 32, Packet/Seconds 5
+1655416176 [WARN][wsnv]: File not found: /tmp/n1_pae_keys
+1655416176 [WARN][wsnv]: File not found: /tmp/n1_pae_frame_counter
+1655416176 [WARN][wsnv]: File not found: /tmp/n1_pae_nw_info
+1655416176 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416176 [DBG ][wsbs]: FHSS activate
+1655416176 [DBG ][wsbs]: MAC init
+1655416176 [DBG ][wsbs]: router discovery start
+1655416176 [INFO][wspc]: NW keys remove
+1655416176 [DBG ][wsbs]: ip stack reset
+1655416176 [DBG ][wsbs]: ip stack address clear
+1655416176 [DBG ][wsbs]: Disc params imin 150, imax 600, expirations 255, k 1 PAS Trickle I 209 t 144, now 0, c 0
+1655416176 [INFO][wsbs]: Making parent selection in 42 s
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [DBG ][tric]: trickle reset timer
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416189 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416195 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655416218 [DBG ][wsbs]: WS SM:Active Scan
+1655416218 [DBG ][wsbs]: analyze network discovery result
+1655416218 [INFO][wsbs]: candidate list a:01:02:03:04:05:06:00:00 panid:5351 cost:0 size:0 rssi:0 txFailure:0 age:231
+1655416218 [INFO][wsbs]: selected parent:01:02:03:04:05:06:00:00 panid 21329
+1655416218 [DBG ][wsbs]: FHSS activate
+1655416218 [DBG ][wsbs]: MAC init
+1655416218 [DBG ][MACh]: Register Device 0, mac16 ffff mac64: 01:02:03:04:05:06:00:00, 0
+1655416218 [INFO][wsbs]: Added new neighbor 01:02:03:04:05:06:00:00 : index:0
+1655416218 [INFO][wsbs]: authentication start
+1655416218 [DBG ][wsbs]: Excluded ctrl 0, excluded channel count 0, total domain channels 69
+1655416218 [INFO][wsps]: Delete old keys, new PAN ID: 21329 network name: Wi-SUN Network
+1655416218 [DBG ][wsps]: PAE active, timer 2
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416219 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][wsbs]: received ADVERT SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416220 [INFO][ksep]: Initial-key init
+1655416220 [INFO][wsps]: EAPOL target: 01:02:03:04:05:06:00:00
+1655416220 [INFO][wsps]: Initial EAPOL-Key retry timer 384 seconds (range [180,420] seconds)
+1655416220 [INFO][ksep]: Initial EAPOL-Key send, PMKID not set PTKID not set GTKL 0
+1655416220 [INFO][eaps]: EAP-TLS init
+1655416220 [DBG ][tlsp]: TLS: init
+1655416220 [INFO][eaps]: EAP-TLS recv REQ type IDENTITY id 1 flags 0 len 5
+1655416220 [INFO][eaps]: EAP-TLS start
+1655416220 [INFO][eaps]: EAP-TLS: send RESPONSE type IDENTITY id 1 flags ff len 18
+1655416220 [DBG ][secl]: prot timeout, state: 5
+1655416220 [INFO][ksep]: Initial-key finished
+1655416220 [INFO][eaps]: EAP-TLS recv REQ type TLS id 2 flags 20 len 6
+1655416220 [DBG ][tlsp]: TLS: start
+1655416220 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 2 flags 0 len 122
+1655416220 [INFO][eaps]: EAP-TLS recv REQ type TLS id 3 flags c0 len 610
+1655416220 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 3 flags 0 len 10
+1655416220 [INFO][eaps]: EAP-TLS recv REQ type TLS id 4 flags 0 len 171
+1655416220 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 4 flags c0 len 614
+1655416220 [INFO][eaps]: EAP-TLS recv REQ type TLS id 5 flags 0 len 6
+1655416220 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 5 flags 0 len 53
+1655416221 [INFO][eaps]: EAP-TLS recv REQ type TLS id 6 flags 0 len 49
+1655416221 [DBG ][tlsp]: TLS: finish
+1655416221 [INFO][eaps]: EAP-TLS: handshake success
+1655416221 [INFO][eaps]: EAP-TLS: send RESPONSE type TLS id 6 flags 0 len 10
+1655416221 [INFO][eaps]: EAP-TLS finish
+1655416221 [INFO][sfwh]: 4WH: init
+1655416221 [INFO][sfwh]: 4WH: recv Message 1
+1655416221 [INFO][secl]: PMKID 5e:12:dd:50:3e:58:c5:a4:4e:67:8a:51:b6:f1:06:79 EUI-64 01:02:03:04:05:06:00:00 01:02:03:04:05:06:00:01
+1655416221 [INFO][sfwh]: 4WH: start
+1655416221 [INFO][sfwh]: 4WH: send Message 2
+1655416221 [INFO][sfwh]: 4WH: recv Message 3
+1655416221 [INFO][secl]: GTK recv index 0 lifetime 2591963
+1655416221 [INFO][sfwh]: 4WH: send Message 4
+1655416221 [INFO][sfwh]: 4WH: finish, wait Message 3 retry
+1655416221 [INFO][wspc]: NW key set: 0, hash: 25:63:2a:ab:28:ec:37:bb
+1655416221 [INFO][wsbs]: authentication success eui64:01:02:03:04:05:06:00:00
+1655416221 [INFO][wsbs]: Configuration start
+1655416221 [DBG ][wsbs]: router configuration learn start
+1655416221 [DBG ][wsbs]: ip stack reset
+1655416221 [DBG ][tric]: trickle reset timer
+1655416221 [DBG ][wsbs]: WS SM:configuration Scan
+1655416221 [INFO][sgkh]: GKH init
+1655416221 [INFO][sgkh]: GKH: recv Message 1
+1655416221 [INFO][secl]: GTK recv index 1 lifetime 5183963
+1655416221 [INFO][sgkh]: GKH start
+1655416221 [INFO][sgkh]: GKH: send Message 2
+1655416221 [INFO][sgkh]: GKH finish
+1655416221 [INFO][wspc]: NW key set: 1, hash: 25:63:2a:ab:28:ec:37:bb
+1655416221 [INFO][sgkh]: GKH init
+1655416221 [INFO][sgkh]: GKH: recv Message 1
+1655416221 [INFO][secl]: GTK recv index 2 lifetime 7775963
+1655416221 [INFO][sgkh]: GKH start
+1655416221 [INFO][sgkh]: GKH: send Message 2
+1655416221 [INFO][sgkh]: GKH finish
+1655416221 [INFO][wspc]: NW key set: 2, hash: 25:63:2a:ab:28:ec:37:bb
+1655416221 [INFO][sgkh]: GKH init
+1655416221 [INFO][sgkh]: GKH: recv Message 1
+1655416221 [INFO][secl]: GTK recv index 3 lifetime 12959963
+1655416221 [INFO][sgkh]: GKH start
+1655416221 [INFO][sgkh]: GKH: send Message 2
+1655416221 [INFO][sgkh]: GKH finish
+1655416221 [INFO][wspc]: NW key set: 3, hash: 49:21:f1:11:f9:1a:85:39
+1655416225 [DBG ][secl]: prot timeout, state: 5
+1655416225 [DBG ][tlsp]: TLS: finished, free F
+1655416226 [DBG ][secl]: prot timeout, state: 5
+1655416226 [INFO][eaps]: EAP-TLS finished
+1655416226 [DBG ][secl]: prot timeout, state: 5
+1655416226 [INFO][sgkh]: GKH finished
+1655416226 [DBG ][secl]: prot timeout, state: 5
+1655416226 [INFO][sgkh]: GKH finished
+1655416226 [DBG ][secl]: prot timeout, state: 5
+1655416226 [INFO][sgkh]: GKH finished
+1655416227 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655416229 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655416229 [INFO][wsbs]: Updated PAN configuration own:0, heard:14524
+1655416229 [DBG ][wspc]: Pending to store new frame counter: index 0 value 0
+1655416229 [DBG ][wspc]: Stored frame counters, active key set: index 0 value 0
+1655416229 [DBG ][wspc]: Pending to store new frame counter: index 1 value 0
+1655416229 [DBG ][wspc]: Pending to store new frame counter: index 2 value 0
+1655416229 [DBG ][wspc]: Pending to store new frame counter: index 3 value 0
+1655416229 [DBG ][wspc]: Write frame counters: system time 53
+1655416229 [INFO][wsnv]: NVM FRAME COUNTER write; stored time: 1577836853
+1655416229 [INFO][wspc]: NW send key index set: 1
+1655416229 [INFO][wsbs]: learn network configuration
+1655416230 [DBG ][wsbs]: WS SM:configuration Scan
+1655416230 [DBG ][wsbs]: Start using PAN configuration
+1655416230 [INFO][wsbs]: operation start
+1655416230 [DBG ][wsbs]: ip stack init
+1655416230 [DBG ][wsbs]: ip stack reset
+1655416230 [DBG ][wsbs]: RPL Activate
+1655416230 [DBG ][wsbs]: Start RPL learn
+1655416230 [DBG ][wsbs]: WS SM:Wait RPL to contact DODAG root
+1655416230 [INFO][rplc]: Transmit DIS
+1655416244 [DBG ][mpl ]: MPL received 119
+1655416244 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 119
+1655416245 [DBG ][mpl ]: MPL received 119
+1655416245 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 119
+1655416245 [DBG ][mpl ]: Repeated MPL message 119
+1655416248 [DBG ][mpl ]: MPL received 119
+1655416248 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 119
+1655416248 [DBG ][mpl ]: Repeated MPL message 119
+1655416249 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655416249 [DBG ][rplu]: Timed parent triggered 41
+1655416249 [INFO][mpl ]: MPL transmit 119
+1655416250 [INFO][wsbs]: Probe generate NS 0
+1655416254 [INFO][wsbs]: Probe generate NS 0
+1655416259 [INFO][wsbs]: Probe generate NS 0
+1655416259 [DBG ][rplc]: Triggering parent selection due to ETX better on neigh index 0, etx 256
+1655416267 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655416273 [DBG ][mpl ]: MPL received 120
+1655416273 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 120
+1655416276 [INFO][mpl ]: MPL transmit 120
+1655416279 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655416279 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416280 [DBG ][mpl ]: MPL received 120
+1655416280 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 120
+1655416280 [DBG ][mpl ]: Repeated MPL message 120
+1655416281 [DBG ][secl]: prot timeout, state: 8
+1655416281 [INFO][sfwh]: 4WH: Message 3 retry timeout
+1655416286 [DBG ][secl]: prot timeout, state: 5
+1655416286 [INFO][sfwh]: 4WH: finished
+1655416289 [DBG ][mpl ]: MPL received 120
+1655416289 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 120
+1655416289 [DBG ][mpl ]: Repeated MPL message 120
+1655416290 [DBG ][rplu]: Timed parent selection
+1655416290 [DBG ][tric]: trickle reset timer
+1655416290 [INFO][rplu]: Added parent fe80::302:304:506:0
+1655416290 [DBG ][rout]: Added route:
+1655416290 [DBG ][rout]:                        ::/0   if:1 src:'RPL Instance' id:1 lifetime:7200
+1655416290 [DBG ][rout]:      next-hop fe80::302:304:506:0 (met 128)
+1655416290 [DBG ][rout]: Added route:
+1655416290 [DBG ][rout]:  fd12:3456::1615:16ff:fe17:1819/128 if:1 src:'RPL Root' id:1 lifetime:7200
+1655416290 [DBG ][rout]:      next-hop fe80::302:304:506:0 (met 128)
+1655416290 [DBG ][rout]: Added route:
+1655416290 [DBG ][rout]:                        ::/0   if:1 src:'RPL Root' id:1 lifetime:7200
+1655416290 [DBG ][rout]:      next-hop fe80::302:304:506:0 (met 128)
+1655416290 [INFO][rplu]: New preferred parent fe:80:00:00:00:00:00:00:03:02:03:04:05:06:00:00
+1655416290 [DBG ][RPLd]: removed=0, added=ff
+1655416290 [INFO][wsbs]: RPL parent update ... register ARO
+1655416290 [INFO][wsbs]: RPL event 3
+1655416290 [INFO][rplu]: Time 00:01:54.0 (114.0) RPL memory usage 512
+1655416290 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655416290 [INFO][rplu]: RPL Instance 1
+1655416290 [INFO][rplu]: ---------------
+1655416290 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416290 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416290 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416290 [INFO][rplu]:   Version 241
+1655416290 [INFO][rplu]:   *Current version* Rank=0188
+1655416290 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655416290 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416290 [INFO][rplu]:             I=328, now=0, t=320, c=0
+1655416290 [DBG ][DHP ]: GEN new Dhcpv6 client 1
+1655416290 [DBG ][dhcp]: Send DHCPv6 request
+1655416290 [INFO][dhcp]: dhcp service socket_sendto fe80::302:304:506:0
+1655416292 [INFO][dhcp]: dhcp service socket_sendto fe80::302:304:506:0
+1655416292 [DBG ][dhcp]: dhcp recv response message
+1655416292 [DBG ][rout]: Added route:
+1655416292 [DBG ][rout]:  fd12:3456::302:304:506:1/128 if:1 src:'Loopback' id:0 lifetime:infinite
+1655416292 [DBG ][rout]:      On-link (met 128)
+1655416292 [INFO][addr]: Address added to IF 1: fd12:3456::302:304:506:1
+1655416292 [DBG ][wsbs]: DHCPv6 fd12:3456::302:304:506:1 status 1 with link fe80::302:304:506:0
+1655416293 [DBG ][RPLd]: New Target fd12:3456::302:304:506:1
+1655416293 [DBG ][RPLd]: Register Address to parent fd12:3456::302:304:506:1
+1655416293 [INFO][RPLd]: Send ARO fd12:3456::302:304:506:1 to fe80::302:304:506:0
+1655416293 [DBG ][RPLd]: Address fd12:3456::302:304:506:1 register to fe80::302:304:506:0
+1655416304 [DBG ][mpl ]: MPL received 121
+1655416304 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 121
+1655416305 [INFO][RPLd]: DAO tx 240 seq attempts 0 retry-timer 470
+1655416305 [DBG ][RPLd]: DAO-ACK RX
+1655416305 [DBG ][RPLd]: tgt fd12:3456::302:304:506:1/128 - pc ff, assigned 00, assigning ff, life 78, rfr 0
+1655416305 [DBG ][RPLd]: set rfr to 3663
+1655416305 [DBG ][wsbs]: Enable DHCPv6 relay
+1655416305 [DBG ][sck ]: Socket id 1 allocated
+1655416305 [DBG ][wsbs]: Start EAPOL relay
+1655416305 [DBG ][sck ]: Socket id 2 allocated
+1655416305 [INFO][wsps]: NW key valid indication
+1655416305 [INFO][wsnv]: NVM NW_INFO write PAN ID: 21329 name: Wi-SUN Network stored time: 1577836929
+1655416305 [INFO][wsnv]: NVM KEYS write
+1655416305 [DBG ][wsbs]: own hop: 1, own rank: 392, rank inc: 196
+1655416305 [INFO][wsbs]: RPL event 0
+1655416305 [DBG ][wsbs]: WS SM:Wait RPL to contact DODAG root
+1655416305 [INFO][wsbs]: Routing ready
+1655416306 [INFO][wsbs]: WS SM:Bootstrap Done
+1655416306 [INFO][core]: RPL Ready
+1655416309 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655416309 [DBG ][rplu]: Timed parent triggered 41
+1655416310 [DBG ][mpl ]: MPL received 121
+1655416310 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 121
+1655416310 [DBG ][mpl ]: Repeated MPL message 121
+1655416311 [INFO][mpl ]: MPL transmit 121
+1655416316 [DBG ][wsps]: PAE idle
+1655416318 [DBG ][mpl ]: MPL received 121
+1655416318 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 121
+1655416318 [DBG ][mpl ]: Repeated MPL message 121
+1655416325 [INFO][wsbs]: Send PAN advertisement
+1655416326 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655416332 [INFO][wsbs]: Send PAN configuration
+1655416334 [DBG ][mpl ]: MPL received 122
+1655416334 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 122
+1655416337 [INFO][rplc]: transmit dio, rank: 188
+1655416340 [INFO][mpl ]: MPL transmit 122
+1655416343 [DBG ][mpl ]: MPL received 122
+1655416343 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 122
+1655416343 [DBG ][mpl ]: Repeated MPL message 122
+1655416345 [INFO][wsbs]: received CONFIG SOL Src:01:02:03:04:05:06:00:02 rssi:0
+1655416345 [DBG ][tric]: trickle reset timer
+1655416350 [DBG ][rplu]: Timed parent selection
+1655416350 [INFO][rplu]: Time 00:02:54.0 (174.0) RPL memory usage 592
+1655416350 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655416350 [INFO][rplu]: RPL Instance 1
+1655416350 [INFO][rplu]: ---------------
+1655416350 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416350 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416350 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416350 [INFO][rplu]:   Version 241
+1655416350 [INFO][rplu]:   *Current version* Rank=0188
+1655416350 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655416350 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416350 [INFO][rplu]:             I=656, now=115, t=619, c=0
+1655416350 [INFO][rplu]: DAO Targets:
+1655416350 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655416352 [DBG ][mpl ]: MPL received 122
+1655416352 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 122
+1655416352 [DBG ][mpl ]: Repeated MPL message 122
+1655416356 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655416356 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416363 [DBG ][mpl ]: MPL received 123
+1655416363 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 123
+1655416366 [INFO][wsbs]: Send PAN advertisement
+1655416367 [INFO][mpl ]: MPL transmit 123
+1655416369 [DBG ][mpl ]: MPL received 123
+1655416369 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 123
+1655416369 [DBG ][mpl ]: Repeated MPL message 123
+1655416381 [DBG ][mpl ]: MPL received 123
+1655416381 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 123
+1655416381 [DBG ][mpl ]: Repeated MPL message 123
+1655416385 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655416387 [INFO][wsbs]: Send PAN configuration
+1655416389 [DBG ][tric]: trickle reset timer
+1655416394 [DBG ][mpl ]: MPL received 124
+1655416394 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 124
+1655416397 [DBG ][mpl ]: MPL received 124
+1655416397 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 124
+1655416397 [DBG ][mpl ]: Repeated MPL message 124
+1655416402 [INFO][mpl ]: MPL transmit 124
+1655416402 [DBG ][mpl ]: MPL received 124
+1655416402 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 124
+1655416402 [DBG ][mpl ]: Repeated MPL message 124
+1655416419 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655416419 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416421 [INFO][rplc]: transmit dio, rank: 188
+1655416423 [DBG ][MACh]: Register Device 1, mac16 ffff mac64: 01:02:03:04:05:06:00:02, 0
+1655416423 [DBG ][mpl ]: MPL received 125
+1655416423 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 125
+1655416425 [INFO][mpl ]: MPL transmit 125
+1655416425 [DBG ][mpl ]: MPL received 125
+1655416425 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 125
+1655416425 [DBG ][mpl ]: Repeated MPL message 125
+1655416427 [DBG ][MACh]: Unregister Device 1, mac64: 01:02:03:04:05:06:00:02
+1655416430 [DBG ][mpl ]: MPL received 125
+1655416430 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 125
+1655416430 [DBG ][mpl ]: Repeated MPL message 125
+1655416441 [DBG ][MACh]: Register Device 2, mac16 ffff mac64: 01:02:03:04:05:06:00:02, 0
+1655416446 [DBG ][MACh]: Unregister Device 2, mac64: 01:02:03:04:05:06:00:02
+1655416453 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655416453 [DBG ][rplu]: Timed parent triggered 33
+1655416454 [DBG ][mpl ]: MPL received 126
+1655416454 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 126
+1655416457 [DBG ][mpl ]: MPL received 126
+1655416457 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 126
+1655416457 [DBG ][mpl ]: Repeated MPL message 126
+1655416459 [INFO][mpl ]: MPL transmit 126
+1655416468 [DBG ][MACh]: Register Device 3, mac16 ffff mac64: 01:02:03:04:05:06:00:02, 0
+1655416468 [DBG ][dhcp]: dhcp Relay recv msg
+1655416468 [DBG ][wsbs]: Set short response neighbor 01:02:03:04:05:06:00:02 : index:3
+1655416468 [DBG ][dhcp]: Forward Client msg to server
+1655416468 [DBG ][dhcp]: dhcp Relay recv msg
+1655416468 [DBG ][dhcp]: Forward Original relay msg to client
+1655416468 [DBG ][wllc]: Remove Temp Entry by TX confirm
+1655416468 [DBG ][MACh]: Unregister Device 3, mac64: 01:02:03:04:05:06:00:02
+1655416468 [DBG ][mpl ]: MPL received 126
+1655416468 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 126
+1655416468 [DBG ][mpl ]: Repeated MPL message 126
+1655416468 [DBG ][MACh]: Register Device 4, mac16 ffff mac64: 01:02:03:04:05:06:00:02, 0
+1655416468 [INFO][wscm]: Added new neighbor 01:02:03:04:05:06:00:02 : index:4
+1655416468 [INFO][wscm]: Child registration allowed 0/230, max:255
+1655416468 [DBG ][rout]: Added route:
+1655416468 [DBG ][rout]:  fd12:3456::302:304:506:2/128 if:1 src:'ARO' id:0 lifetime:2218
+1655416468 [DBG ][rout]:      next-hop fd12:3456::302:304:506:2 (met 32)
+1655416468 [DBG ][icmp]: Omit NA ARO success
+1655416472 [INFO][rplc]: transmit dio, rank: 188
+1655416476 [INFO][wsbs]: Send PAN advertisement
+1655416484 [DBG ][mpl ]: MPL received 127
+1655416484 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 127
+1655416485 [DBG ][rplu]: Timed parent selection
+1655416485 [INFO][rplu]: Time 00:05:09.0 (309.0) RPL memory usage 592
+1655416485 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655416485 [INFO][rplu]: RPL Instance 1
+1655416485 [INFO][rplu]: ---------------
+1655416485 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416485 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416485 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416485 [INFO][rplu]:   Version 241
+1655416485 [INFO][rplu]:   *Current version* Rank=0188
+1655416485 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655416485 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416485 [INFO][rplu]:             I=656, now=633, t=503, c=1
+1655416485 [INFO][rplu]: DAO Targets:
+1655416485 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655416486 [DBG ][mpl ]: MPL received 127
+1655416486 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 127
+1655416486 [DBG ][mpl ]: Repeated MPL message 127
+1655416491 [INFO][mpl ]: MPL transmit 127
+1655416493 [DBG ][mpl ]: MPL received 127
+1655416493 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 127
+1655416493 [DBG ][mpl ]: Repeated MPL message 127
+1655416496 [DBG ][mpl ]: MPL received 127
+1655416496 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 127
+1655416496 [DBG ][mpl ]: Repeated MPL message 127
+1655416497 [INFO][wsbs]: Send PAN configuration
+1655416502 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655416513 [DBG ][mpl ]: MPL received 128
+1655416513 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 128
+1655416514 [DBG ][rplc]: Triggering parent selection due to ETX better on neigh index 4, etx 256
+1655416516 [DBG ][mpl ]: MPL received 128
+1655416516 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 128
+1655416516 [DBG ][mpl ]: Repeated MPL message 128
+1655416518 [INFO][mpl ]: MPL transmit 128
+1655416520 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655416520 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416520 [DBG ][mpl ]: MPL received 128
+1655416520 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 128
+1655416520 [DBG ][mpl ]: Repeated MPL message 128
+1655416522 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655416522 [DBG ][mpl ]: MPL received 128
+1655416522 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 128
+1655416522 [DBG ][mpl ]: Repeated MPL message 128
+1655416530 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655416544 [DBG ][mpl ]: MPL received 129
+1655416544 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 129
+1655416545 [INFO][mpl ]: MPL transmit 129
+1655416550 [DBG ][mpl ]: MPL received 129
+1655416550 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 129
+1655416550 [DBG ][mpl ]: Repeated MPL message 129
+1655416551 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655416551 [DBG ][rplu]: Timed parent triggered 40
+1655416551 [DBG ][mpl ]: MPL received 129
+1655416551 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 129
+1655416551 [DBG ][mpl ]: Repeated MPL message 129
+1655416556 [INFO][rplc]: transmit dio, rank: 188
+1655416560 [DBG ][mpl ]: MPL received 129
+1655416560 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 129
+1655416560 [DBG ][mpl ]: Repeated MPL message 129
+1655416569 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655416573 [DBG ][mpl ]: MPL received 130
+1655416573 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 130
+1655416577 [INFO][mpl ]: MPL transmit 130
+1655416577 [DBG ][mpl ]: MPL received 130
+1655416577 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 130
+1655416577 [DBG ][mpl ]: Repeated MPL message 130
+1655416586 [DBG ][mpl ]: MPL received 130
+1655416586 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 130
+1655416586 [DBG ][mpl ]: Repeated MPL message 130
+1655416587 [DBG ][mpl ]: MPL received 130
+1655416587 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 130
+1655416587 [DBG ][mpl ]: Repeated MPL message 130
+1655416590 [DBG ][rplu]: Timed parent selection
+1655416590 [INFO][rplu]: Time 00:06:54.0 (414.0) RPL memory usage 592
+1655416590 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655416590 [INFO][rplu]: RPL Instance 1
+1655416590 [INFO][rplu]: ---------------
+1655416590 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416590 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416590 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416590 [INFO][rplu]:   Version 241
+1655416590 [INFO][rplu]:   *Current version* Rank=0188
+1655416590 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655416590 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416590 [INFO][rplu]:             I=1311, now=1027, t=686, c=1
+1655416590 [INFO][rplu]: DAO Targets:
+1655416590 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655416600 [INFO][wsbs]: Send PAN advertisement
+1655416604 [DBG ][mpl ]: MPL received 131
+1655416604 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 131
+1655416604 [DBG ][mpl ]: MPL received 131
+1655416604 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 131
+1655416604 [DBG ][mpl ]: Repeated MPL message 131
+1655416606 [DBG ][mpl ]: MPL received 131
+1655416606 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 131
+1655416606 [DBG ][mpl ]: Repeated MPL message 131
+1655416609 [INFO][wsbs]: Send PAN configuration
+1655416610 [INFO][mpl ]: MPL transmit 131
+1655416618 [DBG ][mpl ]: MPL received 131
+1655416618 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 131
+1655416618 [DBG ][mpl ]: Repeated MPL message 131
+1655416633 [DBG ][mpl ]: MPL received 132
+1655416633 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 132
+1655416636 [DBG ][mpl ]: MPL received 132
+1655416636 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 132
+1655416636 [DBG ][mpl ]: Repeated MPL message 132
+1655416639 [INFO][mpl ]: MPL transmit 132
+1655416642 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655416642 [DBG ][mpl ]: MPL received 132
+1655416642 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 132
+1655416642 [DBG ][mpl ]: Repeated MPL message 132
+1655416648 [DBG ][mpl ]: MPL received 132
+1655416648 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 132
+1655416648 [DBG ][mpl ]: Repeated MPL message 132
+1655416653 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655416656 [INFO][wsbs]: Send PAN advertisement
+1655416663 [DBG ][mpl ]: MPL received 133
+1655416663 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 133
+1655416664 [INFO][mpl ]: MPL transmit 133
+1655416669 [DBG ][mpl ]: MPL received 133
+1655416669 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 133
+1655416669 [DBG ][mpl ]: Repeated MPL message 133
+1655416669 [DBG ][mpl ]: MPL received 133
+1655416669 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 133
+1655416669 [DBG ][mpl ]: Repeated MPL message 133
+1655416669 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:02 rssi:0
+1655416669 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416679 [DBG ][mpl ]: MPL received 133
+1655416679 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 133
+1655416679 [DBG ][mpl ]: Repeated MPL message 133
+1655416694 [DBG ][mpl ]: MPL received 134
+1655416694 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 134
+1655416699 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655416699 [DBG ][rplu]: Timed parent triggered 37
+1655416700 [INFO][mpl ]: MPL transmit 134
+1655416701 [DBG ][mpl ]: MPL received 134
+1655416701 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 134
+1655416701 [DBG ][mpl ]: Repeated MPL message 134
+1655416705 [DBG ][mpl ]: MPL received 134
+1655416705 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 134
+1655416705 [DBG ][mpl ]: Repeated MPL message 134
+1655416712 [DBG ][mpl ]: MPL received 134
+1655416712 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 134
+1655416712 [DBG ][mpl ]: Repeated MPL message 134
+1655416723 [DBG ][mpl ]: MPL received 135
+1655416723 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 135
+1655416724 [DBG ][mpl ]: MPL received 135
+1655416724 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 135
+1655416724 [DBG ][mpl ]: Repeated MPL message 135
+1655416727 [DBG ][mpl ]: MPL received 135
+1655416727 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 135
+1655416727 [DBG ][mpl ]: Repeated MPL message 135
+1655416728 [INFO][mpl ]: MPL transmit 135
+1655416730 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655416734 [DBG ][mpl ]: MPL received 135
+1655416734 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 135
+1655416734 [DBG ][mpl ]: Repeated MPL message 135
+1655416734 [INFO][wsbs]: Send PAN configuration
+1655416735 [DBG ][rplu]: Timed parent selection
+1655416735 [INFO][rplu]: Time 00:09:19.0 (559.0) RPL memory usage 592
+1655416735 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655416735 [INFO][rplu]: RPL Instance 1
+1655416735 [INFO][rplu]: ---------------
+1655416735 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416735 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416735 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416735 [INFO][rplu]:   Version 241
+1655416735 [INFO][rplu]:   *Current version* Rank=0188
+1655416735 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655416735 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416735 [INFO][rplu]:             I=1311, now=1166, t=1300, c=1
+1655416735 [INFO][rplu]: DAO Targets:
+1655416735 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655416737 [INFO][wsbs]: Send PAN advertisement
+1655416749 [INFO][rplc]: transmit dio, rank: 188
+1655416754 [DBG ][mpl ]: MPL received 136
+1655416754 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 136
+1655416755 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655416755 [DBG ][mpl ]: MPL received 136
+1655416755 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 136
+1655416755 [DBG ][mpl ]: Repeated MPL message 136
+1655416758 [DBG ][mpl ]: MPL received 136
+1655416758 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 136
+1655416758 [DBG ][mpl ]: Repeated MPL message 136
+1655416758 [INFO][mpl ]: MPL transmit 136
+1655416762 [DBG ][mpl ]: MPL received 136
+1655416762 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 136
+1655416762 [DBG ][mpl ]: Repeated MPL message 136
+1655416771 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655416771 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416783 [DBG ][mpl ]: MPL received 137
+1655416783 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 137
+1655416789 [INFO][mpl ]: MPL transmit 137
+1655416791 [INFO][wsbs]: Send PAN advertisement
+1655416793 [DBG ][mpl ]: MPL received 137
+1655416793 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 137
+1655416793 [DBG ][mpl ]: Repeated MPL message 137
+1655416793 [DBG ][mpl ]: MPL received 137
+1655416793 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 137
+1655416793 [DBG ][mpl ]: Repeated MPL message 137
+1655416796 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655416796 [DBG ][rplu]: Timed parent triggered 35
+1655416801 [DBG ][mpl ]: MPL received 137
+1655416801 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 137
+1655416801 [DBG ][mpl ]: Repeated MPL message 137
+1655416814 [DBG ][mpl ]: MPL received 138
+1655416814 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 138
+1655416816 [INFO][rout]: Resetting PMTU for: ff02::1a
+1655416817 [DBG ][mpl ]: MPL received 138
+1655416817 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 138
+1655416817 [DBG ][mpl ]: Repeated MPL message 138
+1655416819 [INFO][mpl ]: MPL transmit 138
+1655416827 [INFO][rplc]: transmit dio, rank: 188
+1655416827 [DBG ][mpl ]: MPL received 138
+1655416827 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 138
+1655416827 [DBG ][mpl ]: Repeated MPL message 138
+1655416827 [DBG ][mpl ]: MPL received 138
+1655416827 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 138
+1655416827 [DBG ][mpl ]: Repeated MPL message 138
+1655416830 [DBG ][rplu]: Timed parent selection
+1655416830 [INFO][rplu]: Time 00:10:54.0 (654.0) RPL memory usage 592
+1655416830 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655416830 [INFO][rplu]: RPL Instance 1
+1655416830 [INFO][rplu]: ---------------
+1655416830 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416830 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416830 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416830 [INFO][rplu]:   Version 241
+1655416830 [INFO][rplu]:   *Current version* Rank=0188
+1655416830 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655416830 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416830 [INFO][rplu]:             I=1311, now=805, t=772, c=1
+1655416830 [INFO][rplu]: DAO Targets:
+1655416830 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655416836 [INFO][rout]: Resetting PMTU for: ff03::fc
+1655416836 [INFO][rout]: Resetting PMTU for: fe80::302:304:506:0
+1655416843 [INFO][wsbs]: Send PAN configuration
+1655416844 [DBG ][mpl ]: MPL received 139
+1655416844 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 139
+1655416845 [INFO][mpl ]: MPL transmit 139
+1655416847 [DBG ][mpl ]: MPL received 139
+1655416847 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 139
+1655416847 [DBG ][mpl ]: Repeated MPL message 139
+1655416848 [INFO][wsbs]: Send PAN advertisement
+1655416854 [DBG ][mpl ]: MPL received 139
+1655416854 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 139
+1655416854 [DBG ][mpl ]: Repeated MPL message 139
+1655416854 [DBG ][mpl ]: MPL received 139
+1655416854 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 139
+1655416854 [DBG ][mpl ]: Repeated MPL message 139
+1655416873 [DBG ][mpl ]: MPL received 140
+1655416873 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 140
+1655416876 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655416879 [DBG ][mpl ]: MPL received 140
+1655416879 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 140
+1655416879 [DBG ][mpl ]: Repeated MPL message 140
+1655416880 [INFO][mpl ]: MPL transmit 140
+1655416885 [DBG ][mpl ]: MPL received 140
+1655416885 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 140
+1655416885 [DBG ][mpl ]: Repeated MPL message 140
+1655416891 [DBG ][mpl ]: MPL received 140
+1655416891 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 140
+1655416891 [DBG ][mpl ]: Repeated MPL message 140
+1655416896 [INFO][rout]: Resetting PMTU for: fd12:3456::1615:16ff:fe17:1819
+1655416896 [INFO][wsbs]: Send PAN advertisement
+1655416904 [DBG ][mpl ]: MPL received 141
+1655416904 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 141
+1655416908 [INFO][mpl ]: MPL transmit 141
+1655416908 [DBG ][mpl ]: MPL received 141
+1655416908 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 141
+1655416908 [DBG ][mpl ]: Repeated MPL message 141
+1655416910 [DBG ][mpl ]: MPL received 141
+1655416910 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 141
+1655416910 [DBG ][mpl ]: Repeated MPL message 141
+1655416910 [INFO][wsbs]: Send PAN configuration
+1655416915 [DBG ][mpl ]: MPL received 141
+1655416915 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 141
+1655416915 [DBG ][mpl ]: Repeated MPL message 141
+1655416929 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655416929 [DBG ][rplu]: Timed parent triggered 46
+1655416933 [DBG ][mpl ]: MPL received 142
+1655416933 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 142
+1655416935 [INFO][mpl ]: MPL transmit 142
+1655416938 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655416938 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655416938 [DBG ][mpl ]: MPL received 142
+1655416938 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 142
+1655416938 [DBG ][mpl ]: Repeated MPL message 142
+1655416940 [DBG ][mpl ]: MPL received 142
+1655416940 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 142
+1655416940 [DBG ][mpl ]: Repeated MPL message 142
+1655416948 [DBG ][mpl ]: MPL received 142
+1655416948 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 142
+1655416948 [DBG ][mpl ]: Repeated MPL message 142
+1655416964 [DBG ][mpl ]: MPL received 143
+1655416964 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 143
+1655416967 [DBG ][mpl ]: MPL received 143
+1655416967 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 143
+1655416967 [DBG ][mpl ]: Repeated MPL message 143
+1655416972 [INFO][wsbs]: Send PAN advertisement
+1655416973 [INFO][mpl ]: MPL transmit 143
+1655416974 [DBG ][mpl ]: MPL received 143
+1655416974 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 143
+1655416974 [DBG ][mpl ]: Repeated MPL message 143
+1655416974 [DBG ][rplu]: Timed parent selection
+1655416974 [INFO][rplu]: Time 00:13:18.0 (798.0) RPL memory usage 592
+1655416974 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655416974 [INFO][rplu]: RPL Instance 1
+1655416974 [INFO][rplu]: ---------------
+1655416974 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655416974 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655416974 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655416974 [INFO][rplu]:   Version 241
+1655416974 [INFO][rplu]:   *Current version* Rank=0188
+1655416974 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655416974 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655416974 [INFO][rplu]:             I=1311, now=934, t=1061, c=1
+1655416974 [INFO][rplu]: DAO Targets:
+1655416974 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655416978 [DBG ][mpl ]: MPL received 143
+1655416978 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 143
+1655416978 [DBG ][mpl ]: Repeated MPL message 143
+1655416987 [INFO][rplc]: transmit dio, rank: 188
+1655416993 [DBG ][mpl ]: MPL received 144
+1655416993 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 144
+1655416998 [INFO][mpl ]: MPL transmit 144
+1655417000 [DBG ][mpl ]: MPL received 144
+1655417000 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 144
+1655417000 [DBG ][mpl ]: Repeated MPL message 144
+1655417005 [DBG ][mpl ]: MPL received 144
+1655417005 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 144
+1655417005 [DBG ][mpl ]: Repeated MPL message 144
+1655417009 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417010 [DBG ][mpl ]: MPL received 144
+1655417010 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 144
+1655417010 [DBG ][mpl ]: Repeated MPL message 144
+1655417023 [DBG ][mpl ]: MPL received 145
+1655417023 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 145
+1655417029 [INFO][mpl ]: MPL transmit 145
+1655417029 [DBG ][mpl ]: MPL received 145
+1655417029 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 145
+1655417029 [DBG ][mpl ]: Repeated MPL message 145
+1655417032 [DBG ][mpl ]: MPL received 145
+1655417032 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 145
+1655417032 [DBG ][mpl ]: Repeated MPL message 145
+1655417034 [INFO][wsbs]: Send PAN advertisement
+1655417036 [DBG ][mpl ]: MPL received 145
+1655417036 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 145
+1655417036 [DBG ][mpl ]: Repeated MPL message 145
+1655417040 [INFO][wsbs]: Send PAN configuration
+1655417054 [DBG ][mpl ]: MPL received 146
+1655417054 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 146
+1655417055 [DBG ][mpl ]: MPL received 146
+1655417055 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 146
+1655417055 [DBG ][mpl ]: Repeated MPL message 146
+1655417056 [INFO][rout]: Resetting PMTU for: fe80::302:304:506:2
+1655417057 [INFO][mpl ]: MPL transmit 146
+1655417059 [DBG ][mpl ]: MPL received 146
+1655417059 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 146
+1655417059 [DBG ][mpl ]: Repeated MPL message 146
+1655417064 [DBG ][mpl ]: MPL received 146
+1655417064 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 146
+1655417064 [DBG ][mpl ]: Repeated MPL message 146
+1655417077 [INFO][rout]: Resetting PMTU for: fd12:3456::302:304:506:2
+1655417082 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417082 [DBG ][rplu]: Timed parent triggered 36
+1655417083 [DBG ][mpl ]: MPL received 147
+1655417083 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 147
+1655417087 [INFO][mpl ]: MPL transmit 147
+1655417090 [DBG ][mpl ]: MPL received 147
+1655417090 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 147
+1655417090 [DBG ][mpl ]: Repeated MPL message 147
+1655417090 [INFO][wsbs]: Send PAN advertisement
+1655417094 [INFO][wsbs]: Send PAN configuration
+1655417094 [DBG ][mpl ]: MPL received 147
+1655417094 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 147
+1655417094 [DBG ][mpl ]: Repeated MPL message 147
+1655417101 [DBG ][mpl ]: MPL received 147
+1655417101 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 147
+1655417101 [DBG ][mpl ]: Repeated MPL message 147
+1655417106 [INFO][rplc]: transmit dio, rank: 188
+1655417114 [DBG ][mpl ]: MPL received 148
+1655417114 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 148
+1655417116 [INFO][mpl ]: MPL transmit 148
+1655417116 [DBG ][mpl ]: MPL received 148
+1655417116 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 148
+1655417116 [DBG ][mpl ]: Repeated MPL message 148
+1655417118 [DBG ][rplu]: Timed parent selection
+1655417118 [INFO][rplu]: Time 00:15:41.0 (941.0) RPL memory usage 592
+1655417118 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655417118 [INFO][rplu]: RPL Instance 1
+1655417118 [INFO][rplu]: ---------------
+1655417118 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417118 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417118 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417118 [INFO][rplu]:   Version 241
+1655417118 [INFO][rplu]:   *Current version* Rank=0188
+1655417118 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655417118 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417118 [INFO][rplu]:             I=1311, now=1053, t=937, c=1
+1655417118 [INFO][rplu]: DAO Targets:
+1655417118 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655417121 [DBG ][mpl ]: MPL received 148
+1655417121 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 148
+1655417121 [DBG ][mpl ]: Repeated MPL message 148
+1655417123 [DBG ][mpl ]: MPL received 148
+1655417123 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 148
+1655417123 [DBG ][mpl ]: Repeated MPL message 148
+1655417143 [DBG ][mpl ]: MPL received 149
+1655417143 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 149
+1655417144 [INFO][wsbs]: Send PAN advertisement
+1655417146 [INFO][mpl ]: MPL transmit 149
+1655417147 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417148 [DBG ][mpl ]: MPL received 149
+1655417148 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 149
+1655417148 [DBG ][mpl ]: Repeated MPL message 149
+1655417150 [DBG ][mpl ]: MPL received 149
+1655417150 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 149
+1655417150 [DBG ][mpl ]: Repeated MPL message 149
+1655417150 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417152 [INFO][wsbs]: Send PAN configuration
+1655417159 [DBG ][mpl ]: MPL received 149
+1655417159 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 149
+1655417159 [DBG ][mpl ]: Repeated MPL message 149
+1655417173 [DBG ][mpl ]: MPL received 150
+1655417173 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 150
+1655417177 [INFO][mpl ]: MPL transmit 150
+1655417178 [DBG ][mpl ]: MPL received 150
+1655417178 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 150
+1655417178 [DBG ][mpl ]: Repeated MPL message 150
+1655417182 [DBG ][mpl ]: MPL received 150
+1655417182 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 150
+1655417182 [DBG ][mpl ]: Repeated MPL message 150
+1655417186 [DBG ][mpl ]: MPL received 150
+1655417186 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 150
+1655417186 [DBG ][mpl ]: Repeated MPL message 150
+1655417188 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417188 [DBG ][rplu]: Timed parent triggered 40
+1655417200 [INFO][wsbs]: Send PAN advertisement
+1655417204 [DBG ][mpl ]: MPL received 151
+1655417204 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 151
+1655417205 [DBG ][mpl ]: MPL received 151
+1655417205 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 151
+1655417205 [DBG ][mpl ]: Repeated MPL message 151
+1655417207 [DBG ][mpl ]: MPL received 151
+1655417207 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 151
+1655417207 [DBG ][mpl ]: Repeated MPL message 151
+1655417211 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417213 [INFO][mpl ]: MPL transmit 151
+1655417217 [INFO][wsbs]: Send PAN configuration
+1655417220 [DBG ][mpl ]: MPL received 151
+1655417220 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 151
+1655417220 [DBG ][mpl ]: Repeated MPL message 151
+1655417224 [INFO][rplc]: transmit dio, rank: 188
+1655417228 [DBG ][rplu]: Timed parent selection
+1655417228 [INFO][rplu]: Time 00:17:31.0 (1051.0) RPL memory usage 592
+1655417228 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655417228 [INFO][rplu]: RPL Instance 1
+1655417228 [INFO][rplu]: ---------------
+1655417228 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417228 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417228 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417228 [INFO][rplu]:   Version 241
+1655417228 [INFO][rplu]:   *Current version* Rank=0188
+1655417228 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655417228 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417228 [INFO][rplu]:             I=1311, now=842, t=811, c=1
+1655417228 [INFO][rplu]: DAO Targets:
+1655417228 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655417233 [DBG ][mpl ]: MPL received 152
+1655417233 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 152
+1655417236 [INFO][mpl ]: MPL transmit 152
+1655417237 [DBG ][mpl ]: MPL received 152
+1655417237 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 152
+1655417237 [DBG ][mpl ]: Repeated MPL message 152
+1655417242 [DBG ][mpl ]: MPL received 152
+1655417242 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 152
+1655417242 [DBG ][mpl ]: Repeated MPL message 152
+1655417248 [DBG ][mpl ]: MPL received 152
+1655417248 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 152
+1655417248 [DBG ][mpl ]: Repeated MPL message 152
+1655417256 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417264 [DBG ][mpl ]: MPL received 153
+1655417264 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 153
+1655417267 [INFO][wsbs]: Send PAN advertisement
+1655417270 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417271 [INFO][mpl ]: MPL transmit 153
+1655417272 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:02 rssi:0
+1655417272 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417273 [DBG ][mpl ]: MPL received 153
+1655417273 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 153
+1655417273 [DBG ][mpl ]: Repeated MPL message 153
+1655417283 [DBG ][mpl ]: MPL received 153
+1655417283 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 153
+1655417283 [DBG ][mpl ]: Repeated MPL message 153
+1655417293 [DBG ][mpl ]: MPL received 154
+1655417293 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 154
+1655417297 [INFO][mpl ]: MPL transmit 154
+1655417297 [DBG ][mpl ]: MPL received 154
+1655417297 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 154
+1655417297 [DBG ][mpl ]: Repeated MPL message 154
+1655417303 [DBG ][mpl ]: MPL received 154
+1655417303 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 154
+1655417303 [DBG ][mpl ]: Repeated MPL message 154
+1655417309 [INFO][wsbs]: Send PAN advertisement
+1655417311 [DBG ][mpl ]: MPL received 154
+1655417311 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 154
+1655417311 [DBG ][mpl ]: Repeated MPL message 154
+1655417322 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417323 [DBG ][mpl ]: MPL received 155
+1655417323 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 155
+1655417324 [INFO][mpl ]: MPL transmit 155
+1655417325 [DBG ][mpl ]: MPL received 155
+1655417325 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 155
+1655417325 [DBG ][mpl ]: Repeated MPL message 155
+1655417326 [DBG ][mpl ]: MPL received 155
+1655417326 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 155
+1655417326 [DBG ][mpl ]: Repeated MPL message 155
+1655417327 [DBG ][mpl ]: MPL received 155
+1655417327 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 155
+1655417327 [DBG ][mpl ]: Repeated MPL message 155
+1655417328 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417328 [DBG ][rplu]: Timed parent triggered 40
+1655417341 [INFO][wsbs]: Send PAN configuration
+1655417354 [DBG ][mpl ]: MPL received 156
+1655417354 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 156
+1655417355 [DBG ][mpl ]: MPL received 156
+1655417355 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 156
+1655417355 [DBG ][mpl ]: Repeated MPL message 156
+1655417357 [DBG ][mpl ]: MPL received 156
+1655417357 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 156
+1655417357 [DBG ][mpl ]: Repeated MPL message 156
+1655417359 [INFO][mpl ]: MPL transmit 156
+1655417364 [DBG ][mpl ]: MPL received 156
+1655417364 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 156
+1655417364 [DBG ][mpl ]: Repeated MPL message 156
+1655417368 [DBG ][rplu]: Timed parent selection
+1655417368 [INFO][rplu]: Time 00:19:51.0 (1191.0) RPL memory usage 592
+1655417368 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655417368 [INFO][rplu]: RPL Instance 1
+1655417368 [INFO][rplu]: ---------------
+1655417368 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417368 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417368 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417368 [INFO][rplu]:   Version 241
+1655417368 [INFO][rplu]:   *Current version* Rank=0188
+1655417368 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655417368 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417368 [INFO][rplu]:             I=1311, now=931, t=1297, c=1
+1655417368 [INFO][rplu]: DAO Targets:
+1655417368 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655417382 [INFO][wsbs]: Send PAN advertisement
+1655417383 [DBG ][mpl ]: MPL received 157
+1655417383 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 157
+1655417387 [DBG ][mpl ]: MPL received 157
+1655417387 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 157
+1655417387 [DBG ][mpl ]: Repeated MPL message 157
+1655417389 [INFO][mpl ]: MPL transmit 157
+1655417393 [INFO][wsbs]: ARO registration timer start
+1655417393 [DBG ][RPLd]: Register Address to parent fd12:3456::302:304:506:1
+1655417393 [INFO][RPLd]: Send ARO fd12:3456::302:304:506:1 to fe80::302:304:506:0
+1655417393 [DBG ][RPLd]: Address fd12:3456::302:304:506:1 register to fe80::302:304:506:0
+1655417395 [DBG ][mpl ]: MPL received 157
+1655417395 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 157
+1655417395 [DBG ][mpl ]: Repeated MPL message 157
+1655417400 [DBG ][mpl ]: MPL received 157
+1655417400 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 157
+1655417400 [DBG ][mpl ]: Repeated MPL message 157
+1655417404 [INFO][rplc]: transmit dio, rank: 188
+1655417407 [INFO][wsbs]: Send PAN configuration
+1655417414 [DBG ][mpl ]: MPL received 158
+1655417414 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 158
+1655417417 [INFO][mpl ]: MPL transmit 158
+1655417418 [DBG ][mpl ]: MPL received 158
+1655417418 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 158
+1655417418 [DBG ][mpl ]: Repeated MPL message 158
+1655417418 [DBG ][mpl ]: MPL received 158
+1655417418 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 158
+1655417418 [DBG ][mpl ]: Repeated MPL message 158
+1655417429 [DBG ][mpl ]: MPL received 158
+1655417429 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 158
+1655417429 [DBG ][mpl ]: Repeated MPL message 158
+1655417432 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417443 [DBG ][mpl ]: MPL received 159
+1655417443 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 159
+1655417444 [DBG ][mpl ]: MPL received 159
+1655417444 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 159
+1655417444 [DBG ][mpl ]: Repeated MPL message 159
+1655417446 [DBG ][mpl ]: MPL received 159
+1655417446 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 159
+1655417446 [DBG ][mpl ]: Repeated MPL message 159
+1655417448 [INFO][mpl ]: MPL transmit 159
+1655417449 [DBG ][mpl ]: MPL received 159
+1655417449 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 159
+1655417449 [DBG ][mpl ]: Repeated MPL message 159
+1655417456 [INFO][wsbs]: Send PAN advertisement
+1655417463 [INFO][wsbs]: Send PAN configuration
+1655417474 [DBG ][mpl ]: MPL received 160
+1655417474 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 160
+1655417476 [DBG ][mpl ]: MPL received 160
+1655417476 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 160
+1655417476 [DBG ][mpl ]: Repeated MPL message 160
+1655417476 [INFO][mpl ]: MPL transmit 160
+1655417480 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655417481 [DBG ][mpl ]: MPL received 160
+1655417481 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 160
+1655417481 [DBG ][mpl ]: Repeated MPL message 160
+1655417483 [DBG ][mpl ]: MPL received 160
+1655417483 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 160
+1655417483 [DBG ][mpl ]: Repeated MPL message 160
+1655417498 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417498 [DBG ][rplu]: Timed parent triggered 32
+1655417501 [INFO][wsbs]: Send PAN advertisement
+1655417503 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417504 [DBG ][mpl ]: MPL received 161
+1655417504 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 161
+1655417507 [INFO][mpl ]: MPL transmit 161
+1655417507 [INFO][wsbs]: Send PAN configuration
+1655417510 [DBG ][mpl ]: MPL received 161
+1655417510 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 161
+1655417510 [DBG ][mpl ]: Repeated MPL message 161
+1655417516 [DBG ][mpl ]: MPL received 161
+1655417516 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 161
+1655417516 [DBG ][mpl ]: Repeated MPL message 161
+1655417518 [DBG ][mpl ]: MPL received 161
+1655417518 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 161
+1655417518 [DBG ][mpl ]: Repeated MPL message 161
+1655417530 [DBG ][rplu]: Timed parent selection
+1655417530 [INFO][rplu]: Time 00:22:33.0 (1353.0) RPL memory usage 592
+1655417530 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655417530 [INFO][rplu]: RPL Instance 1
+1655417530 [INFO][rplu]: ---------------
+1655417530 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417530 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417530 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417530 [INFO][rplu]:   Version 241
+1655417530 [INFO][rplu]:   *Current version* Rank=0188
+1655417530 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655417530 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417530 [INFO][rplu]:             I=1311, now=1240, t=1248, c=1
+1655417530 [INFO][rplu]: DAO Targets:
+1655417530 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655417531 [INFO][rplc]: transmit dio, rank: 188
+1655417533 [DBG ][mpl ]: MPL received 162
+1655417533 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 162
+1655417535 [INFO][mpl ]: MPL transmit 162
+1655417540 [DBG ][mpl ]: MPL received 162
+1655417540 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 162
+1655417540 [DBG ][mpl ]: Repeated MPL message 162
+1655417543 [DBG ][mpl ]: MPL received 162
+1655417543 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 162
+1655417543 [DBG ][mpl ]: Repeated MPL message 162
+1655417552 [DBG ][mpl ]: MPL received 162
+1655417552 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 162
+1655417552 [DBG ][mpl ]: Repeated MPL message 162
+1655417564 [DBG ][mpl ]: MPL received 163
+1655417564 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 163
+1655417568 [DBG ][mpl ]: MPL received 163
+1655417568 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 163
+1655417568 [DBG ][mpl ]: Repeated MPL message 163
+1655417568 [INFO][wsbs]: Send PAN advertisement
+1655417568 [INFO][wscm]: Child registration from old child
+1655417568 [DBG ][icmp]: Omit NA ARO success
+1655417569 [INFO][mpl ]: MPL transmit 163
+1655417573 [DBG ][mpl ]: MPL received 163
+1655417573 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 163
+1655417573 [DBG ][mpl ]: Repeated MPL message 163
+1655417574 [DBG ][mpl ]: MPL received 163
+1655417574 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 163
+1655417574 [DBG ][mpl ]: Repeated MPL message 163
+1655417575 [INFO][wsbs]: Send PAN configuration
+1655417593 [DBG ][mpl ]: MPL received 164
+1655417593 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 164
+1655417594 [DBG ][mpl ]: MPL received 164
+1655417594 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 164
+1655417594 [DBG ][mpl ]: Repeated MPL message 164
+1655417596 [DBG ][mpl ]: MPL received 164
+1655417596 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 164
+1655417596 [DBG ][mpl ]: Repeated MPL message 164
+1655417599 [INFO][mpl ]: MPL transmit 164
+1655417600 [DBG ][mpl ]: MPL received 164
+1655417600 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 164
+1655417600 [DBG ][mpl ]: Repeated MPL message 164
+1655417624 [DBG ][mpl ]: MPL received 165
+1655417624 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 165
+1655417624 [INFO][rplc]: transmit dio, rank: 188
+1655417625 [DBG ][mpl ]: MPL received 165
+1655417625 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 165
+1655417625 [DBG ][mpl ]: Repeated MPL message 165
+1655417625 [INFO][mpl ]: MPL transmit 165
+1655417627 [INFO][wsbs]: Send PAN advertisement
+1655417628 [DBG ][mpl ]: MPL received 165
+1655417628 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 165
+1655417628 [DBG ][mpl ]: Repeated MPL message 165
+1655417629 [DBG ][mpl ]: MPL received 165
+1655417629 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 165
+1655417629 [DBG ][mpl ]: Repeated MPL message 165
+1655417635 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417635 [DBG ][rplu]: Timed parent triggered 47
+1655417639 [INFO][wsbs]: Send PAN configuration
+1655417653 [DBG ][mpl ]: MPL received 166
+1655417653 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 166
+1655417655 [DBG ][mpl ]: MPL received 166
+1655417655 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 166
+1655417655 [DBG ][mpl ]: Repeated MPL message 166
+1655417660 [DBG ][mpl ]: MPL received 166
+1655417660 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 166
+1655417660 [DBG ][mpl ]: Repeated MPL message 166
+1655417660 [INFO][mpl ]: MPL transmit 166
+1655417663 [DBG ][mpl ]: MPL received 166
+1655417663 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 166
+1655417663 [DBG ][mpl ]: Repeated MPL message 166
+1655417669 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655417682 [DBG ][rplu]: Timed parent selection
+1655417682 [INFO][rplu]: Time 00:25:05.0 (1505.0) RPL memory usage 592
+1655417682 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655417682 [INFO][rplu]: RPL Instance 1
+1655417682 [INFO][rplu]: ---------------
+1655417682 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417682 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417682 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417682 [INFO][rplu]:   Version 241
+1655417682 [INFO][rplu]:   *Current version* Rank=0188
+1655417682 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655417682 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417682 [INFO][rplu]:             I=1311, now=138, t=678, c=0
+1655417682 [INFO][rplu]: DAO Targets:
+1655417682 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655417682 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655417682 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417683 [INFO][wsbs]: Send PAN advertisement
+1655417683 [DBG ][mpl ]: MPL received 167
+1655417683 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 167
+1655417685 [DBG ][mpl ]: MPL received 167
+1655417685 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 167
+1655417685 [DBG ][mpl ]: Repeated MPL message 167
+1655417686 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417687 [INFO][mpl ]: MPL transmit 167
+1655417690 [DBG ][mpl ]: MPL received 167
+1655417690 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 167
+1655417690 [DBG ][mpl ]: Repeated MPL message 167
+1655417690 [DBG ][mpl ]: MPL received 167
+1655417690 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 167
+1655417690 [DBG ][mpl ]: Repeated MPL message 167
+1655417696 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:02 rssi:0
+1655417696 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417714 [DBG ][mpl ]: MPL received 168
+1655417714 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 168
+1655417717 [INFO][mpl ]: MPL transmit 168
+1655417718 [DBG ][mpl ]: MPL received 168
+1655417718 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 168
+1655417718 [DBG ][mpl ]: Repeated MPL message 168
+1655417723 [DBG ][mpl ]: MPL received 168
+1655417723 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 168
+1655417723 [DBG ][mpl ]: Repeated MPL message 168
+1655417725 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417730 [DBG ][mpl ]: MPL received 168
+1655417730 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 168
+1655417730 [DBG ][mpl ]: Repeated MPL message 168
+1655417735 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417735 [DBG ][rplu]: Timed parent triggered 47
+1655417736 [INFO][rplc]: transmit dio, rank: 188
+1655417737 [INFO][wsbs]: Send PAN advertisement
+1655417743 [DBG ][mpl ]: MPL received 169
+1655417743 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 169
+1655417746 [DBG ][mpl ]: MPL received 169
+1655417746 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 169
+1655417746 [DBG ][mpl ]: Repeated MPL message 169
+1655417749 [INFO][mpl ]: MPL transmit 169
+1655417749 [DBG ][mpl ]: MPL received 169
+1655417749 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 169
+1655417749 [DBG ][mpl ]: Repeated MPL message 169
+1655417752 [INFO][wsbs]: Send PAN configuration
+1655417758 [DBG ][mpl ]: MPL received 169
+1655417758 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 169
+1655417758 [DBG ][mpl ]: Repeated MPL message 169
+1655417772 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:02 rssi:0
+1655417772 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417774 [DBG ][mpl ]: MPL received 170
+1655417774 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 170
+1655417776 [DBG ][mpl ]: MPL received 170
+1655417776 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 170
+1655417776 [DBG ][mpl ]: Repeated MPL message 170
+1655417780 [INFO][mpl ]: MPL transmit 170
+1655417781 [DBG ][rplu]: Timed parent selection
+1655417781 [INFO][rplu]: Time 00:26:44.0 (1604.0) RPL memory usage 592
+1655417781 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655417781 [INFO][rplu]: RPL Instance 1
+1655417781 [INFO][rplu]: ---------------
+1655417781 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417781 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417781 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417781 [INFO][rplu]:   Version 241
+1655417781 [INFO][rplu]:   *Current version* Rank=0188
+1655417781 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655417781 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417781 [INFO][rplu]:             I=1311, now=1128, t=678, c=1
+1655417781 [INFO][rplu]: DAO Targets:
+1655417781 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655417782 [DBG ][mpl ]: MPL received 170
+1655417782 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 170
+1655417782 [DBG ][mpl ]: Repeated MPL message 170
+1655417786 [DBG ][mpl ]: MPL received 170
+1655417786 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 170
+1655417786 [DBG ][mpl ]: Repeated MPL message 170
+1655417803 [DBG ][mpl ]: MPL received 171
+1655417803 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 171
+1655417803 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417804 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417804 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417809 [INFO][mpl ]: MPL transmit 171
+1655417813 [DBG ][mpl ]: MPL received 171
+1655417813 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 171
+1655417813 [DBG ][mpl ]: Repeated MPL message 171
+1655417813 [DBG ][mpl ]: MPL received 171
+1655417813 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 171
+1655417813 [DBG ][mpl ]: Repeated MPL message 171
+1655417815 [INFO][wsbs]: Send PAN advertisement
+1655417823 [DBG ][mpl ]: MPL received 171
+1655417823 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 171
+1655417823 [DBG ][mpl ]: Repeated MPL message 171
+1655417833 [DBG ][mpl ]: MPL received 172
+1655417833 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 172
+1655417838 [DBG ][mpl ]: MPL received 172
+1655417838 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 172
+1655417838 [DBG ][mpl ]: Repeated MPL message 172
+1655417839 [INFO][mpl ]: MPL transmit 172
+1655417845 [DBG ][mpl ]: MPL received 172
+1655417845 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 172
+1655417845 [DBG ][mpl ]: Repeated MPL message 172
+1655417845 [DBG ][mpl ]: MPL received 172
+1655417845 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 172
+1655417845 [DBG ][mpl ]: Repeated MPL message 172
+1655417855 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655417864 [DBG ][mpl ]: MPL received 173
+1655417864 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 173
+1655417867 [INFO][mpl ]: MPL transmit 173
+1655417869 [DBG ][mpl ]: MPL received 173
+1655417869 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 173
+1655417869 [DBG ][mpl ]: Repeated MPL message 173
+1655417871 [INFO][wsbs]: Send PAN advertisement
+1655417872 [DBG ][mpl ]: MPL received 173
+1655417872 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 173
+1655417872 [DBG ][mpl ]: Repeated MPL message 173
+1655417874 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655417875 [DBG ][mpl ]: MPL received 173
+1655417875 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 173
+1655417875 [DBG ][mpl ]: Repeated MPL message 173
+1655417881 [INFO][rplc]: transmit dio, rank: 188
+1655417884 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417884 [DBG ][rplu]: Timed parent triggered 37
+1655417888 [INFO][wsbs]: Send PAN configuration
+1655417888 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:02 rssi:0
+1655417888 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655417891 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655417893 [DBG ][mpl ]: MPL received 174
+1655417893 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 174
+1655417894 [INFO][mpl ]: MPL transmit 174
+1655417898 [DBG ][mpl ]: MPL received 174
+1655417898 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 174
+1655417898 [DBG ][mpl ]: Repeated MPL message 174
+1655417899 [DBG ][mpl ]: MPL received 174
+1655417899 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 174
+1655417899 [DBG ][mpl ]: Repeated MPL message 174
+1655417909 [DBG ][mpl ]: MPL received 174
+1655417909 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 174
+1655417909 [DBG ][mpl ]: Repeated MPL message 174
+1655417920 [DBG ][rplu]: Timed parent selection
+1655417920 [INFO][rplu]: Time 00:29:03.0 (1743.0) RPL memory usage 592
+1655417920 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655417920 [INFO][rplu]: RPL Instance 1
+1655417920 [INFO][rplu]: ---------------
+1655417920 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655417920 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655417920 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655417920 [INFO][rplu]:   Version 241
+1655417920 [INFO][rplu]:   *Current version* Rank=0188
+1655417920 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655417920 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655417920 [INFO][rplu]:             I=1311, now=1207, t=820, c=1
+1655417920 [INFO][rplu]: DAO Targets:
+1655417920 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655417924 [DBG ][mpl ]: MPL received 175
+1655417924 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 175
+1655417925 [DBG ][mpl ]: MPL received 175
+1655417925 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 175
+1655417925 [DBG ][mpl ]: Repeated MPL message 175
+1655417927 [DBG ][mpl ]: MPL received 175
+1655417927 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 175
+1655417927 [DBG ][mpl ]: Repeated MPL message 175
+1655417929 [INFO][mpl ]: MPL transmit 175
+1655417932 [DBG ][mpl ]: MPL received 175
+1655417932 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 175
+1655417932 [DBG ][mpl ]: Repeated MPL message 175
+1655417935 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655417941 [INFO][wsbs]: Send PAN configuration
+1655417953 [DBG ][mpl ]: MPL received 176
+1655417953 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 176
+1655417958 [INFO][mpl ]: MPL transmit 176
+1655417959 [DBG ][mpl ]: MPL received 176
+1655417959 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 176
+1655417959 [DBG ][mpl ]: Repeated MPL message 176
+1655417959 [DBG ][mpl ]: MPL received 176
+1655417959 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 176
+1655417959 [DBG ][mpl ]: Repeated MPL message 176
+1655417973 [DBG ][mpl ]: MPL received 176
+1655417973 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 176
+1655417973 [DBG ][mpl ]: Repeated MPL message 176
+1655417982 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655417982 [DBG ][rplu]: Timed parent triggered 46
+1655417982 [INFO][wsbs]: Send PAN advertisement
+1655417984 [DBG ][mpl ]: MPL received 177
+1655417984 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 177
+1655417987 [DBG ][mpl ]: MPL received 177
+1655417987 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 177
+1655417987 [DBG ][mpl ]: Repeated MPL message 177
+1655417987 [INFO][mpl ]: MPL transmit 177
+1655417993 [DBG ][mpl ]: MPL received 177
+1655417993 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 177
+1655417993 [DBG ][mpl ]: Repeated MPL message 177
+1655417993 [DBG ][mpl ]: MPL received 177
+1655417993 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 177
+1655417993 [DBG ][mpl ]: Repeated MPL message 177
+1655418005 [INFO][wsbs]: Send PAN configuration
+1655418013 [DBG ][mpl ]: MPL received 178
+1655418013 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 178
+1655418019 [INFO][mpl ]: MPL transmit 178
+1655418022 [DBG ][mpl ]: MPL received 178
+1655418022 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 178
+1655418022 [DBG ][mpl ]: Repeated MPL message 178
+1655418023 [DBG ][mpl ]: MPL received 178
+1655418023 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 178
+1655418023 [DBG ][mpl ]: Repeated MPL message 178
+1655418027 [DBG ][rplu]: Timed parent selection
+1655418027 [INFO][rplu]: Time 00:30:50.0 (1850.0) RPL memory usage 592
+1655418027 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655418027 [INFO][rplu]: RPL Instance 1
+1655418027 [INFO][rplu]: ---------------
+1655418027 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418027 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418027 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418027 [INFO][rplu]:   Version 241
+1655418027 [INFO][rplu]:   *Current version* Rank=0188
+1655418027 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655418027 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418027 [INFO][rplu]:             I=1311, now=966, t=991, c=1
+1655418027 [INFO][rplu]: DAO Targets:
+1655418027 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655418030 [INFO][rplc]: transmit dio, rank: 188
+1655418030 [DBG ][mpl ]: MPL received 178
+1655418030 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 178
+1655418030 [DBG ][mpl ]: Repeated MPL message 178
+1655418043 [DBG ][mpl ]: MPL received 179
+1655418043 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 179
+1655418045 [DBG ][mpl ]: MPL received 179
+1655418045 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 179
+1655418045 [DBG ][mpl ]: Repeated MPL message 179
+1655418048 [INFO][wsbs]: Send PAN advertisement
+1655418048 [INFO][mpl ]: MPL transmit 179
+1655418049 [DBG ][mpl ]: MPL received 179
+1655418049 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 179
+1655418049 [DBG ][mpl ]: Repeated MPL message 179
+1655418049 [DBG ][mpl ]: MPL received 179
+1655418049 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 179
+1655418049 [DBG ][mpl ]: Repeated MPL message 179
+1655418070 [INFO][wsbs]: Send PAN configuration
+1655418074 [DBG ][mpl ]: MPL received 180
+1655418074 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 180
+1655418078 [INFO][mpl ]: MPL transmit 180
+1655418079 [DBG ][mpl ]: MPL received 180
+1655418079 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 180
+1655418079 [DBG ][mpl ]: Repeated MPL message 180
+1655418081 [DBG ][mpl ]: MPL received 180
+1655418081 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 180
+1655418081 [DBG ][mpl ]: Repeated MPL message 180
+1655418081 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655418089 [DBG ][mpl ]: MPL received 180
+1655418089 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 180
+1655418089 [DBG ][mpl ]: Repeated MPL message 180
+1655418092 [INFO][wsbs]: Send PAN advertisement
+1655418094 [DBG ][dhcp]: Send DHCPv6 request
+1655418094 [INFO][dhcp]: dhcp service socket_sendto fd12:3456::1615:16ff:fe17:1819
+1655418094 [INFO][DHP ]: DHCP renew send OK
+1655418094 [DBG ][dhcp]: dhcp recv response message
+1655418094 [DBG ][wsbs]: DHCPv6 fd12:3456::302:304:506:1 status 1 with link fe80::302:304:506:0
+1655418103 [DBG ][mpl ]: MPL received 181
+1655418103 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 181
+1655418105 [INFO][mpl ]: MPL transmit 181
+1655418106 [DBG ][mpl ]: MPL received 181
+1655418106 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 181
+1655418106 [DBG ][mpl ]: Repeated MPL message 181
+1655418111 [DBG ][mpl ]: MPL received 181
+1655418111 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 181
+1655418111 [DBG ][mpl ]: Repeated MPL message 181
+1655418117 [INFO][wsbs]: Send PAN configuration
+1655418121 [DBG ][mpl ]: MPL received 181
+1655418121 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 181
+1655418121 [DBG ][mpl ]: Repeated MPL message 181
+1655418133 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655418133 [DBG ][rplu]: Timed parent triggered 40
+1655418134 [DBG ][mpl ]: MPL received 182
+1655418134 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 182
+1655418135 [DBG ][mpl ]: MPL received 182
+1655418135 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 182
+1655418135 [DBG ][mpl ]: Repeated MPL message 182
+1655418137 [INFO][mpl ]: MPL transmit 182
+1655418139 [INFO][rplc]: transmit dio, rank: 188
+1655418142 [DBG ][mpl ]: MPL received 182
+1655418142 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 182
+1655418142 [DBG ][mpl ]: Repeated MPL message 182
+1655418145 [DBG ][mpl ]: MPL received 182
+1655418145 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 182
+1655418145 [DBG ][mpl ]: Repeated MPL message 182
+1655418146 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655418146 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655418159 [INFO][wsbs]: Send PAN advertisement
+1655418163 [DBG ][mpl ]: MPL received 183
+1655418163 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 183
+1655418165 [DBG ][mpl ]: MPL received 183
+1655418165 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 183
+1655418165 [DBG ][mpl ]: Repeated MPL message 183
+1655418165 [DBG ][mpl ]: MPL received 183
+1655418165 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 183
+1655418165 [DBG ][mpl ]: Repeated MPL message 183
+1655418167 [INFO][mpl ]: MPL transmit 183
+1655418172 [DBG ][rplu]: Timed parent selection
+1655418172 [INFO][rplu]: Time 00:33:15.0 (1995.0) RPL memory usage 592
+1655418172 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655418172 [INFO][rplu]: RPL Instance 1
+1655418172 [INFO][rplu]: ---------------
+1655418172 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418172 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418172 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418172 [INFO][rplu]:   Version 241
+1655418172 [INFO][rplu]:   *Current version* Rank=0188
+1655418172 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655418172 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418172 [INFO][rplu]:             I=1311, now=1105, t=767, c=1
+1655418172 [INFO][rplu]: DAO Targets:
+1655418172 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655418174 [DBG ][mpl ]: MPL received 183
+1655418174 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 183
+1655418174 [DBG ][mpl ]: Repeated MPL message 183
+1655418186 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655418193 [DBG ][mpl ]: MPL received 184
+1655418193 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 184
+1655418194 [INFO][mpl ]: MPL transmit 184
+1655418199 [DBG ][mpl ]: MPL received 184
+1655418199 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 184
+1655418199 [DBG ][mpl ]: Repeated MPL message 184
+1655418201 [DBG ][mpl ]: MPL received 184
+1655418201 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 184
+1655418201 [DBG ][mpl ]: Repeated MPL message 184
+1655418209 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655418209 [DBG ][mpl ]: MPL received 184
+1655418209 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 184
+1655418209 [DBG ][mpl ]: Repeated MPL message 184
+1655418213 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655418214 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655418214 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:02 panid:5351 rssi:0
+1655418224 [DBG ][mpl ]: MPL received 185
+1655418224 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 185
+1655418227 [DBG ][mpl ]: MPL received 185
+1655418227 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 185
+1655418227 [DBG ][mpl ]: Repeated MPL message 185
+1655418232 [INFO][mpl ]: MPL transmit 185
+1655418237 [DBG ][mpl ]: MPL received 185
+1655418237 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 185
+1655418237 [DBG ][mpl ]: Repeated MPL message 185
+1655418238 [INFO][wsbs]: Send PAN advertisement
+1655418238 [DBG ][mpl ]: MPL received 185
+1655418238 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 185
+1655418238 [DBG ][mpl ]: Repeated MPL message 185
+1655418242 [INFO][wsbs]: Send PAN configuration
+1655418253 [DBG ][mpl ]: MPL received 186
+1655418253 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 186
+1655418258 [INFO][mpl ]: MPL transmit 186
+1655418258 [DBG ][mpl ]: MPL received 186
+1655418258 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 186
+1655418258 [DBG ][mpl ]: Repeated MPL message 186
+1655418259 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655418259 [DBG ][rplu]: Timed parent triggered 32
+1655418266 [DBG ][mpl ]: MPL received 186
+1655418266 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 186
+1655418266 [DBG ][mpl ]: Repeated MPL message 186
+1655418272 [INFO][wsbs]: Send PAN advertisement
+1655418273 [DBG ][mpl ]: MPL received 186
+1655418273 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 186
+1655418273 [DBG ][mpl ]: Repeated MPL message 186
+1655418276 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655418276 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655418284 [DBG ][mpl ]: MPL received 187
+1655418284 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 187
+1655418287 [INFO][mpl ]: MPL transmit 187
+1655418288 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
+1655418290 [DBG ][mpl ]: MPL received 187
+1655418290 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 187
+1655418290 [DBG ][mpl ]: Repeated MPL message 187
+1655418290 [DBG ][mpl ]: MPL received 187
+1655418290 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 187
+1655418290 [DBG ][mpl ]: Repeated MPL message 187
+1655418291 [DBG ][rplu]: Timed parent selection
+1655418291 [INFO][rplu]: Time 00:35:13.0 (2113.0) RPL memory usage 592
+1655418291 [INFO][rplu]: RPL Domain 0x563eb473b000
+1655418291 [INFO][rplu]: RPL Instance 1
+1655418291 [INFO][rplu]: ---------------
+1655418291 [INFO][rplu]: DODAG fd12:3456::1615:16ff:fe17:1819
+1655418291 [INFO][rplu]:   G=1 MOP=1 Prf=0
+1655418291 [INFO][rplu]:              fd12:3456::/64  lifetime:0 flags:-- 
+1655418291 [INFO][rplu]:   Version 241
+1655418291 [INFO][rplu]:   *Current version* Rank=0188
+1655418291 [INFO][rplu]:     1*00c4 0144 ff fe80::302:304:506:0%1 (fd12:3456::302:304:506:0)
+1655418291 [INFO][rplu]: DIO trickle Imin=328, Imax=1311, k=0
+1655418291 [INFO][rplu]:             I=1311, now=974, t=1071, c=1
+1655418291 [INFO][rplu]: DAO Targets:
+1655418291 [INFO][rplu]:   fd12:3456::302:304:506:1/128             ff seq=240 (pub)
+1655418299 [DBG ][mpl ]: MPL received 187
+1655418299 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 187
+1655418299 [DBG ][mpl ]: Repeated MPL message 187
+1655418300 [INFO][rplc]: transmit dio, rank: 188
+1655418313 [DBG ][mpl ]: MPL received 188
+1655418313 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 188
+1655418316 [INFO][mpl ]: MPL transmit 188
+1655418318 [DBG ][mpl ]: MPL received 188
+1655418318 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 188
+1655418318 [DBG ][mpl ]: Repeated MPL message 188
+1655418322 [DBG ][mpl ]: MPL received 188
+1655418322 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 188
+1655418322 [DBG ][mpl ]: Repeated MPL message 188
+1655418327 [DBG ][mpl ]: MPL received 188
+1655418327 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 188
+1655418327 [DBG ][mpl ]: Repeated MPL message 188
+1655418333 [INFO][wsbs]: Send PAN advertisement
+1655418343 [DBG ][mpl ]: MPL received 189
+1655418343 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 189
+1655418344 [DBG ][mpl ]: MPL received 189
+1655418344 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 189
+1655418344 [DBG ][mpl ]: Repeated MPL message 189
+1655418347 [INFO][mpl ]: MPL transmit 189
+1655418347 [DBG ][mpl ]: MPL received 189
+1655418347 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 189
+1655418347 [DBG ][mpl ]: Repeated MPL message 189
+1655418350 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:00 rssi:0
+1655418350 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655418352 [DBG ][mpl ]: MPL received 189
+1655418352 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 189
+1655418352 [DBG ][mpl ]: Repeated MPL message 189
+1655418366 [INFO][wsbs]: received CONFIG Src:01:02:03:04:05:06:00:02 rssi:0
+1655418366 [INFO][wsbs]: PAN Config analyse own:14524, heard:14524
+1655418374 [DBG ][mpl ]: MPL received 190
+1655418374 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 190
+1655418376 [INFO][mpl ]: MPL transmit 190
+1655418377 [DBG ][mpl ]: MPL received 190
+1655418377 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 190
+1655418377 [DBG ][mpl ]: Repeated MPL message 190
+1655418383 [DBG ][mpl ]: MPL received 190
+1655418383 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 190
+1655418383 [DBG ][mpl ]: Repeated MPL message 190
+1655418384 [DBG ][mpl ]: MPL received 190
+1655418384 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 190
+1655418384 [DBG ][mpl ]: Repeated MPL message 190
+1655418399 [INFO][wsbs]: received ADVERT Src:01:02:03:04:05:06:00:00 panid:5351 rssi:0
+1655418402 [INFO][rplc]: DIO from fe80::302:304:506:0, rank c4
+1655418402 [DBG ][rplu]: Timed parent triggered 34
+1655418403 [DBG ][mpl ]: MPL received 191
+1655418403 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 191
+1655418407 [INFO][wsbs]: Send PAN configuration
+1655418408 [INFO][mpl ]: MPL transmit 191
+1655418408 [DBG ][mpl ]: MPL received 191
+1655418408 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 191
+1655418408 [DBG ][mpl ]: Repeated MPL message 191
+1655418410 [DBG ][mpl ]: MPL received 191
+1655418410 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 191
+1655418410 [DBG ][mpl ]: Repeated MPL message 191
+1655418413 [INFO][wsbs]: Send PAN advertisement
+1655418415 [DBG ][mpl ]: MPL received 191
+1655418415 [DBG ][mpl ]: seed fd:12:34:56:00:00:00:00:03:02:03:04:05:06:00:00 seq 191
+1655418415 [DBG ][mpl ]: Repeated MPL message 191
+1655418422 [INFO][rplc]: transmit dio, rank: 188
+1655418430 [INFO][rplc]: DIO from fe80::302:304:506:2, rank 24c
