@@ -8,6 +8,7 @@
 #include <sys/resource.h>
 #include "common/log.h"
 #include "common/utils.h"
+#include <fcntl.h>
 
 #define MAX_NODES 4096
 
@@ -125,6 +126,40 @@ static void graph_dump(struct ctxt *ctxt)
     }
 }
 
+static void graph_dump_to_file(struct ctxt *ctxt, char * file_path)
+{
+    int max = graph_get_num_nodes(ctxt);
+    int i, j;
+
+    int fd = open(file_path, O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    if (fd < 0) {
+        perror("open");
+        exit(-1);
+    }
+
+    char *ptr = (char*)calloc(1024*1028, sizeof(char));
+    if (ptr == NULL) {
+        perror("memalloc");
+        exit(-1);
+    }
+    char *bptr = ptr;
+
+    for (i = 0; i < max; i++) {
+        for (j = 0; j < max; j++) {
+            if(bitmap_get(j, ctxt->node_graph[i], MAX_NODES / 64)) {
+                sprintf(bptr, "%04d,%04d\n", i, j);
+                bptr = bptr + 4 + 4 + 2; // MAX_NODES is 4096 which is 4 chars * 2 plus 2 for a "\n" and a ","
+            }
+        }
+    }
+    char buf[15] = {0};
+    snprintf(buf, 15, "%04d\n", max);
+    write(fd, &buf, 5);
+    write(fd, ptr, bptr - ptr);
+    close(fd);
+    free(ptr);
+}
+
 void print_help(FILE *stream, int exit_code) {
     fprintf(stream, "broadcast server to create networks of wshwsim\n");
     exit(exit_code);
@@ -132,15 +167,18 @@ void print_help(FILE *stream, int exit_code) {
 
 void parse_commandline(struct ctxt *ctxt, int argc, char *argv[])
 {
-    const char *opts_short = "hlg:";
+    const char *opts_short = "hlf::g:";
     static const struct option opts_long[] = {
         { "group", required_argument, 0,  'g' },
+        { "fpath", optional_argument, 0, 'f'},
         { "dump",  no_argument,       0,  'l' },
         { "help",  no_argument,       0,  'h' },
         { 0,       0,                 0,   0  }
     };
     uint64_t mask[MAX_NODES / 64];
     bool dump = false, has_filter = false;
+    bool dump2file = false;
+    char dump_path[4096];
     int opt, i, ret;
 
     while ((opt = getopt_long(argc, argv, opts_short, opts_long, NULL)) != -1) {
@@ -150,6 +188,21 @@ void parse_commandline(struct ctxt *ctxt, int argc, char *argv[])
                 FATAL_ON(ret, 1, "Bad mask: %s", optarg);
                 graph_apply_mask(ctxt->node_graph, mask);
                 has_filter = true;
+                break;
+            case 'f':
+               if (optarg == NULL && optind < argc
+                    && argv[optind][0] != '-')
+                {
+                    optarg = argv[optind++];
+                }
+                if (optarg == NULL)
+                {
+                    sprintf(dump_path, "%s", "/tmp/graph.txt");
+                } else {
+                    strncpy(dump_path, optarg, sizeof(dump_path)-2);
+                    dump_path[sizeof(dump_path)-1] = '\n';
+                }
+                    dump2file = true;
                 break;
             case 'l':
                 dump = true;
@@ -171,6 +224,9 @@ void parse_commandline(struct ctxt *ctxt, int argc, char *argv[])
     if (dump) {
         FATAL_ON(!has_filter, 1, "No graph to dump");
         graph_dump(ctxt);
+        if (dump2file) {
+            graph_dump_to_file(ctxt, dump_path);
+        }
     }
     if (optind >= argc)
         FATAL(1, "Expected argument: socket path");
