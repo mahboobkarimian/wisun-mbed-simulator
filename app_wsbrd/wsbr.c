@@ -296,8 +296,6 @@ void wsbr_handle_reset(struct wsbr_ctxt *ctxt, const char *version_fw_str)
 
 void kill_handler(int signal)
 {
-    //Shutdown TCP session in RPL info service
-    stop_rpl_info_service();
     exit(3);
 }
 

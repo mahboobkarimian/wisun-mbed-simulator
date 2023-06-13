@@ -77,7 +77,6 @@ add_executable(wsbrd
     app_wsbrd/commandline.c
     app_wsbrd/os_whiteboard.c
     app_wsbrd/mbedtls_config_check.c
-    app_wsbrd/rpl_info_service.c
     application_protocols/mqtt/MQTTClient-C/src/MQTTClient.c
     #application_protocols/mqtt/MQTTClient-C/src/linux/MQTTLinux.c
     application_protocols/mqtt/MQTTClient-C/src/mbed/MQTTMbed.c
