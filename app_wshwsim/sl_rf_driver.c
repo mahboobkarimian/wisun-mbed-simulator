@@ -37,14 +37,18 @@
 #include "mac/rf_driver_storage.h"
 #include "sl_wsrcp.h"
 #include "sl_rf_driver.h"
-#include<sys/time.h>
+#include <sys/time.h>
 #include "common/os_timer.h"
+#include "app_wshwsim/hal_fhss_timer.h"
 
 #include <signal.h>
 #include "fhss/fhss.h"
 #include "ringbufindex.h"
 #include <sched.h>
 #include <pthread.h>
+
+#include <sys/mman.h>
+#include <fcntl.h>
 
 #define TRACE_GROUP "vrf"
 
@@ -185,12 +189,31 @@ sd_bus * rf_dbus;
 sd_bus * rf_request_dbus;
 bool rf_dbus_registered = false;
 
+/* Functions shm */
+void set_shm_cca_state();
+void get_shm_cca_state();
+
+/* Variables shm */
+const char* shm_name = "/wssimcca";
+const int shm_size = 4096*3; // 4096 nodes, 1 byte state + 2 bytes channel
+int shm_fd = -1;
+void* shm_ptr = NULL;
+
 /* Threads */
 pthread_t rf_dbus_proces_thread, fhss_on_timer;
 
 /* Extra PHY defines, Helper functions */
 #define PHY_EXTRA_HDR_SIZE 8
 #define CALC_SLEEP_TIME(x)  (unsigned int)(((uint64_t)x*8*1000000)/(phy_subghz.datarate))
+
+/*----------------------SHM-------------------------------------------------------------*/
+void set_shm_cca_state()
+{
+    int pos = rf_mac_address[7]*(3);
+    memcpy(shm_ptr+pos, (uint8_t *)&driver_state, 1);
+    memcpy(shm_ptr+pos+1, &channel, 2);
+}
+
 /*----------------------RADIO ----------------------------------------------------------*/
 /**
  * \brief This function is used by the network stack library to set the interface state:
@@ -288,6 +311,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
             goto CANCEL_RX;
         }
         driver_state = DRVSTATE_RX;
+        set_shm_cca_state();
         _rf_start_backup_timer(MAX_PACKET_SENDING_TIME);
         __PRINT(31, "Receiving ... pkt_chan=%d, curr_chan=%d, pkt_len=%u, rxseq=%d ts=%u", pkt_chan, channel, pkt_len, pkt_seq, rf_get_timestamp());
         
@@ -296,6 +320,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
         if (input_index == -1) {
             WARN("RX ring buffer full");
             driver_state = DRVSTATE_IDLE_WAITING_RX;
+            set_shm_cca_state();
             goto CANCEL_RX;
         }
         static struct input_packet *current_input;
@@ -381,6 +406,7 @@ static void _rf_handle_rx_end(){
     //_rf_check_and_change_channel(pkt_chan);
     packet_rxsync_time = buffed_packet->rx_time;
     driver_state = DRVSTATE_IDLE_WAITING_RX;
+    set_shm_cca_state();
     if (device_driver.phy_rx_cb)
         ctxt->rf_driver->phy_driver->phy_rx_cb(buf, len, 200, 0, ctxt->rcp_driver_id);
 }
@@ -420,6 +446,7 @@ static int _rf_set_rx(){
 
     if (driver_state != DRVSTATE_CSMA_STARTED) {
         driver_state = DRVSTATE_IDLE_WAITING_RX;
+        set_shm_cca_state();
     }
     return 1;
 }
@@ -442,6 +469,7 @@ static void _rf_tx_sleep_timeout_timer_cb(int timer_id, uint16_t slots)
                                                         mac_tx_handle, PHY_LINK_TX_SUCCESS, 0, 0);
     rx_thread_blokcked = false;
     driver_state = DRVSTATE_IDLE_WAITING_RX;
+    set_shm_cca_state();
     //_rf_set_rx();
 }
 
@@ -474,13 +502,25 @@ static bool _rf_check_cca(){
     for (i = 0; i < ARRAY_SIZE(ctxt->neighbor_timings); i++) {
         if(ctxt->neighbor_timings[i].eui64[1] != 0) {
             WARN("neigh %d: mac[last]: %d",i, ctxt->neighbor_timings[i].eui64[7]);
-            uint8_t * cca_res = rf_request_rf_state_dbus(&ctxt->neighbor_timings[i].eui64[0]);
+            /* uint8_t * cca_res = rf_request_rf_state_dbus(&ctxt->neighbor_timings[i].eui64[0]);
             if (cca_res != NULL) {
                 if(cca_res[0] == DRVSTATE_TX && (uint16_t)cca_res[1] == channel) {
                     __PRINT(36,"CCA: CANNEL BUSY");
                     driver_state = DRVSTATE_IDLE_WAITING_RX;
                     return false;
                 }
+            } */
+            // using shm
+            int des_pos_shm = (ctxt->neighbor_timings[i].eui64[7])*3;
+            uint8_t tmp_st = *(uint8_t*)(shm_ptr+des_pos_shm);
+            uint16_t tmp_ch = *(uint16_t*)(shm_ptr+des_pos_shm+1);
+            WARN("tmp_st %d, tmp_ch: %d", tmp_st, tmp_ch);
+            if(tmp_st == DRVSTATE_TX && tmp_ch == channel)
+            {
+                    __PRINT(36,"CCA: CANNEL BUSY");
+                    driver_state = DRVSTATE_IDLE_WAITING_RX;
+                    set_shm_cca_state();
+                    return false;
             }
         }
     }
@@ -502,6 +542,7 @@ static int _rf_execute_tx(){
     // TX FIFO must be pre-filled with TX data
 
     driver_state = DRVSTATE_TX;
+    set_shm_cca_state();
 
     _rf_set_idle(RADIO_IDLE_ABORT);
 
@@ -548,6 +589,7 @@ static void _rf_csma_timeout_handler(){
         if (driver_state == DRVSTATE_CSMA_STARTED) {
             _rf_set_idle(RADIO_IDLE_ABORT);
             driver_state = DRVSTATE_IDLE;
+            set_shm_cca_state();
             _rf_set_rx();
         }
         break;
@@ -673,10 +715,12 @@ static void _rf_backup_timeout_handler(){
             device_driver.phy_tx_done_cb(rf_radio_driver_id, mac_tx_handle, PHY_LINK_TX_FAIL, 0, 0);
         }
         driver_state = DRVSTATE_IDLE;
+        set_shm_cca_state();
         _rf_set_idle(RADIO_IDLE_ABORT);
         _rf_set_rx();
     } else if (driver_state == DRVSTATE_RX){
         driver_state = DRVSTATE_IDLE_WAITING_RX;
+        set_shm_cca_state();
     }
 }
 
@@ -708,6 +752,7 @@ static int8_t phy_rf_tx(uint8_t *data_ptr, uint16_t data_len, uint8_t tx_handle,
     //platform_enter_critical();
     mac_tx_handle = tx_handle;
     driver_state = DRVSTATE_CSMA_STARTED;
+    set_shm_cca_state();
     // flush, then transfer data to outgoing fifo ring buffer
     ringbufindex_flush(&output_ringbuf);
     int16_t tx_index = ringbufindex_peek_put(&output_ringbuf);
@@ -969,6 +1014,7 @@ static int8_t phy_rf_extension(phy_extension_type_e extension_type, uint8_t *dat
                     _rf_stop_csma_timeout_timer();
                     _rf_set_idle(RADIO_IDLE_ABORT);
                     driver_state = DRVSTATE_IDLE;
+                    set_shm_cca_state();
                     //_rf_set_rx();             
                     backoff_time = 0;
                 } else {
@@ -1009,6 +1055,18 @@ static int8_t phy_rf_extension(phy_extension_type_e extension_type, uint8_t *dat
     return 0;
 }
 
+void shm_init()
+{
+    // Create shared memory
+    int shm_fd = shm_open(shm_name, O_CREAT | O_RDWR, 0666);
+    FATAL_ON(shm_fd < 0, 2, "shm open faild!");
+    ftruncate(shm_fd, shm_size);
+
+    // Map shared memory
+    shm_ptr = mmap(0, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    FATAL_ON(shm_ptr == NULL, 2, "shm mmap faild!");
+}
+
 void rf_driver_local_init(void)
 {
     ringbufindex_init(&input_ringbuf, MAX_TXRX_BUFFERS);
@@ -1020,11 +1078,13 @@ void rf_driver_local_init(void)
     pthread_create(&fhss_on_timer, NULL, set_fhss_status, NULL);
 
     driver_state = DRVSTATE_IDLE;
+    set_shm_cca_state();
 }
 // XXX: the phy_channel_pages needs to match the config at cmd_network.c, or the RF init fails
 int8_t virtual_rf_device_register(phy_link_type_e link_type, uint16_t mtu_size)
 {
     if (rf_radio_driver_id < 0) {
+        shm_init();
         rf_driver_local_init();
         memset(&device_driver, 0, sizeof(phy_device_driver_s));
         /*Set pointer to MAC address*/

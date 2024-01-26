@@ -9,6 +9,8 @@
 #include "common/log.h"
 #include "common/utils.h"
 #include <fcntl.h>
+#include <sys/mman.h>
+#include <signal.h>
 
 #define MAX_NODES 4096
 
@@ -249,8 +251,29 @@ static void broadcast(uint64_t *node_graph, struct pollfd *fds, int fds_len, voi
     }
 }
 
+bool stop = false;
+void signal_handler(int signal) {
+    if (signal == SIGINT) {
+        stop = true;
+    }
+}
+
 int main(int argc, char **argv)
 {
+    signal(SIGINT, signal_handler);
+
+    const char* shm_name = "/wssimcca";
+    const int shm_size = 4096*3; // 4096 nodes, 1 byte state + 2 bytes channel
+
+
+    // Create shared memory
+    int shm_fd = shm_open(shm_name, O_CREAT | O_RDWR, 0666);
+    ftruncate(shm_fd, shm_size);
+
+    // Map shared memory
+    void* ptr = mmap(0, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    memset(ptr, 0, shm_size);
+
     char buf[4096];
     int i;
     int on = 1;
@@ -276,9 +299,14 @@ int main(int argc, char **argv)
     ret = listen(fds[0].fd, 4096);
     FATAL_ON(ret < 0, 1, "listen: %s: %m", ctxt.addr.sun_path);
 
-    while (true) {
+    while (stop == false) {
         ret = poll(fds, fd_limit, -1);
-        FATAL_ON(ret < 0, 1, "poll: %m");
+        //FATAL_ON(ret < 0, 1, "poll: %m");
+        if (ret < 0)
+        {
+            WARN("Poll error");
+            break;
+        }
         if (fds[0].revents) {
             for (i = 0; i < fd_limit; i++) {
                 if (fds[i].fd == -1) {
@@ -310,6 +338,12 @@ int main(int argc, char **argv)
             }
         }
     }
+
+    // Graceful teardown
+    DEBUG("Graceful teardown");
+    munmap(ptr, shm_size);
+    close(shm_fd);
+    shm_unlink(shm_name);
 }
 
 
