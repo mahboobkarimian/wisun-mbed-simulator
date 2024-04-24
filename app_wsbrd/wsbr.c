@@ -325,7 +325,7 @@ int main(int argc, char *argv[])
     uint64_t val;
     struct timespec ts = { };
 
-    logfile_fd = open("/tmp/log_wsbr", O_WRONLY | O_CREAT, 0644);
+    logfile_fd = open("/dev/shm/log_wsbr", O_WRONLY | O_CREAT, 0644);
     mbed_trace_print_function_set(&mbed_trace_print_and_log);
     INFO("Silicon Labs Wi-SUN border router %s", version_daemon);
     signal(SIGINT, kill_handler);
@@ -336,7 +336,7 @@ int main(int argc, char *argv[])
     ctxt->rcp_rx = uart_rx;
     wsbr_check_mbedtls_features();
     mbed_trace_init();
-    mbed_trace_config_set(TRACE_ACTIVE_LEVEL_ALL | TRACE_MODE_COLOR);
+    mbed_trace_config_set(TRACE_ACTIVE_LEVEL_NONE | TRACE_MODE_COLOR);
     platform_critical_init();
     eventOS_scheduler_os_init(ctxt->os_ctxt);
     eventOS_scheduler_init();

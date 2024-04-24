@@ -60,14 +60,6 @@ static int8_t rf_radio_driver_id = (-1);
 static bool data_request_pending_flag = false;
 
 
-static uint32_t rf_get_timestamp(void)
-{
-    struct timespec tp;
-    clock_gettime(CLOCK_MONOTONIC, &tp);
-    return (((uint32_t)tp.tv_sec) * 1000000 + tp.tv_nsec / 1000);
-}
-
-
 int64_t get_sys_time_ms(void) {
     struct timeval tv;
 

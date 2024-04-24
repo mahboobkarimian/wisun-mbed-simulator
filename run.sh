@@ -3,7 +3,8 @@
 # Number of nodes (Number 0 is reserved for BR)
 #TYPE="debug" # Debug with few node
 #TYPE="test" # Testbench topology
-TYPE="normal" # Run full topology
+#TYPE="normal" # Run full topology
+TYPE=$1
 if [ "$TYPE" = "debug" ];then
 	let NODES=1
 elif [ "$TYPE" = "test" ]; then

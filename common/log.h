@@ -58,14 +58,8 @@ enum {
     TR_HDLC = 0x08,
     TR_HIF  = 0x10,
 };
-#define TRACE(COND, ...)          __TRACE(COND, "" __VA_ARGS__)
-#define DEBUG(...)                __DEBUG("" __VA_ARGS__)
-#define WARN(...)                 __WARN("" __VA_ARGS__)
-#define WARN_ON(COND, ...)        __WARN_ON(COND, "" __VA_ARGS__)
-#define FATAL(CODE, ...)          __FATAL(CODE, "" __VA_ARGS__)
-#define FATAL_ON(COND, CODE, ...) __FATAL_ON(COND, CODE, "" __VA_ARGS__)
-#define BUG(...)                  __BUG("" __VA_ARGS__)
-#define BUG_ON(COND, ...)         __BUG_ON(COND, "" __VA_ARGS__)
+
+
 
 enum bytes_str_options {
     DELIM_SPACE     = 0x01, // Add space between each bytes
@@ -77,6 +71,16 @@ enum bytes_str_options {
 };
 
 char *bytes_str(const void *in_start, size_t in_len, const void **in_done, char *out_start, size_t out_len, int opt);
+
+#if 0
+#define TRACE(COND, ...)          __TRACE(COND, "" __VA_ARGS__)
+#define DEBUG(...)                __DEBUG("" __VA_ARGS__)
+#define WARN(...)                 __WARN("" __VA_ARGS__)
+#define WARN_ON(COND, ...)        __WARN_ON(COND, "" __VA_ARGS__)
+#define FATAL(CODE, ...)          __FATAL(CODE, "" __VA_ARGS__)
+#define FATAL_ON(COND, CODE, ...) __FATAL_ON(COND, CODE, "" __VA_ARGS__)
+#define BUG(...)                  __BUG("" __VA_ARGS__)
+#define BUG_ON(COND, ...)         __BUG_ON(COND, "" __VA_ARGS__)
 
 #define __TRACE(COND, MSG, ...) \
     do {                                                             \
@@ -179,6 +183,62 @@ char *bytes_str(const void *in_start, size_t in_len, const void **in_done, char 
         struct timespec tp;                                          \
         clock_gettime(CLOCK_REALTIME, &tp);                          \
         __PRINT(COLOR, "%ju.%06ju: " MSG, (uintmax_t)tp.tv_sec, (uintmax_t)tp.tv_nsec / 1000, ##__VA_ARGS__); \
+    } while (0)
+
+#endif
+
+#define INFO(MSG, ...)
+#define __PRINT(COLOR, MSG, ...)
+#define __PRINT_WITH_LINE(COLOR, MSG, ...)
+#define __PRINT_WITH_TIME(COLOR, MSG, ...)
+#define TRACE(COND, ...)
+#define DEBUG(...)
+#define WARN(...)
+#define WARN_ON(COND, ...)
+#define FATAL(CODE, ...)          __FATAL(CODE, "" __VA_ARGS__)
+#define FATAL_ON(COND, CODE, ...) __FATAL_ON(COND, CODE, "" __VA_ARGS__)
+#define BUG(...)                  __BUG("" __VA_ARGS__)
+#define BUG_ON(COND, ...)         __BUG_ON(COND, "" __VA_ARGS__)
+
+#define __FATAL(CODE, MSG, ...) \
+    do {                                                             \
+        if (MSG[0] != '\0')                                          \
+            __PRINT(31, MSG, ##__VA_ARGS__);                         \
+        else                                                         \
+            __PRINT_WITH_LINE(31, "fatal error");                    \
+        exit(CODE);                                                  \
+    } while (0)
+#define __FATAL_ON(COND, CODE, MSG, ...) \
+    do {                                                             \
+        if (COND) {                                                  \
+            if (MSG[0] != '\0')                                      \
+                __PRINT(31, MSG, ##__VA_ARGS__);                     \
+            else                                                     \
+                __PRINT_WITH_LINE(31, "fatal error: \"%s\"", #COND); \
+            exit(CODE);                                              \
+        }                                                            \
+    } while (0)
+
+#define __BUG(MSG, ...) \
+    do {                                                             \
+        if (MSG[0] != '\0')                                          \
+            __PRINT_WITH_LINE(91, "bug: " MSG, ##__VA_ARGS__);       \
+        else                                                         \
+            __PRINT_WITH_LINE(91, "bug");                            \
+        backtrace_show();                                            \
+        raise(SIGTRAP);                                              \
+    } while (0)
+
+#define __BUG_ON(COND, MSG, ...) \
+    do {                                                             \
+        if (COND) {                                                  \
+            if (MSG[0] != '\0')                                      \
+                __PRINT_WITH_LINE(91, "bug: " MSG, ##__VA_ARGS__);   \
+            else                                                     \
+                __PRINT_WITH_LINE(91, "bug: \"%s\"", #COND);         \
+            backtrace_show();                                        \
+            raise(SIGTRAP);                                          \
+        }                                                            \
     } while (0)
 
 #endif

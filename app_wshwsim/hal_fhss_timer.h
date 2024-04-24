@@ -20,5 +20,6 @@ struct fhss_timer_entry {
 };
 
 extern struct fhss_timer wsmac_fhss;
+uint32_t rf_get_timestamp(void);
 
 #endif

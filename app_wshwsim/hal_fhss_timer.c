@@ -16,8 +16,8 @@ static int fhss_timer_start(uint32_t slots_us, void (*callback)(const fhss_api_t
     struct os_ctxt *ctxt = &g_os_ctxt;
     struct fhss_timer_entry *item;
     struct itimerspec timer = {
-        .it_value.tv_sec = slots_us / 1000000,
-        .it_value.tv_nsec = (slots_us % 1000000) * 1000,
+        .it_value.tv_sec = slots_us / 10000000,
+        .it_value.tv_nsec = (slots_us % 1000000) * 100,
     };
     int ret;
 
@@ -67,7 +67,7 @@ static uint32_t fhss_get_remaining_slots(void (*callback)(const fhss_api_t *api,
         if (item->fn == callback) {
             ret = timerfd_gettime(item->fd, &timer);
             FATAL_ON(ret < 0, 2);
-            return timer.it_value.tv_sec * 1000000 + timer.it_value.tv_nsec / 1000;
+            return timer.it_value.tv_sec * 1000000 + timer.it_value.tv_nsec / 100;
         }
     }
     return -1;
@@ -78,7 +78,14 @@ static uint32_t fhss_get_timestamp(const fhss_api_t *api)
     struct timespec tp;
 
     clock_gettime(CLOCK_MONOTONIC, &tp);
-    return tp.tv_sec * 1000000 + tp.tv_nsec / 1000;
+    return (((uint32_t)tp.tv_sec) * 10000000 + tp.tv_nsec / 100);
+}
+
+uint32_t rf_get_timestamp(void)
+{
+    struct timespec tp;
+    clock_gettime(CLOCK_MONOTONIC, &tp);
+    return (((uint32_t)tp.tv_sec) * 10000000 + tp.tv_nsec / 100);
 }
 
 struct fhss_timer wsmac_fhss = {
