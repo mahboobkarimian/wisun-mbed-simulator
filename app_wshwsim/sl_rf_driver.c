@@ -50,6 +50,8 @@
 #include <sys/mman.h>
 #include <fcntl.h>
 
+#include "mac_helpers.h"
+
 #define TRACE_GROUP "vrf"
 
 #define FHSS_ON
@@ -90,7 +92,7 @@ static int8_t phy_rf_extension(phy_extension_type_e extension_type, uint8_t *dat
 
 /**
  * @brief All the variables of new driver
- * 
+ *
  */
 enum driver_state {
     /// Driver is not initialized
@@ -111,7 +113,7 @@ enum driver_state {
 static volatile enum driver_state driver_state = DRVSTATE_RADIO_UNINIT;
 /**
  * @enum idle_state
- * @brief Represent the different idle states depths that can be reached * 
+ * @brief Represent the different idle states depths that can be reached *
  */
 enum idle_state {
     /// Puts the radio in idle state after current TRX operation is finished
@@ -314,7 +316,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
         set_shm_cca_state();
         _rf_start_backup_timer(MAX_PACKET_SENDING_TIME);
         __PRINT(31, "Receiving ... pkt_chan=%d, curr_chan=%d, pkt_len=%u, rxseq=%d ts=%u", pkt_chan, channel, pkt_len, pkt_seq, rf_get_timestamp());
-        
+
         // write in the rx_ring_buffer temporary
         int16_t input_index = ringbufindex_peek_put(&input_ringbuf);
         if (input_index == -1) {
@@ -376,6 +378,19 @@ static int8_t phy_rf_tx_now()
     uint8_t *data_ptr = current_output->data;
     uint16_t data_len = current_output->data_len;
 
+    for (int i = 0; i < data_len; i++){
+        printf("%02X ", data_ptr[i]);
+    }
+    printf("\n\n");
+
+    uint8_t dest_addr[8] = {0};
+    uint8_t src_addr[8] = {0};
+
+    extract_mac_addresses(data_ptr, dest_addr, src_addr);
+
+    printf("DST MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n", dest_addr[0], dest_addr[1], dest_addr[2], dest_addr[3], dest_addr[4], dest_addr[5], dest_addr[6], dest_addr[7]);
+    printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7]);
+
     // Prepend data with a synchronisation marker
     memcpy(hdr + 0, "xx", 2);
     memcpy(hdr + 2, &data_len, 2);
@@ -413,7 +428,7 @@ static void _rf_handle_rx_end(){
 
 /**
  * @brief Changes the active channel of the radio with state conflict avoidance
- * 
+ *
  * @param[in] new_channel New channel to switch to
  * @return 0 on success, -1 on failure (channel not changed because radio is
  * emitting or receiving a packet)
@@ -431,9 +446,9 @@ static int _rf_check_and_change_channel(uint16_t new_channel){
 
 /**
  * @brief Sets the to receive mode (with state verification).
- * 
- * @return 0 on success, > 0 on failure. 
- * 
+ *
+ * @return 0 on success, > 0 on failure.
+ *
  * @note The return value can be casted to @ref RAIL_Status_t to get the exact error code.
  */
 static int _rf_set_rx(){
@@ -453,7 +468,7 @@ static int _rf_set_rx(){
 
 /**
  * @brief Sets the radio to idle state.
- * 
+ *
  * @param[in] mode Specifies if the radio must abort ongoing operation (TRX) or must shutdown (see @ref idle_state).
  */
 static void _rf_set_idle(enum idle_state mode){
@@ -465,7 +480,7 @@ static void _rf_tx_sleep_timeout_timer_cb(int timer_id, uint16_t slots)
 {
     _rf_stop_backup_timer();
     if (device_driver.phy_tx_done_cb)
-                device_driver.phy_tx_done_cb(rf_radio_driver_id, 
+                device_driver.phy_tx_done_cb(rf_radio_driver_id,
                                                         mac_tx_handle, PHY_LINK_TX_SUCCESS, 0, 0);
     rx_thread_blokcked = false;
     driver_state = DRVSTATE_IDLE_WAITING_RX;
@@ -486,10 +501,10 @@ static void _rf_rx_sleep_timeout_timer(uint32_t duration){
 
 /**
  * @brief Checks if the current channel is clear to send.
- * 
+ *
  * @return true if the channel is clear to send, false otherwise.
  */
-static bool _rf_check_cca(){   
+static bool _rf_check_cca(){
     if(!cca_enabled){
         return true;
     }
@@ -530,12 +545,12 @@ static bool _rf_check_cca(){
 
 /**
  * @brief Sends the packet stored inside the TX fifo.
- * 
+ *
  * @return 0 on success, > 0 on failure.
- * 
+ *
  * This function is non-blocking. It only sets the radio to TX mode. The end of transmission is handled
  * by the radio IRQ handler @ref _rf_rail_events_irq_handler with the RAIL_EVENTS_TX_COMPLETION flag.
- * 
+ *
  * @note The return value can be casted to @ref RAIL_Status_t to get the exact error code.
  */
 static int _rf_execute_tx(){
@@ -570,7 +585,7 @@ static int _rf_execute_tx(){
 
 /**
  * @brief CSMA-CA timeout handler called by the IRQ thread task
- * 
+ *
  * This function tells to the MAC layer that the CSMA-CA timeout has occurred.
  * The MAC layer is responsible to tell what to do next. Depending on the status
  * that the MAC layer returns, this function will either cancel the transmission,
@@ -582,7 +597,7 @@ static void _rf_csma_timeout_handler(){
     // Request CSMA status from Nanostack
     if (device_driver.phy_tx_done_cb)
         status = device_driver.phy_tx_done_cb(rf_radio_driver_id, mac_tx_handle, PHY_LINK_CCA_PREPARE, 0, 0);
-    
+
     switch (status){
     case PHY_TX_NOT_ALLOWED:
         __PRINT(92,"CSMA-CA PHY_TX_NOT_ALLOWED");
@@ -612,7 +627,7 @@ static void _rf_csma_timeout_handler(){
                 _rf_rearm_csma_timeout_timer();
             }
         }
-        break;   
+        break;
     case PHY_TX_ALLOWED:
         __PRINT(32,"CSMA-CA PHY_TX_ALLOWED");
         if (driver_state == DRVSTATE_RX){
@@ -622,19 +637,19 @@ static void _rf_csma_timeout_handler(){
             // Channel is busy
             WARN("Channel is busy");
             if (device_driver.phy_tx_done_cb)
-                device_driver.phy_tx_done_cb(rf_radio_driver_id, 
+                device_driver.phy_tx_done_cb(rf_radio_driver_id,
                                                                 mac_tx_handle, PHY_LINK_CCA_FAIL, 0, 0);
         } else {
             // Channel is clear -> start transmission immediately
             if (_rf_execute_tx() != 0){
                 WARN("TX fail");
                 if (device_driver.phy_tx_done_cb)
-                    device_driver.phy_tx_done_cb(rf_radio_driver_id, 
+                    device_driver.phy_tx_done_cb(rf_radio_driver_id,
                                                                 mac_tx_handle, PHY_LINK_TX_FAIL, 0, 0);
             }
             // TX success is called in _rf_rail_events_irq_handler()
         }
-        break;  
+        break;
     default:
         break;
     }
@@ -642,7 +657,7 @@ static void _rf_csma_timeout_handler(){
 
 /**
  * @brief Starts the CSMA-CA timer
- * 
+ *
  * @param[in] duration before triggering the CSMA-CA timeout callback
  */
 static void _rf_start_csma_timeout_timer(uint32_t duration){
@@ -651,7 +666,7 @@ static void _rf_start_csma_timeout_timer(uint32_t duration){
 }
 
 /**
- * @brief Stops the CSMA-CA timer 
+ * @brief Stops the CSMA-CA timer
  */
 static void _rf_stop_csma_timeout_timer(){
     //WARN("CSMA-CA timeout stopped");
@@ -659,14 +674,14 @@ static void _rf_stop_csma_timeout_timer(){
 }
 
 /**
- * @brief CSMA-CA timeout callback 
+ * @brief CSMA-CA timeout callback
  */
 static void _rf_csma_timeout_timer_cb(int timer_id, uint16_t slots){
     _rf_csma_timeout_handler();
 }
 
 /**
- * @brief Starts/restarts the CSMA-CA timer based on the requested backoff time * 
+ * @brief Starts/restarts the CSMA-CA timer based on the requested backoff time *
  */
 static void _rf_rearm_csma_timeout_timer(){
     uint32_t csma_ca_period = backoff_time - rf_get_timestamp();
@@ -674,7 +689,7 @@ static void _rf_rearm_csma_timeout_timer(){
     if(csma_ca_period > 65000){
         // Time has already passed, trigger the IRQ immediately for immediate TX
         csma_ca_period = 1;
-    } 
+    }
 
     _rf_start_csma_timeout_timer(csma_ca_period);
 }
@@ -682,9 +697,9 @@ static void _rf_rearm_csma_timeout_timer(){
 
 /**
  * @brief Starts the backup timer
- * 
+ *
  * @param[in] duration before triggering the backup timeout callback
- * 
+ *
  * The backup timer is responsible to put the radio in a known state in case of unexpected radio failure.
  */
 static void _rf_start_backup_timer(uint32_t duration){
@@ -692,14 +707,14 @@ static void _rf_start_backup_timer(uint32_t duration){
 }
 
 /**
- * @brief Stops the backup timer 
+ * @brief Stops the backup timer
  */
 static void _rf_stop_backup_timer(){
     eventOS_callback_timer_stop(backup_timeout_timer);
 }
 
 /**
- * @brief Backup timeout callback 
+ * @brief Backup timeout callback
  */
 static void _rf_backup_timer_cb(int timer_id, uint16_t slots){
     _rf_backup_timeout_handler();
@@ -727,7 +742,7 @@ static void _rf_backup_timeout_handler(){
 
 /**
  * @brief Checks if the radio is busy (i.e. transmitting or receiving a packet).
- * 
+ *
  * @return true if the radio is busy, false otherwise.
  */
 static bool _rf_is_busy(){
@@ -748,7 +763,7 @@ static int8_t phy_rf_tx(uint8_t *data_ptr, uint16_t data_len, uint8_t tx_handle,
         return -1;
     }
     WARN("RF is not busy, bft %u", backoff_time);
-    
+
     //platform_enter_critical();
     mac_tx_handle = tx_handle;
     driver_state = DRVSTATE_CSMA_STARTED;
@@ -813,7 +828,7 @@ int rf_dbus_register () {
         WARN_ON(1, "Failed to connect to system bus: %s", strerror(-ret));
         return ret;
     }
-    
+
     char dbus_name[38];
     snprintf(dbus_name,38, "com.wshwsim.mac%02x%02x%02x%02x%02x%02x%02x%02x",
         rf_mac_address[0], rf_mac_address[1], rf_mac_address[2], rf_mac_address[3],
@@ -823,13 +838,13 @@ int rf_dbus_register () {
     snprintf(dbus_path,39, "/com/wshwsim/Mac%02x%02x%02x%02x%02x%02x%02x%02x",
         rf_mac_address[0], rf_mac_address[1], rf_mac_address[2], rf_mac_address[3],
         rf_mac_address[4], rf_mac_address[5], rf_mac_address[6], rf_mac_address[7]);
-    
+
     ret = sd_bus_add_object_vtable(rf_dbus, NULL, dbus_path, dbus_name, rf_dbus_vtable, NULL);
     if (ret < 0) {
         WARN_ON(1,"Failed to add object: %s", strerror(-ret));
         return ret;
     }
-    
+
     ret = sd_bus_request_name(rf_dbus, dbus_name, SD_BUS_NAME_ALLOW_REPLACEMENT | SD_BUS_NAME_REPLACE_EXISTING);
     if (ret < 0) {
         WARN_ON(1,"Failed to acquire service name: %s", strerror(-ret));
@@ -882,7 +897,7 @@ static  uint8_t * rf_request_rf_state_dbus(uint8_t *dest_mac_addr) {
         *dest_mac_addr, *(dest_mac_addr+1), *(dest_mac_addr+2), *(dest_mac_addr+3),
         *(dest_mac_addr+4), *(dest_mac_addr+5), *(dest_mac_addr+6), *(dest_mac_addr+7));
     INFO("Sending message to s %s p %s", dbus_name, dbus_path);
-    
+
     static sd_bus_message *reply_buf = NULL;
     int ret = -1;
 
@@ -1015,7 +1030,7 @@ static int8_t phy_rf_extension(phy_extension_type_e extension_type, uint8_t *dat
                     _rf_set_idle(RADIO_IDLE_ABORT);
                     driver_state = DRVSTATE_IDLE;
                     set_shm_cca_state();
-                    //_rf_set_rx();             
+                    //_rf_set_rx();
                     backoff_time = 0;
                 } else {
                     // Store backoff_time and cca_enabled

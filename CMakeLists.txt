@@ -511,6 +511,7 @@ if(COMPILE_SIMULATION_TOOLS)
         app_wshwsim/sl_wsrcp.c
         app_wshwsim/sl_wsrcp_mac.c
         app_wshwsim/ringbufindex.c
+        app_wshwsim/mac_helpers.c
         app_wshwsim/sl_rf_driver.c
         app_wshwsim/hal_fhss_timer.c
         app_wshwsim/mac/rf_driver_storage.c

@@ -12,7 +12,11 @@
 #include <sys/mman.h>
 #include <signal.h>
 
+#include "nodes_infos.h"
+
 #define MAX_NODES 4096
+
+struct node_infos *nodes_infos_flat_map;
 
 struct ctxt {
     struct sockaddr_un addr;
@@ -68,8 +72,21 @@ static int bitmap_parse(char *str, uint64_t *out, int size)
     char *endptr;
     unsigned long cur, end;
 
+    char *str_copy = (char *)malloc(strlen(str));
+    if (str_copy == NULL) {
+        return -1;
+    }
+    strcpy(str_copy, str);
+
+    char *indexes_part = strtok(str_copy, ":");
+
+    if (indexes_part == NULL) {
+        // No RSSI has been specified
+        strcpy(str_copy, str);
+    }
+
     memset(out, 0, size * sizeof(uint64_t));
-    range = strtok(str, ",");
+    range = strtok(str_copy, ",");
     do {
         cur = strtoul(range, &endptr, 0);
         if (*endptr == '-') {
@@ -78,14 +95,102 @@ static int bitmap_parse(char *str, uint64_t *out, int size)
         } else {
             end = cur;
         }
-        if (*endptr != '\0')
+        if (*endptr != '\0') {
+            free(str_copy);
             return -1;
-        if (cur > end)
+        }
+        if (cur > end) {
+            free(str_copy);
             return -1;
+        }
         for (; cur <= end; cur++)
-            if (bitmap_set(cur, out, size) < 0)
+            if (bitmap_set(cur, out, size) < 0) {
+                free(str_copy);
                 return -1;
+            }
     } while ((range = strtok(NULL, ",")));
+
+    free(str_copy);
+    return 0;
+}
+
+static int rssi_map_parse_for_one_group(char *str)
+{
+    char *range;
+    char *endptr;
+    int nodes_in_group[MAX_NODES] = {-1};
+    memset(nodes_in_group, -1, sizeof(nodes_in_group));
+    int nodes_in_group_idx = 0;
+
+    char *str_copy = (char *)malloc(strlen(str));
+    if (str_copy == NULL) {
+        return -1;
+    }
+    strcpy(str_copy, str);
+
+    char *rest = str_copy;
+    char *indexes_part, *rssi_part;
+    float rssi = 0.0;
+    indexes_part = __strtok_r(rest, ":", &rest);
+
+
+    if (indexes_part == NULL) {
+        // No RSSI has been specified
+        free(str_copy);
+        return 0;
+    }
+
+    rssi_part = __strtok_r(rest, ":", &rest);
+
+    if (rssi_part != NULL) {
+        rssi = (float)atof(rssi_part);
+    }
+
+    strcpy(str_copy, str);
+    rest = str_copy;
+    indexes_part = __strtok_r(rest, ":", &rest);
+
+    // Map the RSSI
+    range = strtok(indexes_part, ",");
+    unsigned long start_node = strtoul(range, &endptr, 0);
+    unsigned long end_node;
+    if (*endptr == '-') {
+        range = ++endptr;
+        end_node = strtoul(range, &endptr, 0);
+
+        if (end_node > start_node) {
+            for (int i = start_node + 1; i <= end_node; i++) {
+                for (int j = start_node + 1; j <= end_node; j++) {
+                    if (i != j) {
+                        (nodes_infos_flat_map + i * sizeof(nodes_infos_flat_map) + j)->rssi = rssi;
+                        (nodes_infos_flat_map + j * sizeof(nodes_infos_flat_map) + i)->rssi = rssi;
+                    }
+                }
+            }
+        }
+    } else {
+        nodes_in_group[nodes_in_group_idx++] = start_node;
+        while ((range = strtok(NULL, ","))) {
+            unsigned long cur_node = strtoul(range, &endptr, 0);
+            nodes_in_group[nodes_in_group_idx++] = cur_node;
+        }
+
+        int i = 0, j = 0;
+        while (nodes_in_group[i] != -1) {
+            while (nodes_in_group[j] != -1) {
+                if (i != j) {
+                    (nodes_infos_flat_map + nodes_in_group[i] * sizeof(nodes_infos_flat_map) + nodes_in_group[j])->rssi = rssi;
+                    (nodes_infos_flat_map + nodes_in_group[j] * sizeof(nodes_infos_flat_map) + nodes_in_group[i])->rssi = rssi;
+                }
+                j++;
+            }
+            j = 0;
+            i++;
+        }
+    }
+
+    free(str_copy);
+
     return 0;
 }
 
@@ -117,12 +222,31 @@ static void graph_dump(struct ctxt *ctxt)
     int max = graph_get_num_nodes(ctxt);
     int i, j;
 
+    printf("Topology:\n");
     for (i = 0; i < max; i++) {
         printf("%02x ", i);
         for (j = 0; j < max; j++) {
             char bf[10];
             sprintf(bf, "%02x|", j);
             printf("%s", bitmap_get(j, ctxt->node_graph[i], MAX_NODES / 64) ? bf : "--|");
+        }
+        printf("\n");
+    }
+
+    printf("\nRSSI map:\n");
+    for (i = 0; i < max; i++) {
+        if (i == 0) {
+            printf("%*d ", 11, i);
+        } else {
+            printf("%*d ", 5, i);
+        }
+
+    }
+    printf("\n");
+    for (i = 0; i < max; i++) {
+        printf("%*d ", 5, i);
+        for (j = 0; j < max; j++) {
+            printf("%*.*g ", 5, 6, (nodes_infos_flat_map + i * sizeof(nodes_infos_flat_map) + j)->rssi);
         }
         printf("\n");
     }
@@ -187,6 +311,7 @@ void parse_commandline(struct ctxt *ctxt, int argc, char *argv[])
         switch (opt) {
             case 'g':
                 ret = bitmap_parse(optarg, mask, MAX_NODES / 64);
+                ret = rssi_map_parse_for_one_group(optarg);
                 FATAL_ON(ret, 1, "Bad mask: %s", optarg);
                 graph_apply_mask(ctxt->node_graph, mask);
                 has_filter = true;
@@ -262,9 +387,9 @@ int main(int argc, char **argv)
 {
     signal(SIGINT, signal_handler);
 
+    // Shared memory for CCA
     const char* shm_name = "/wssimcca";
     const int shm_size = 4096*3; // 4096 nodes, 1 byte state + 2 bytes channel
-
 
     // Create shared memory
     int shm_fd = shm_open(shm_name, O_CREAT | O_RDWR, 0666);
@@ -273,6 +398,20 @@ int main(int argc, char **argv)
     // Map shared memory
     void* ptr = mmap(0, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
     memset(ptr, 0, shm_size);
+
+    // Shared memory for nodes and edges information
+    const char* shm_infos_name = "/wssimnodesinfos";
+    const int shm_infos_size = MAX_NODES*MAX_NODES*sizeof(struct node_infos);
+
+    // Create shared memory
+    int shm_infos_fd = shm_open(shm_infos_name, O_CREAT | O_RDWR, 0666);
+    ftruncate(shm_infos_fd, shm_infos_size);
+
+    // Map shared memory
+    void* infos_ptr = mmap(0, shm_infos_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_infos_fd, 0);
+    memset(infos_ptr, 0, shm_infos_size);
+
+    nodes_infos_flat_map = (struct node_infos *)infos_ptr;
 
     char buf[4096];
     int i;
@@ -342,8 +481,11 @@ int main(int argc, char **argv)
     // Graceful teardown
     DEBUG("Graceful teardown");
     munmap(ptr, shm_size);
+    munmap(infos_ptr, shm_infos_size);
     close(shm_fd);
+    close(shm_infos_fd);
     shm_unlink(shm_name);
+    shm_unlink(shm_infos_name);
 }
 
 

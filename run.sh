@@ -3,8 +3,10 @@
 # Number of nodes (Number 0 is reserved for BR)
 #TYPE="debug" # Debug with few node
 #TYPE="test" # Testbench topology
-TYPE="normal" # Run full topology
+TYPE="single" # Run full topology
 if [ "$TYPE" = "debug" ];then
+	let NODES=1
+elif [ "$TYPE" = "single" ]; then
 	let NODES=1
 elif [ "$TYPE" = "test" ]; then
 	let NODES=12
@@ -19,7 +21,7 @@ fi
 DIR=$(pwd)
 
 # Clean up temp files
-rm -rf /tmp/wsbrd/
+sudo rm -rf /tmp/wsbrd/
 rm -f /tmp/sim_socket /tmp/*_pae_*
 mkdir -p /tmp/wsbrd/
 
@@ -34,13 +36,15 @@ if [ "$TYPE" = "debug" ];then
 	do
 		TPG+="-g $(($c-1))-$c "
 	done
+elif [ "$TYPE" = "single" ]; then
+	TPG+="-g 0,1;0.81"
 elif [ "$TYPE" = "test" ]; then
 	TPG+="-g 0,1,2,3,4,7 -g 1,5,6 -g 4,8,9,10,11,12"
 elif [ "$TYPE" = "normal" ]; then
 	TPG+="-g 0,1 -g 0,2 -g 2,3 -g 3,4 -g 4,5 -g 5,6 -g 4,7 -g 7,8 -g 0,9 -g 9,10 -g 10,11 -g 11,12 -g 12,13 -g 11,14 -g 14,15"
 else
 	#TPG+="-g 0-1 -g 0-2 -g 2-3 -g 3-4 -g 4-5 -g 5-6 -g 4-7 -g 7-8 -g 0-9 -g 9-10 -g 10-11 -g 11-12 -g 12-13 -g 11-14 -g 14-15"
-	
+
 	echo "Unsupported"
 	sleep 2
 	exit -1
@@ -65,7 +69,7 @@ do
 done
 
 # Run BR node
-gnome-terminal --window --title "BR N0" -- $DIR/wsbrd -F $DIR/examples/wsbrd.conf -u $(readlink /tmp/uart0)
+gnome-terminal --window --title "BR N0" -- sudo $DIR/wsbrd -F $DIR/examples/wsbrd.conf -u $(readlink /tmp/uart0)
 
 
 
