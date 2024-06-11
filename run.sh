@@ -37,7 +37,7 @@ if [ "$TYPE" = "debug" ];then
 		TPG+="-g $(($c-1))-$c "
 	done
 elif [ "$TYPE" = "single" ]; then
-	TPG+="-g 0,1;0.81"
+	TPG+="-g 0,1:0.65"
 elif [ "$TYPE" = "test" ]; then
 	TPG+="-g 0,1,2,3,4,7 -g 1,5,6 -g 4,8,9,10,11,12"
 elif [ "$TYPE" = "normal" ]; then

@@ -540,6 +540,7 @@ if(COMPILE_SIMULATION_TOOLS)
     target_include_directories(wshwsim PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}
         app_wshwsim/
+        app_wssimserver/
         mbed-trace/
         mbed-client-libservice/
         nanostack-event-loop/
@@ -549,6 +550,7 @@ if(COMPILE_SIMULATION_TOOLS)
     # target_compile_definitions(wshwsim PRIVATE FHSS_CHANNEL_DEBUG)
     # target_compile_definitions(wshwsim PRIVATE TIMING_TOOL_TRACES)
     # target_compile_definitions(wshwsim PRIVATE EXTRA_DEBUG_INFO)
+    target_link_libraries(wshwsim PRIVATE m)
     target_link_libraries(wshwsim PRIVATE Threads::Threads)
     target_link_libraries(wshwsim PRIVATE MbedTLS::mbedtls)
     target_link_libraries(wshwsim PRIVATE util pthread)

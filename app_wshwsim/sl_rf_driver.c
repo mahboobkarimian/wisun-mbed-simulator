@@ -51,6 +51,8 @@
 #include <fcntl.h>
 
 #include "mac_helpers.h"
+#include "nodes_infos.h"
+#include <math.h>
 
 #define TRACE_GROUP "vrf"
 
@@ -201,6 +203,15 @@ const int shm_size = 4096*3; // 4096 nodes, 1 byte state + 2 bytes channel
 int shm_fd = -1;
 void* shm_ptr = NULL;
 
+/* Shared memory for RSSI infos */
+#define MAX_NODES 4096
+struct node_infos *nodes_infos_flat_map;
+const char* shm_infos_name = "/wssimnodesinfos";
+const int shm_infos_size = MAX_NODES*MAX_NODES*sizeof(struct node_infos);
+
+const float BER_FSK[] = {1.586553e-01, 1.309273e-01, 1.040286e-01, 7.889587e-02, 5.649530e-02, 3.767899e-02, 2.300714e-02, 1.258703e-02, 6.004386e-03, 2.413310e-03, 7.827011e-04, 1.939855e-04, 3.430262e-05, 3.969248e-06, 2.695148e-07, 9.361040e-09, 1.399028e-10, 7.235971e-13, 9.844575e-16, 2.490143e-19};
+const int EBN0[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
+
 /* Threads */
 pthread_t rf_dbus_proces_thread, fhss_on_timer;
 
@@ -300,6 +311,32 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
 
     len = read(ctxt->rf_fd, buf, pkt_len);
     WARN_ON(len != pkt_len);
+
+    // Simulate RSSI
+    uint8_t dest_addr[8] = {0};
+    uint8_t src_addr[8] = {0};
+
+    extract_mac_addresses(buf, dest_addr, src_addr);
+
+    uint16_t dst_node_id = (dest_addr[6] << 8) + dest_addr[7];
+    uint16_t src_node_id = (src_addr[6] << 8) + src_addr[7];
+    uint16_t own_node_id = (rf_mac_address[6] << 8) + rf_mac_address[7];
+
+    printf("Own node ID = %d\n", own_node_id);
+    printf("DST MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", dest_addr[0], dest_addr[1], dest_addr[2], dest_addr[3], dest_addr[4], dest_addr[5], dest_addr[6], dest_addr[7], dst_node_id);
+    printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
+
+    float rssi = (nodes_infos_flat_map + own_node_id * sizeof(nodes_infos_flat_map) + src_node_id)->rssi;
+    printf("RSSI = %g\n", rssi);
+    int scale_ebn0 = (int)(floor(exp(-(1 - rssi) * 1.2) * 19));
+    float frame_error_rate = BER_FSK[scale_ebn0] * 8 * pkt_len;
+
+    if (frame_error_rate > (float)rand() / (float)RAND_MAX) {
+        printf("Packet was lost due to link quality (RSSI) (FER = %g)\n", frame_error_rate);
+        goto CANCEL_RX;
+    }
+
+    // Handle the received packet
     TRACE(TR_RF, "   rf rx: chan=%2d/%2d %s (%d bytes)", pkt_chan, channel,
         bytes_str(buf, len, NULL, trace_buffer, sizeof(trace_buffer), DELIM_SPACE | ELLIPSIS_STAR), pkt_len);
     // Flush data from the socket if RX is blocked
@@ -378,6 +415,8 @@ static int8_t phy_rf_tx_now()
     uint8_t *data_ptr = current_output->data;
     uint16_t data_len = current_output->data_len;
 
+    // We don't generate the RSSI-based loss in the TX function, because in case of broadcast we don't know how is going to receive
+    /*
     for (int i = 0; i < data_len; i++){
         printf("%02X ", data_ptr[i]);
     }
@@ -388,8 +427,12 @@ static int8_t phy_rf_tx_now()
 
     extract_mac_addresses(data_ptr, dest_addr, src_addr);
 
-    printf("DST MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n", dest_addr[0], dest_addr[1], dest_addr[2], dest_addr[3], dest_addr[4], dest_addr[5], dest_addr[6], dest_addr[7]);
-    printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7]);
+    uint16_t dst_node_id = dest_addr[6] << 8 + dest_addr[7];
+    uint16_t src_node_id = src_addr[6] << 8 + src_addr[7];
+
+    printf("DST MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", dest_addr[0], dest_addr[1], dest_addr[2], dest_addr[3], dest_addr[4], dest_addr[5], dest_addr[6], dest_addr[7], dst_node_id);
+    printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
+    */
 
     // Prepend data with a synchronisation marker
     memcpy(hdr + 0, "xx", 2);
@@ -1079,7 +1122,19 @@ void shm_init()
 
     // Map shared memory
     shm_ptr = mmap(0, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
-    FATAL_ON(shm_ptr == NULL, 2, "shm mmap faild!");
+    FATAL_ON(shm_ptr == NULL, 2, "shm mmap failed!");
+
+
+    // Shared memory for nodes and edges information
+    // Create shared memory
+    int shm_infos_fd = shm_open(shm_infos_name, O_CREAT | O_RDWR, 0666);
+    ftruncate(shm_infos_fd, shm_infos_size);
+
+    // Map shared memory
+    void* infos_ptr = mmap(0, shm_infos_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_infos_fd, 0);
+    FATAL_ON(infos_ptr == NULL, 2, "shm_infos mmap failed!");
+
+    nodes_infos_flat_map = (struct node_infos *)infos_ptr;
 }
 
 void rf_driver_local_init(void)
