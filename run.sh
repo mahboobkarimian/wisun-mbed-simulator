@@ -3,11 +3,13 @@
 # Number of nodes (Number 0 is reserved for BR)
 #TYPE="debug" # Debug with few node
 #TYPE="test" # Testbench topology
-TYPE="single" # Run full topology
+TYPE="dag_simple" # Run full topology
 if [ "$TYPE" = "debug" ];then
 	let NODES=1
 elif [ "$TYPE" = "single" ]; then
 	let NODES=1
+elif [ "$TYPE" = "dag_simple" ]; then
+	let NODES=14
 elif [ "$TYPE" = "test" ]; then
 	let NODES=12
 elif [ "$TYPE" = "normal" ]; then
@@ -38,6 +40,8 @@ if [ "$TYPE" = "debug" ];then
 	done
 elif [ "$TYPE" = "single" ]; then
 	TPG+="-g 0,1:0.65"
+elif [ "$TYPE" = "dag_simple" ]; then
+	TPG+="-g 7,9:0.75 -g 4,9:0.8 -g 3,9:0.7 -g 8,9:0.8 -g 5,8:0.6 -g 3,8:0.8 -g 0,8:0.56 -g 0,1:0.71 -g 0,2:0.71 -g 0,3:0.65 -g 2,4:0.85 -g 2,5:0.7 -g 4,6:0.99 -g 1,7:0.71 -g 4,7:0.68 -g 0,7:0.6 -g 7,8:0.95 -g 7,10:0.77 -g 8,11:0.86 -g 9,12:0.8 -g 9,13:0.67 -g 10,14:0.75"
 elif [ "$TYPE" = "test" ]; then
 	TPG+="-g 0,1,2,3,4,7 -g 1,5,6 -g 4,8,9,10,11,12"
 elif [ "$TYPE" = "normal" ]; then

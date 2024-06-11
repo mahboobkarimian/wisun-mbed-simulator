@@ -134,7 +134,7 @@ static int rssi_map_parse_for_one_group(char *str)
     indexes_part = __strtok_r(rest, ":", &rest);
 
 
-    if (indexes_part == NULL) {
+    if (indexes_part == NULL || strstr(indexes_part, ":") == NULL) {
         // No RSSI has been specified
         free(str_copy);
         return 0;
@@ -409,9 +409,13 @@ int main(int argc, char **argv)
 
     // Map shared memory
     void* infos_ptr = mmap(0, shm_infos_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_infos_fd, 0);
-    memset(infos_ptr, 0, shm_infos_size);
 
     nodes_infos_flat_map = (struct node_infos *)infos_ptr;
+    for (int i = 0; i < MAX_NODES; i++) {
+        for (int j = 0; j < MAX_NODES; j++) {
+            (nodes_infos_flat_map + i * sizeof(nodes_infos_flat_map) + j)->rssi = 1.0;
+        }
+    }
 
     char buf[4096];
     int i;
