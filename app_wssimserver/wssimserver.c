@@ -134,7 +134,7 @@ static int rssi_map_parse_for_one_group(char *str)
     indexes_part = __strtok_r(rest, ":", &rest);
 
 
-    if (indexes_part == NULL || strstr(indexes_part, ":") == NULL) {
+    if (indexes_part == NULL || strstr(str, ":") == NULL) {
         // No RSSI has been specified
         free(str_copy);
         return 0;
