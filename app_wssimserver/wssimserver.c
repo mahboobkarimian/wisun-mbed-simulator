@@ -179,8 +179,8 @@ static int rssi_map_parse_for_one_group(char *str)
         while (nodes_in_group[i] != -1) {
             while (nodes_in_group[j] != -1) {
                 if (i != j) {
-                    (nodes_infos_flat_map + nodes_in_group[i] * sizeof(nodes_infos_flat_map) + nodes_in_group[j])->rssi = rssi;
-                    (nodes_infos_flat_map + nodes_in_group[j] * sizeof(nodes_infos_flat_map) + nodes_in_group[i])->rssi = rssi;
+                    (nodes_infos_flat_map + nodes_in_group[i] * sizeof(nodes_infos_flat_map) * MAX_NODES + nodes_in_group[j])->rssi = rssi;
+                    (nodes_infos_flat_map + nodes_in_group[j] * sizeof(nodes_infos_flat_map) * MAX_NODES + nodes_in_group[i])->rssi = rssi;
                 }
                 j++;
             }
@@ -246,7 +246,7 @@ static void graph_dump(struct ctxt *ctxt)
     for (i = 0; i < max; i++) {
         printf("%*d ", 5, i);
         for (j = 0; j < max; j++) {
-            printf("%*.*g ", 5, 6, (nodes_infos_flat_map + i * sizeof(nodes_infos_flat_map) + j)->rssi);
+            printf("%*.*g ", 5, 6, (nodes_infos_flat_map + i * sizeof(nodes_infos_flat_map) * MAX_NODES + j)->rssi);
         }
         printf("\n");
     }

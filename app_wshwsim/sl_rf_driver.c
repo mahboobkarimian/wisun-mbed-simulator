@@ -326,7 +326,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
     printf("DST MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", dest_addr[0], dest_addr[1], dest_addr[2], dest_addr[3], dest_addr[4], dest_addr[5], dest_addr[6], dest_addr[7], dst_node_id);
     printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
 
-    float rssi = (nodes_infos_flat_map + own_node_id * sizeof(nodes_infos_flat_map) + src_node_id)->rssi;
+    float rssi = (nodes_infos_flat_map + own_node_id * sizeof(nodes_infos_flat_map) * MAX_NODES + src_node_id)->rssi;
     printf("RSSI = %g\n", rssi);
     int scale_ebn0 = (int)(floor(exp(-(1 - rssi) * 1.2) * 19));
     float frame_error_rate = BER_FSK[scale_ebn0] * 8 * pkt_len;
