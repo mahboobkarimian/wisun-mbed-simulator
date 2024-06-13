@@ -164,6 +164,7 @@ struct input_packet {
   int len; /* Packet len */
   uint16_t channel; /* Channel we received the packet on */
   uint32_t rx_time;
+  int8_t rssi;
 };
 
 struct input_packet input_array[MAX_TXRX_BUFFERS];
@@ -327,7 +328,9 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
     printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
 
     float rssi = (nodes_infos_flat_map + own_node_id * sizeof(nodes_infos_flat_map) * MAX_NODES + src_node_id)->rssi;
-    printf("RSSI = %g\n", rssi);
+    // 1.0 -> -12dBm, 0.6 -> -99dBm
+    int8_t rssi_dbm = (int8_t)(-(24.0 / (rssi * rssi * rssi) - 12));
+    printf("RSSI = %g (%d dBm)\n", rssi, rssi_dbm);
     int scale_ebn0 = (int)(floor(exp(-(1 - rssi) * 1.2) * 19));
     float frame_error_rate = BER_FSK[scale_ebn0] * 8 * pkt_len;
 
@@ -369,6 +372,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
         // Save the rest of packet in buffer
         current_input->len = pkt_len;
         current_input->channel = pkt_chan;
+        current_input->rssi = rssi_dbm;
         memcpy(current_input->payload , &buf, pkt_len);
         // Store it in the ringbuf
         ringbufindex_put(&input_ringbuf);
@@ -466,7 +470,7 @@ static void _rf_handle_rx_end(){
     driver_state = DRVSTATE_IDLE_WAITING_RX;
     set_shm_cca_state();
     if (device_driver.phy_rx_cb)
-        ctxt->rf_driver->phy_driver->phy_rx_cb(buf, len, 200, 0, ctxt->rcp_driver_id);
+        ctxt->rf_driver->phy_driver->phy_rx_cb(buf, len, 200, buffed_packet->rssi, ctxt->rcp_driver_id);
 }
 
 /**
