@@ -50,6 +50,10 @@
 #include <sys/mman.h>
 #include <fcntl.h>
 
+#include "mac_helpers.h"
+#include "nodes_infos.h"
+#include <math.h>
+
 #define TRACE_GROUP "vrf"
 
 #define FHSS_ON
@@ -82,7 +86,7 @@ static int8_t phy_rf_extension(phy_extension_type_e extension_type, uint8_t *dat
 
 /**
  * @brief All the variables of new driver
- * 
+ *
  */
 enum driver_state {
     /// Driver is not initialized
@@ -103,7 +107,7 @@ enum driver_state {
 static volatile enum driver_state driver_state = DRVSTATE_RADIO_UNINIT;
 /**
  * @enum idle_state
- * @brief Represent the different idle states depths that can be reached * 
+ * @brief Represent the different idle states depths that can be reached *
  */
 enum idle_state {
     /// Puts the radio in idle state after current TRX operation is finished
@@ -152,6 +156,7 @@ struct input_packet {
   int len; /* Packet len */
   uint16_t channel; /* Channel we received the packet on */
   uint32_t rx_time;
+  int8_t rssi;
 };
 
 struct input_packet input_array[MAX_TXRX_BUFFERS];
@@ -190,6 +195,15 @@ const char* shm_name = "/wssimcca";
 const int shm_size = 4096*3; // 4096 nodes, 1 byte state + 2 bytes channel
 int shm_fd = -1;
 void* shm_ptr = NULL;
+
+/* Shared memory for RSSI infos */
+#define MAX_NODES 4096
+struct node_infos *nodes_infos_flat_map;
+const char* shm_infos_name = "/wssimnodesinfos";
+const int shm_infos_size = MAX_NODES*MAX_NODES*sizeof(struct node_infos);
+
+const float BER_FSK[] = {1.586553e-01, 1.309273e-01, 1.040286e-01, 7.889587e-02, 5.649530e-02, 3.767899e-02, 2.300714e-02, 1.258703e-02, 6.004386e-03, 2.413310e-03, 7.827011e-04, 1.939855e-04, 3.430262e-05, 3.969248e-06, 2.695148e-07, 9.361040e-09, 1.399028e-10, 7.235971e-13, 9.844575e-16, 2.490143e-19};
+const int EBN0[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
 
 /* Threads */
 pthread_t rf_dbus_proces_thread, fhss_on_timer;
@@ -290,6 +304,34 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
 
     len = read(ctxt->rf_fd, buf, pkt_len);
     WARN_ON(len != pkt_len);
+
+    // Simulate RSSI
+    uint8_t dest_addr[8] = {0};
+    uint8_t src_addr[8] = {0};
+
+    extract_mac_addresses(buf, dest_addr, src_addr);
+
+    uint16_t dst_node_id = (dest_addr[6] << 8) + dest_addr[7];
+    uint16_t src_node_id = (src_addr[6] << 8) + src_addr[7];
+    uint16_t own_node_id = (rf_mac_address[6] << 8) + rf_mac_address[7];
+
+    printf("Own node ID = %d\n", own_node_id);
+    printf("DST MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", dest_addr[0], dest_addr[1], dest_addr[2], dest_addr[3], dest_addr[4], dest_addr[5], dest_addr[6], dest_addr[7], dst_node_id);
+    printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
+
+    float rssi = (nodes_infos_flat_map + own_node_id * sizeof(nodes_infos_flat_map) * MAX_NODES + src_node_id)->rssi;
+    // 1.0 -> -12dBm, 0.6 -> -99dBm
+    int8_t rssi_dbm = (int8_t)(-(24.0 / (rssi * rssi * rssi) - 12));
+    printf("RSSI = %g (%d dBm)\n", rssi, rssi_dbm);
+    int scale_ebn0 = (int)(floor(exp(-(1 - rssi) * 1.2) * 19));
+    float frame_error_rate = BER_FSK[scale_ebn0] * 8 * pkt_len;
+
+    if (frame_error_rate > (float)rand() / (float)RAND_MAX) {
+        printf("Packet was lost due to link quality (RSSI) (FER = %g)\n", frame_error_rate);
+        goto CANCEL_RX;
+    }
+
+    // Handle the received packet
     TRACE(TR_RF, "   rf rx: chan=%2d/%2d %s (%d bytes)", pkt_chan, channel,
         bytes_str(buf, len, NULL, trace_buffer, sizeof(trace_buffer), DELIM_SPACE | ELLIPSIS_STAR), pkt_len);
     // Flush data from the socket if RX is blocked
@@ -306,7 +348,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
         set_shm_cca_state();
         _rf_start_backup_timer(MAX_PACKET_SENDING_TIME);
         __PRINT(31, "Receiving ... pkt_chan=%d, curr_chan=%d, pkt_len=%u, rxseq=%d ts=%u", pkt_chan, channel, pkt_len, pkt_seq, rf_get_timestamp());
-        
+
         // write in the rx_ring_buffer temporary
         int16_t input_index = ringbufindex_peek_put(&input_ringbuf);
         if (input_index == -1) {
@@ -322,6 +364,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
         // Save the rest of packet in buffer
         current_input->len = pkt_len;
         current_input->channel = pkt_chan;
+        current_input->rssi = rssi_dbm;
         memcpy(current_input->payload , &buf, pkt_len);
         // Store it in the ringbuf
         ringbufindex_put(&input_ringbuf);
@@ -368,6 +411,25 @@ static int8_t phy_rf_tx_now()
     uint8_t *data_ptr = current_output->data;
     uint16_t data_len = current_output->data_len;
 
+    // We don't generate the RSSI-based loss in the TX function, because in case of broadcast we don't know how is going to receive
+    /*
+    for (int i = 0; i < data_len; i++){
+        printf("%02X ", data_ptr[i]);
+    }
+    printf("\n\n");
+
+    uint8_t dest_addr[8] = {0};
+    uint8_t src_addr[8] = {0};
+
+    extract_mac_addresses(data_ptr, dest_addr, src_addr);
+
+    uint16_t dst_node_id = dest_addr[6] << 8 + dest_addr[7];
+    uint16_t src_node_id = src_addr[6] << 8 + src_addr[7];
+
+    printf("DST MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", dest_addr[0], dest_addr[1], dest_addr[2], dest_addr[3], dest_addr[4], dest_addr[5], dest_addr[6], dest_addr[7], dst_node_id);
+    printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
+    */
+
     // Prepend data with a synchronisation marker
     memcpy(hdr + 0, "xx", 2);
     memcpy(hdr + 2, &data_len, 2);
@@ -400,12 +462,12 @@ static void _rf_handle_rx_end(){
     driver_state = DRVSTATE_IDLE_WAITING_RX;
     set_shm_cca_state();
     if (device_driver.phy_rx_cb)
-        ctxt->rf_driver->phy_driver->phy_rx_cb(buf, len, 200, 0, ctxt->rcp_driver_id);
+        ctxt->rf_driver->phy_driver->phy_rx_cb(buf, len, 200, buffed_packet->rssi, ctxt->rcp_driver_id);
 }
 
 /**
  * @brief Changes the active channel of the radio with state conflict avoidance
- * 
+ *
  * @param[in] new_channel New channel to switch to
  * @return 0 on success, -1 on failure (channel not changed because radio is
  * emitting or receiving a packet)
@@ -423,9 +485,9 @@ static int _rf_check_and_change_channel(uint16_t new_channel){
 
 /**
  * @brief Sets the to receive mode (with state verification).
- * 
- * @return 0 on success, > 0 on failure. 
- * 
+ *
+ * @return 0 on success, > 0 on failure.
+ *
  * @note The return value can be casted to @ref RAIL_Status_t to get the exact error code.
  */
 static int _rf_set_rx(){
@@ -445,7 +507,7 @@ static int _rf_set_rx(){
 
 /**
  * @brief Sets the radio to idle state.
- * 
+ *
  * @param[in] mode Specifies if the radio must abort ongoing operation (TRX) or must shutdown (see @ref idle_state).
  */
 static void _rf_set_idle(enum idle_state mode){
@@ -457,7 +519,7 @@ static void _rf_tx_sleep_timeout_timer_cb(int timer_id, uint16_t slots)
 {
     _rf_stop_backup_timer();
     if (device_driver.phy_tx_done_cb)
-                device_driver.phy_tx_done_cb(rf_radio_driver_id, 
+                device_driver.phy_tx_done_cb(rf_radio_driver_id,
                                                         mac_tx_handle, PHY_LINK_TX_SUCCESS, 0, 0);
     rx_thread_blokcked = false;
     driver_state = DRVSTATE_IDLE_WAITING_RX;
@@ -478,10 +540,10 @@ static void _rf_rx_sleep_timeout_timer(uint32_t duration){
 
 /**
  * @brief Checks if the current channel is clear to send.
- * 
+ *
  * @return true if the channel is clear to send, false otherwise.
  */
-static bool _rf_check_cca(){   
+static bool _rf_check_cca(){
     if(!cca_enabled){
         return true;
     }
@@ -522,12 +584,12 @@ static bool _rf_check_cca(){
 
 /**
  * @brief Sends the packet stored inside the TX fifo.
- * 
+ *
  * @return 0 on success, > 0 on failure.
- * 
+ *
  * This function is non-blocking. It only sets the radio to TX mode. The end of transmission is handled
  * by the radio IRQ handler @ref _rf_rail_events_irq_handler with the RAIL_EVENTS_TX_COMPLETION flag.
- * 
+ *
  * @note The return value can be casted to @ref RAIL_Status_t to get the exact error code.
  */
 static int _rf_execute_tx(){
@@ -562,7 +624,7 @@ static int _rf_execute_tx(){
 
 /**
  * @brief CSMA-CA timeout handler called by the IRQ thread task
- * 
+ *
  * This function tells to the MAC layer that the CSMA-CA timeout has occurred.
  * The MAC layer is responsible to tell what to do next. Depending on the status
  * that the MAC layer returns, this function will either cancel the transmission,
@@ -574,7 +636,7 @@ static void _rf_csma_timeout_handler(){
     // Request CSMA status from Nanostack
     if (device_driver.phy_tx_done_cb)
         status = device_driver.phy_tx_done_cb(rf_radio_driver_id, mac_tx_handle, PHY_LINK_CCA_PREPARE, 0, 0);
-    
+
     switch (status){
     case PHY_TX_NOT_ALLOWED:
         __PRINT(92,"CSMA-CA PHY_TX_NOT_ALLOWED");
@@ -604,7 +666,7 @@ static void _rf_csma_timeout_handler(){
                 _rf_rearm_csma_timeout_timer();
             }
         }
-        break;   
+        break;
     case PHY_TX_ALLOWED:
         __PRINT(32,"CSMA-CA PHY_TX_ALLOWED");
         if (driver_state == DRVSTATE_RX){
@@ -614,19 +676,19 @@ static void _rf_csma_timeout_handler(){
             // Channel is busy
             WARN("Channel is busy");
             if (device_driver.phy_tx_done_cb)
-                device_driver.phy_tx_done_cb(rf_radio_driver_id, 
+                device_driver.phy_tx_done_cb(rf_radio_driver_id,
                                                                 mac_tx_handle, PHY_LINK_CCA_FAIL, 0, 0);
         } else {
             // Channel is clear -> start transmission immediately
             if (_rf_execute_tx() != 0){
                 WARN("TX fail");
                 if (device_driver.phy_tx_done_cb)
-                    device_driver.phy_tx_done_cb(rf_radio_driver_id, 
+                    device_driver.phy_tx_done_cb(rf_radio_driver_id,
                                                                 mac_tx_handle, PHY_LINK_TX_FAIL, 0, 0);
             }
             // TX success is called in _rf_rail_events_irq_handler()
         }
-        break;  
+        break;
     default:
         break;
     }
@@ -634,7 +696,7 @@ static void _rf_csma_timeout_handler(){
 
 /**
  * @brief Starts the CSMA-CA timer
- * 
+ *
  * @param[in] duration before triggering the CSMA-CA timeout callback
  */
 static void _rf_start_csma_timeout_timer(uint32_t duration){
@@ -643,7 +705,7 @@ static void _rf_start_csma_timeout_timer(uint32_t duration){
 }
 
 /**
- * @brief Stops the CSMA-CA timer 
+ * @brief Stops the CSMA-CA timer
  */
 static void _rf_stop_csma_timeout_timer(){
     //WARN("CSMA-CA timeout stopped");
@@ -651,14 +713,14 @@ static void _rf_stop_csma_timeout_timer(){
 }
 
 /**
- * @brief CSMA-CA timeout callback 
+ * @brief CSMA-CA timeout callback
  */
 static void _rf_csma_timeout_timer_cb(int timer_id, uint16_t slots){
     _rf_csma_timeout_handler();
 }
 
 /**
- * @brief Starts/restarts the CSMA-CA timer based on the requested backoff time * 
+ * @brief Starts/restarts the CSMA-CA timer based on the requested backoff time *
  */
 static void _rf_rearm_csma_timeout_timer(){
     uint32_t csma_ca_period = backoff_time - rf_get_timestamp();
@@ -666,7 +728,7 @@ static void _rf_rearm_csma_timeout_timer(){
     if(csma_ca_period > 65000){
         // Time has already passed, trigger the IRQ immediately for immediate TX
         csma_ca_period = 1;
-    } 
+    }
 
     _rf_start_csma_timeout_timer(csma_ca_period);
 }
@@ -674,9 +736,9 @@ static void _rf_rearm_csma_timeout_timer(){
 
 /**
  * @brief Starts the backup timer
- * 
+ *
  * @param[in] duration before triggering the backup timeout callback
- * 
+ *
  * The backup timer is responsible to put the radio in a known state in case of unexpected radio failure.
  */
 static void _rf_start_backup_timer(uint32_t duration){
@@ -684,14 +746,14 @@ static void _rf_start_backup_timer(uint32_t duration){
 }
 
 /**
- * @brief Stops the backup timer 
+ * @brief Stops the backup timer
  */
 static void _rf_stop_backup_timer(){
     eventOS_callback_timer_stop(backup_timeout_timer);
 }
 
 /**
- * @brief Backup timeout callback 
+ * @brief Backup timeout callback
  */
 static void _rf_backup_timer_cb(int timer_id, uint16_t slots){
     _rf_backup_timeout_handler();
@@ -719,7 +781,7 @@ static void _rf_backup_timeout_handler(){
 
 /**
  * @brief Checks if the radio is busy (i.e. transmitting or receiving a packet).
- * 
+ *
  * @return true if the radio is busy, false otherwise.
  */
 static bool _rf_is_busy(){
@@ -740,7 +802,7 @@ static int8_t phy_rf_tx(uint8_t *data_ptr, uint16_t data_len, uint8_t tx_handle,
         return -1;
     }
     WARN("RF is not busy, bft %u", backoff_time);
-    
+
     //platform_enter_critical();
     mac_tx_handle = tx_handle;
     driver_state = DRVSTATE_CSMA_STARTED;
@@ -805,7 +867,7 @@ int rf_dbus_register () {
         WARN_ON(1, "Failed to connect to system bus: %s", strerror(-ret));
         return ret;
     }
-    
+
     char dbus_name[38];
     snprintf(dbus_name,38, "com.wshwsim.mac%02x%02x%02x%02x%02x%02x%02x%02x",
         rf_mac_address[0], rf_mac_address[1], rf_mac_address[2], rf_mac_address[3],
@@ -815,13 +877,13 @@ int rf_dbus_register () {
     snprintf(dbus_path,39, "/com/wshwsim/Mac%02x%02x%02x%02x%02x%02x%02x%02x",
         rf_mac_address[0], rf_mac_address[1], rf_mac_address[2], rf_mac_address[3],
         rf_mac_address[4], rf_mac_address[5], rf_mac_address[6], rf_mac_address[7]);
-    
+
     ret = sd_bus_add_object_vtable(rf_dbus, NULL, dbus_path, dbus_name, rf_dbus_vtable, NULL);
     if (ret < 0) {
         WARN_ON(1,"Failed to add object: %s", strerror(-ret));
         return ret;
     }
-    
+
     ret = sd_bus_request_name(rf_dbus, dbus_name, SD_BUS_NAME_ALLOW_REPLACEMENT | SD_BUS_NAME_REPLACE_EXISTING);
     if (ret < 0) {
         WARN_ON(1,"Failed to acquire service name: %s", strerror(-ret));
@@ -874,7 +936,7 @@ static  uint8_t * rf_request_rf_state_dbus(uint8_t *dest_mac_addr) {
         *dest_mac_addr, *(dest_mac_addr+1), *(dest_mac_addr+2), *(dest_mac_addr+3),
         *(dest_mac_addr+4), *(dest_mac_addr+5), *(dest_mac_addr+6), *(dest_mac_addr+7));
     INFO("Sending message to s %s p %s", dbus_name, dbus_path);
-    
+
     static sd_bus_message *reply_buf = NULL;
     int ret = -1;
 
@@ -1007,7 +1069,7 @@ static int8_t phy_rf_extension(phy_extension_type_e extension_type, uint8_t *dat
                     _rf_set_idle(RADIO_IDLE_ABORT);
                     driver_state = DRVSTATE_IDLE;
                     set_shm_cca_state();
-                    //_rf_set_rx();             
+                    //_rf_set_rx();
                     backoff_time = 0;
                 } else {
                     // Store backoff_time and cca_enabled
@@ -1056,7 +1118,19 @@ void shm_init()
 
     // Map shared memory
     shm_ptr = mmap(0, shm_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
-    FATAL_ON(shm_ptr == NULL, 2, "shm mmap faild!");
+    FATAL_ON(shm_ptr == NULL, 2, "shm mmap failed!");
+
+
+    // Shared memory for nodes and edges information
+    // Create shared memory
+    int shm_infos_fd = shm_open(shm_infos_name, O_CREAT | O_RDWR, 0666);
+    ftruncate(shm_infos_fd, shm_infos_size);
+
+    // Map shared memory
+    void* infos_ptr = mmap(0, shm_infos_size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_infos_fd, 0);
+    FATAL_ON(infos_ptr == NULL, 2, "shm_infos mmap failed!");
+
+    nodes_infos_flat_map = (struct node_infos *)infos_ptr;
 }
 
 void rf_driver_local_init(void)

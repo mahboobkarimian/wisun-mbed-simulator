@@ -5,6 +5,11 @@
 
 ## Compile mbedtls
 
+0) Install dependencies:
+```bash
+sudo apt-get install libnl-3-dev libnl-route-3-dev libcap-dev \
+    libsystemd-dev libdbus-1-dev cargo cmake ninja-build pkg-config lrzsz
+   ```
 1) Clone mbetls (ver.3) in the pwd `git clone --branch=v3.0.0 https://github.com/ARMmbed/mbedtls`
 2) Do cd into mbedtls dir and `cmake -G Ninja .`
 3) Then do: `ninja`
