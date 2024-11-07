@@ -202,9 +202,6 @@ struct node_infos *nodes_infos_flat_map;
 const char* shm_infos_name = "/wssimnodesinfos";
 const int shm_infos_size = MAX_NODES*MAX_NODES*sizeof(struct node_infos);
 
-const float BER_FSK[] = {1.586553e-01, 1.309273e-01, 1.040286e-01, 7.889587e-02, 5.649530e-02, 3.767899e-02, 2.300714e-02, 1.258703e-02, 6.004386e-03, 2.413310e-03, 7.827011e-04, 1.939855e-04, 3.430262e-05, 3.969248e-06, 2.695148e-07, 9.361040e-09, 1.399028e-10, 7.235971e-13, 9.844575e-16, 2.490143e-19};
-const int EBN0[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19};
-
 /* Threads */
 pthread_t rf_dbus_proces_thread, fhss_on_timer;
 
@@ -320,14 +317,12 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
     printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
 
     float rssi = (nodes_infos_flat_map + own_node_id * sizeof(nodes_infos_flat_map) * MAX_NODES + src_node_id)->rssi;
-    // 1.0 -> -12dBm, 0.6 -> -99dBm
-    int8_t rssi_dbm = (int8_t)(-(24.0 / (rssi * rssi * rssi) - 12));
+    // 1.0 -> 0dBm, 0.0 -> -100dBm
+    int8_t rssi_dbm = (int8_t)(-(1.0 - rssi) * 100);
     printf("RSSI = %g (%d dBm)\n", rssi, rssi_dbm);
-    int scale_ebn0 = (int)(floor(exp(-(1 - rssi) * 1.2) * 19));
-    float frame_error_rate = BER_FSK[scale_ebn0] * 8 * pkt_len;
 
-    if (frame_error_rate > (float)rand() / (float)RAND_MAX) {
-        printf("Packet was lost due to link quality (RSSI) (FER = %g)\n", frame_error_rate);
+    if ((float)rand()/(float)RAND_MAX > rssi) {
+        printf("Packet was lost due to link quality (RSSI = %g)\n", rssi);
         goto CANCEL_RX;
     }
 
