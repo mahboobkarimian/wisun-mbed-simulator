@@ -3,7 +3,7 @@
 # Number of nodes (Number 0 is reserved for BR)
 #TYPE="debug" # Debug with few node
 #TYPE="test" # Testbench topology
-TYPE="dag_simple" # Run full topology
+TYPE=$1 # Run full topology
 if [ "$TYPE" = "debug" ];then
 	let NODES=1
 elif [ "$TYPE" = "single" ]; then
@@ -13,7 +13,7 @@ elif [ "$TYPE" = "dag_simple" ]; then
 elif [ "$TYPE" = "normal" ]; then
 	let NODES=15
 else
-	echo "Unsupported"
+	echo "Please specify a topology name when running bash run.sh <topo>"
 	sleep 2
 	exit -1
 fi
