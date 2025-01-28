@@ -30,7 +30,7 @@ and then: `ninja`
 
 ### Script for running the simulations up to 255 nodes
 
-Run `bash tunup.sh` to setup a TUN interface (This needs sudo). Then run `bash run.sh`. This will open the simulation server and MAC layer processes in new tabs, and the mbed nanostack in separate windows.
+Run `bash tunup.sh` to setup a TUN interface (This needs sudo). Then run `bash run.sh <topology>`. This will open the simulation server and MAC layer processes in new tabs, and the mbed nanostack in separate windows.
 
 ### Example script of 3 nodes (old method)
 
@@ -56,9 +56,9 @@ To run, modify the available parameters in `run_docker.bash`, and run it.
 
 ### Topology setup
 
-The topology of the network is defined within the `run.sh` script.
+The topologies of the network are defined within the `run.sh` script. When running the script, the name of the topology must be provided. The user can easily add new topologies.
 
-Here is a short explanation on the script content. The line
+Here is a short explanation of the script content. The line
 
 ```bash
 `gnome-terminal --tab -- $DIR/wssimserver -g 0-1 -g 1-2 /tmp/sim_socket --dump`
@@ -108,6 +108,10 @@ The following table presents the probability of packet loss of a 100 bytes frame
 | -100.0  | 1.88e-02 |
 
 > **_NOTE:_** be aware that, by default, Wi-SUN does not accept a neighbour as a parent if the RSSI is below -80 dBm (edit `DEVICE_MIN_SENS` variable to change the limit).
+
+### Quick simulator
+
+As Wi-SUN can be low to establish the whole mesh network, this simulator is also able to run using a 10 times faster timebase. Please checkout the `10x_faster` branch of this repository to access this feature.
 
 ### Wireshark
 
