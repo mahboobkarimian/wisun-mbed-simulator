@@ -54,9 +54,11 @@ First, build a docker image. For this see the `docker` directory.
 To run, modify the available parameters in `run_docker.bash`, and run it.
 
 
-#### Topology
+### Topology setup
 
-The line in `run.sh`
+The topology of the network is defined within the `run.sh` script.
+
+Here is a short explanation on the script content. The line
 
 ```bash
 `gnome-terminal --tab -- $DIR/wssimserver -g 0-1 -g 1-2 /tmp/sim_socket --dump`
@@ -79,7 +81,35 @@ But the result of `-g 0-2 -g 1-3` will be:
      3
 ```
 
-#### Wireshark
+The `-g` option also supports providing an RSSI value for a specified edge. The format `-g 2,5:-67.0` will create an edge from node 2 to 5 with an RSSI of -67.0 [dBm]. By default, if no value is provided, the RSSI value is `1 [dBm]` to guarantee a very good link quality.
+
+The RSSI is used within the simulator to calculate a frame transmission error rate at PHY layer. The formula used to compute the frame error rate is based on the non-coherente FSK-2 BER formula and is the following:
+
+$FER(P_r) = \frac{1}{2} e^{\frac{1}{2} (10 \cdot \log_{10}(kTB) + 30 + NF_{LNA} + 10\cdot \log_{10}​(\frac{B}{R_b} ) - P_{r})} \cdot 8 \cdot L_{frame}$
+
+where $P_{r} \approx RSSI$ [dBm], $k$ = Bolzman constant ($k = 1.3806 \cdot 10^{−23}$ [J/K]), $T$ = temperature [K], $B$ = channel bandwith [Hz], $NF_{LNA}$ = noise figure of the LNA, $R_b$ = transmission bitrate [bit/s], $L_{frame}$ = frame byte count
+
+In this simulator, we use $T$ = 293 [K], a channel $B$ = 100 [kHz], a $R_b$ 100 [kbit/s] and $NF_{LNA}$ = 4 [dB] (the formula can be edited in `sl_rf_driver.c`).
+
+The following table presents the probability of packet loss of a 100 bytes frame depending on the RSSI value:
+
+| RSSI [dBm] | Frame error rate [-] |
+|------|------------------|
+| 0.0  | 3.63e-24 |
+| -10.0  | 5.38e-22 |
+| -20.0  | 7.99e-20 |
+| -30.0  | 1.19e-17 |
+| -40.0  | 1.76e-15 |
+| -50.0  | 2.61e-13 |
+| -60.0  | 3.88e-11 |
+| -70.0  | 5.75e-09 |
+| -80.0  | 8.54e-07 |
+| -90.0  | 1.27e-04 |
+| -100.0  | 1.88e-02 |
+
+> **_NOTE:_** be aware that, by default, Wi-SUN does not accept a neighbour as a parent if the RSSI is below -80 dBm (edit `DEVICE_MIN_SENS` variable to change the limit).
+
+### Wireshark
 
 You can add `-w` option to every node's `wshwsim` process and it will bring up a Wireshark window for you. But Note that you need to run the corresponding node processes manually in another terminal window. Otherwise it will not connect to its MAC/PHY.
 

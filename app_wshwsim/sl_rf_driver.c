@@ -317,12 +317,16 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
     printf("SRC MAC: %02x:%02x:%02x:%02x:%02x:%02x:%02x:%02x (node %d)\n", src_addr[0], src_addr[1], src_addr[2], src_addr[3], src_addr[4], src_addr[5], src_addr[6], src_addr[7], src_node_id);
 
     float rssi = (nodes_infos_flat_map + own_node_id * sizeof(nodes_infos_flat_map) * MAX_NODES + src_node_id)->rssi;
-    // 1.0 -> 0dBm, 0.0 -> -100dBm
-    int8_t rssi_dbm = (int8_t)(-(1.0 - rssi) * 100);
-    printf("RSSI = %g (%d dBm)\n", rssi, rssi_dbm);
 
-    if ((float)rand()/(float)RAND_MAX > rssi) {
-        printf("Packet was lost due to link quality (RSSI = %g)\n", rssi);
+    // T = 293 [K], B = 100 [kHz], R_b = 100 [kbit/s], NF_LNA = 4 [dB]
+    // $BER(P_r) = \frac{1}{2} e^{\frac{1}{2} (10 \cdot \log_{10}(kTB) + 30 + NF_{LNA} + 10\cdot \log_{10}​(\frac{B}{R_b} ) - P_{r})}$
+    float ber = 0.5 * exp(0.5 * (-153.930645 + 30 + 4 + 0 - rssi));
+    // 1.0 -> -12dBm, 0.6 -> -99dBm
+    printf("RSSI = %g dBm\n", rssi);
+    float frame_error_rate = ber * 8 * pkt_len;
+
+    if (frame_error_rate > (float)rand() / (float)RAND_MAX) {
+        printf("Packet was lost due to link quality (RSSI) (FER = %g)\n", frame_error_rate);
         goto CANCEL_RX;
     }
 
@@ -359,7 +363,7 @@ void phy_rf_rx_now(struct wsmac_ctxt *ctxt) // Here to pass x and y
         // Save the rest of packet in buffer
         current_input->len = pkt_len;
         current_input->channel = pkt_chan;
-        current_input->rssi = rssi_dbm;
+        current_input->rssi = rssi;
         memcpy(current_input->payload , &buf, pkt_len);
         // Store it in the ringbuf
         ringbufindex_put(&input_ringbuf);

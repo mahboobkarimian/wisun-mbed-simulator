@@ -413,7 +413,7 @@ int main(int argc, char **argv)
     nodes_infos_flat_map = (struct node_infos *)infos_ptr;
     for (int i = 0; i < MAX_NODES; i++) {
         for (int j = 0; j < MAX_NODES; j++) {
-            (nodes_infos_flat_map + i * sizeof(nodes_infos_flat_map) + j)->rssi = 1.0;
+            (nodes_infos_flat_map + i * sizeof(nodes_infos_flat_map) + j)->rssi = 0.0;
         }
     }
 
