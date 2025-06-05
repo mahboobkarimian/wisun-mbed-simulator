@@ -45,7 +45,7 @@ To do this, overall we need 7 process:
 * Note that BR process may need root access to create a tun interface, so `sudo` is used for the case of BR process and it will prompt for your password.
 * There must be different config files for Router nodes and BR. An example of this file `examples` dir. All Router nodes can use the same config file.
 
-## Run in docker
+### Run in docker
 
 It is possible to run multiple simulations in parallel. Meaning that a mesh network per docker instance. This is realized by using Docker which allows the networks to be run isolated from eachother. At the end of the simulation, the results and logs will be saved in a directory in the host, then docker container will exit and removed.
 
@@ -109,6 +109,24 @@ The following table presents the probability of packet loss of a 100 bytes frame
 
 > **_NOTE:_** be aware that, by default, Wi-SUN does not accept a neighbour as a parent if the RSSI is below -80 dBm (edit `DEVICE_MIN_SENS` variable to change the limit).
 
+### Run with python orchestrator
+A Python script (`run_orchestrator.py`) has been created to streamline the use of this simulator by minimizing user interaction, making it easier to automate multiple test runs (e.g., batch testing of network topologies). This implementation also reduces the number of terminal windows opened during simulations, which lower CPU usage overhead.
+
+**Note:** Node-related logs are currently not displayed due to limitations in this script.
+
+The script must be run once interactively to generate the required configuration files, which need root privileges. You will be prompted for your password at two specific points during this process.
+
+Here is how to use the script:
+```bash
+# Display help
+python run_orchestrator.py --help
+
+# Run with a default topology
+python run_orchestrator.py
+
+# Run with a custom topology
+python run_orchestrator.py -g 0,1:0.71 -g 0,2:0.71 -g 1,3:0.65 ...
+```
 ### Quick simulator
 
 As Wi-SUN can be low to establish the whole mesh network, this simulator is also able to run using a 10 times faster timebase. Please checkout the `10x_faster` branch of this repository to access this feature.
